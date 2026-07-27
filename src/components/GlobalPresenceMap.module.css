@@ -1,0 +1,294 @@
+.section {
+  padding: 7rem 0;
+  position: relative;
+  background: radial-gradient(circle at 50% 30%, rgba(12, 28, 51, 0.9) 0%, var(--bg-navy-dark) 100%);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 3rem auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: rgba(21, 101, 255, 0.1);
+  border: 1px solid rgba(21, 101, 255, 0.3);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--royal-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.2rem;
+}
+
+.goldIcon {
+  color: var(--premium-gold);
+}
+
+.blueIcon {
+  color: var(--royal-blue);
+}
+
+.title {
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Tabs */
+.tabsRow {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.tabBtn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabBtn:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: var(--text-white);
+}
+
+.tabActive {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(21, 101, 255, 0.2));
+  border-color: var(--premium-gold);
+  color: var(--gold-light);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+/* Map Card */
+.mapCard {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.mapVisualContainer {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background: radial-gradient(circle at 50% 50%, rgba(8, 19, 32, 0.8) 0%, rgba(2, 4, 8, 0.95) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.worldMapBg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 20% 40%, rgba(21, 101, 255, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(212, 175, 55, 0.08) 0%, transparent 40%);
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 90%);
+}
+
+.shippingSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.animatedRoute {
+  animation: dash 18s linear infinite;
+}
+
+.animatedRouteReverse {
+  animation: dash 22s linear infinite reverse;
+}
+
+@keyframes dash {
+  from { stroke-dashoffset: 200; }
+  to { stroke-dashoffset: 0; }
+}
+
+.pulseNode {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.4); opacity: 0.7; }
+}
+
+/* Floating Region Card Overlay */
+.floatingRegionOverlay {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 380px;
+  padding: 1.6rem;
+  z-index: 10;
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+.overlayHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.overlayTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.liveTag {
+  margin-left: auto;
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: var(--gold-light);
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.overlayStatsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.overlayStat {
+  display: flex;
+  flex-direction: column;
+}
+
+.statVal {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--gold-light);
+}
+
+.statLbl {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.corridorBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.corridorLbl {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.corridorVal {
+  font-size: 0.82rem;
+  color: var(--text-white);
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+.countriesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.countriesTitle {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.countryBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.countryBadge {
+  font-size: 0.7rem;
+  background: rgba(21, 101, 255, 0.15);
+  border: 1px solid rgba(21, 101, 255, 0.3);
+  color: var(--text-white);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Footer Bar */
+.mapFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.2rem 2rem;
+  background: rgba(4, 9, 18, 0.9);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footerMetric {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .floatingRegionOverlay {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    border-radius: 0;
+  }
+  .mapVisualContainer {
+    height: 320px;
+  }
+}

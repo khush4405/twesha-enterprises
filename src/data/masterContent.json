@@ -1,0 +1,41 @@
+{
+  "categories": [
+    {
+      "type": "category",
+      "title": "Engineering Products",
+      "slug": "engineering-products",
+      "id": "1784784465286",
+      "children": []
+    },
+    {
+      "type": "category",
+      "title": "Heating Solution",
+      "slug": "heating-solution",
+      "id": "1784784482074",
+      "children": []
+    },
+    {
+      "type": "category",
+      "title": "Instrumentation Products",
+      "slug": "instrumentation-products",
+      "id": "1784784505227",
+      "children": []
+    }
+  ],
+  "media": {
+    "videos": [
+      {
+        "id": "v1",
+        "title": "Corporate Overview",
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }
+    ],
+    "certificates": [
+      {
+        "id": "cert1",
+        "title": "ISO 9001:2015",
+        "image": "/images/iso9001.png"
+      }
+    ]
+  }
+}

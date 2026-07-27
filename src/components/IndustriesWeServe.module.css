@@ -1,0 +1,78 @@
+.section {
+  padding: 5rem 2rem;
+  background-color: var(--color-primary-dark);
+  font-family: var(--font-body);
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h2 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.header h2 span {
+  color: var(--color-accent-gold);
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #B0C4DE; /* Light blue-grey for readability */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(212, 175, 55, 0.1); /* Subtle gold tint */
+  color: var(--color-accent-gold);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.cardDescription {
+  color: #9BA4B5;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,190 @@
+.section {
+  padding: 7rem 0;
+  position: relative;
+  background: radial-gradient(circle at 70% 50%, rgba(12, 28, 51, 0.8) 0%, var(--bg-navy-dark) 100%);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 4rem auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.2rem;
+}
+
+.goldIcon {
+  color: var(--premium-gold);
+}
+
+.title {
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.carouselCard {
+  padding: 3.5rem 3rem;
+  position: relative;
+  border-radius: var(--radius-lg);
+  background: rgba(8, 19, 32, 0.85);
+}
+
+.quoteWatermark {
+  position: absolute;
+  top: -20px;
+  right: 40px;
+  font-family: var(--font-heading);
+  font-size: 14rem;
+  line-height: 1;
+  color: rgba(212, 175, 55, 0.06);
+  pointer-events: none;
+  font-weight: 900;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.categoryBadge {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gold-light);
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 0.25rem 0.8rem;
+  border-radius: var(--radius-full);
+}
+
+.quoteText {
+  font-size: 1.35rem;
+  color: var(--text-white);
+  line-height: 1.65;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  font-style: italic;
+}
+
+.authorRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 1.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorName {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-white);
+}
+
+.authorRole {
+  font-size: 0.9rem;
+  color: var(--royal-blue);
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+.companyName {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.countryText {
+  color: var(--gold-light);
+}
+
+.navControls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrowBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrowBtn:hover {
+  background: var(--royal-blue);
+  border-color: var(--royal-blue);
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(21, 101, 255, 0.4);
+}
+
+.counterText {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .carouselCard {
+    padding: 2rem 1.5rem;
+  }
+  .quoteText {
+    font-size: 1.1rem;
+  }
+}
