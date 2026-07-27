@@ -15,7 +15,9 @@ import {
   Search,
   ArrowRight,
   Filter,
-  CheckCircle2
+  CheckCircle2,
+  Image as ImageIcon,
+  PlusCircle
 } from "lucide-react";
 import styles from "./CatalogExplorer.module.css";
 import GlobalQuoteModal from "./GlobalQuoteModal";
@@ -29,10 +31,10 @@ interface ProductCategory {
   itemsCount: number;
   featuredSpecs: string[];
   gradient: string;
+  image?: string; // Image URL set from Admin Panel
 }
 
 export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
-  const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeModalProduct, setActiveModalProduct] = useState<ProductCategory | null>(null);
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
@@ -46,7 +48,8 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
       icon: Cpu,
       itemsCount: 120,
       featuredSpecs: ["Modbus/Profinet", "IEC 61131-3", "24V DC / 400V AC"],
-      gradient: "linear-gradient(135deg, rgba(21, 101, 255, 0.2) 0%, rgba(8, 19, 32, 0.4) 100%)"
+      gradient: "linear-gradient(135deg, rgba(21, 101, 255, 0.2) 0%, rgba(8, 19, 32, 0.4) 100%)",
+      image: "" // Placeholder slot for Admin upload
     },
     {
       id: "electrical",
@@ -56,7 +59,8 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
       icon: Zap,
       itemsCount: 185,
       featuredSpecs: ["DIN-Rail Mounted", "Up to 1000V AC/DC", "UL/CE Compliant"],
-      gradient: "linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(8, 19, 32, 0.4) 100%)"
+      gradient: "linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(8, 19, 32, 0.4) 100%)",
+      image: ""
     },
     {
       id: "sensors",
@@ -66,7 +70,8 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
       icon: Activity,
       itemsCount: 95,
       featuredSpecs: ["IP67/IP69K Rated", "IO-Link Enabled", "High Frequency"],
-      gradient: "linear-gradient(135deg, rgba(21, 101, 255, 0.2) 0%, rgba(8, 19, 32, 0.4) 100%)"
+      gradient: "linear-gradient(135deg, rgba(21, 101, 255, 0.2) 0%, rgba(8, 19, 32, 0.4) 100%)",
+      image: ""
     },
     {
       id: "instruments",
@@ -76,7 +81,8 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
       icon: Gauge,
       itemsCount: 80,
       featuredSpecs: ["4-20mA HART Output", "Ex-d Explosion Proof", "Stainless 316L"],
-      gradient: "linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(8, 19, 32, 0.4) 100%)"
+      gradient: "linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(8, 19, 32, 0.4) 100%)",
+      image: ""
     },
     {
       id: "control-panels",
@@ -86,7 +92,8 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
       icon: Sliders,
       itemsCount: 45,
       featuredSpecs: ["NEMA 4X Outdoor", "Thermal Management", "Custom Wiring"],
-      gradient: "linear-gradient(135deg, rgba(21, 101, 255, 0.2) 0%, rgba(8, 19, 32, 0.4) 100%)"
+      gradient: "linear-gradient(135deg, rgba(21, 101, 255, 0.2) 0%, rgba(8, 19, 32, 0.4) 100%)",
+      image: ""
     },
     {
       id: "safety",
@@ -96,7 +103,8 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
       icon: ShieldAlert,
       itemsCount: 60,
       featuredSpecs: ["SIL3 / PLe Rated", "Category 4 Safety", "Dual Channel"],
-      gradient: "linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(8, 19, 32, 0.4) 100%)"
+      gradient: "linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(8, 19, 32, 0.4) 100%)",
+      image: ""
     },
     {
       id: "power",
@@ -106,7 +114,8 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
       icon: BatteryCharging,
       itemsCount: 110,
       featuredSpecs: ["95% Efficiency", "PFC Active", "Overload Protection"],
-      gradient: "linear-gradient(135deg, rgba(21, 101, 255, 0.2) 0%, rgba(8, 19, 32, 0.4) 100%)"
+      gradient: "linear-gradient(135deg, rgba(21, 101, 255, 0.2) 0%, rgba(8, 19, 32, 0.4) 100%)",
+      image: ""
     },
     {
       id: "networking",
@@ -116,7 +125,8 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
       icon: Network,
       itemsCount: 70,
       featuredSpecs: ["Gigabit Fiber SFP", "Wide Temp -40°C~75°C", "Ring Redundancy"],
-      gradient: "linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(8, 19, 32, 0.4) 100%)"
+      gradient: "linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(8, 19, 32, 0.4) 100%)",
+      image: ""
     },
     {
       id: "testing",
@@ -126,7 +136,8 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
       icon: Microscope,
       itemsCount: 50,
       featuredSpecs: ["CAT IV 600V Safety", "NIST Traceable", "True RMS"],
-      gradient: "linear-gradient(135deg, rgba(21, 101, 255, 0.2) 0%, rgba(8, 19, 32, 0.4) 100%)"
+      gradient: "linear-gradient(135deg, rgba(21, 101, 255, 0.2) 0%, rgba(8, 19, 32, 0.4) 100%)",
+      image: ""
     },
     {
       id: "engineering",
@@ -136,7 +147,8 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
       icon: Wrench,
       itemsCount: 40,
       featuredSpecs: ["Custom Sourcing", "OEM Spec Matching", "On-Site Audit"],
-      gradient: "linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(8, 19, 32, 0.4) 100%)"
+      gradient: "linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(8, 19, 32, 0.4) 100%)",
+      image: ""
     }
   ];
 
@@ -196,11 +208,32 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
                 {/* Top Lighting bar */}
                 <div className={styles.topLight}></div>
 
+                {/* Card Header: Icon & Code */}
                 <div className={styles.cardHeader}>
                   <div className={styles.iconFrame}>
-                    <IconComponent size={28} className={styles.cardIcon} />
+                    <IconComponent size={26} className={styles.cardIcon} />
                   </div>
                   <span className={styles.categoryCode}>{cat.categoryCode}</span>
+                </div>
+
+                {/* DEDICATED PRODUCT IMAGE CONTAINER (Renders uploaded image or admin upload slot) */}
+                <div className={styles.productImageFrame}>
+                  {cat.image ? (
+                    <img 
+                      src={cat.image} 
+                      alt={cat.title} 
+                      className={styles.productImage} 
+                    />
+                  ) : (
+                    <div className={styles.imagePlaceholder}>
+                      <div className={styles.placeholderIconRing}>
+                        <ImageIcon size={22} className={styles.placeholderIcon} />
+                      </div>
+                      <span className={styles.placeholderLabel}>Product Media Slot</span>
+                      <span className={styles.placeholderSub}>Upload via Admin Panel</span>
+                    </div>
+                  )}
+                  <div className={styles.imageOverlayGlow}></div>
                 </div>
 
                 <h3 className={styles.cardTitle}>{cat.title}</h3>
@@ -237,6 +270,23 @@ export default function CatalogExplorer({ data = [] }: { data?: any[] }) {
                 <h3 className={styles.modalTitle}>{activeModalProduct.title}</h3>
               </div>
               <button className={styles.closeBtn} onClick={() => setActiveModalProduct(null)}>✕</button>
+            </div>
+
+            {/* Modal Product Image Display */}
+            <div className={styles.modalImageFrame}>
+              {activeModalProduct.image ? (
+                <img 
+                  src={activeModalProduct.image} 
+                  alt={activeModalProduct.title} 
+                  className={styles.modalImage} 
+                />
+              ) : (
+                <div className={styles.modalImagePlaceholder}>
+                  <ImageIcon size={32} className={styles.placeholderIcon} />
+                  <span>Product Image Reserved Space</span>
+                  <span className={styles.placeholderSub}>Editable from Admin Dashboard</span>
+                </div>
+              )}
             </div>
 
             <p className={styles.modalDesc}>{activeModalProduct.description}</p>
