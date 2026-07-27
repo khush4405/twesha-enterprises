@@ -40,7 +40,7 @@ export default function Footer({ categories = [] }: { categories?: any[] }) {
             <div className={styles.brandCol}>
               <div className={styles.logoWrapper}>
                 <img 
-                  src="/twesha logo 2.png" 
+                  src="/Twesha EnterPrize logo.png" 
                   alt="Twesha Enterprises - Premium Industrial Import Export" 
                   className={styles.footerLogo} 
                 />

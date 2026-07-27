@@ -32,7 +32,7 @@ export default function HeroSection() {
         {/* Low-opacity TE Logo Watermark Background */}
         <div className={styles.watermarkContainer}>
           <img 
-            src="/twesha logo 2.png" 
+            src="/Twesha EnterPrize logo.png" 
             alt="Twesha Enterprises Watermark" 
             className={styles.heroWatermark}
           />

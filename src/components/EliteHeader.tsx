@@ -44,7 +44,7 @@ export default function EliteHeader({ categories = [] }: { categories?: Category
           <Link href="/" className={styles.logoContainer}>
             <div className={styles.logoGlow}></div>
             <img 
-              src="/twesha logo 2.png" 
+              src="/Twesha EnterPrize logo.png" 
               alt="Twesha Enterprises - Premium Industrial Import & Export" 
               className={styles.logoImage} 
             />
