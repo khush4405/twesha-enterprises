@@ -5,19 +5,7 @@
       "title": "Heating Solution",
       "slug": "heating-solution",
       "id": "1784784482074",
-      "children": [
-        {
-          "type": "product",
-          "keySpecifications": [],
-          "requestQuoteOption": true,
-          "title": "poiuytrewq",
-          "image": "",
-          "shortDescription": "iuytrvfcdxs",
-          "longDescription": "oiuytrewqkjhgfds",
-          "slug": "poiuytrewq",
-          "id": "1785219315450"
-        }
-      ]
+      "children": []
     },
     {
       "type": "category",
@@ -32,7 +20,8 @@
       "title": "Instrumentation Products",
       "slug": "instrumentation-products",
       "id": "1784784505227",
-      "children": []
+      "children": [],
+      "coverImage": "/instruments.png"
     }
   ],
   "certificates": [
