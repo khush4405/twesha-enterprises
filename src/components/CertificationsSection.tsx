@@ -3,45 +3,8 @@
 import { Award, ShieldCheck, FileCheck, CheckCircle2, BadgeCheck } from "lucide-react";
 import styles from "./CertificationsSection.module.css";
 
-export default function CertificationsSection() {
-  const certs = [
-    {
-      id: "iso",
-      title: "ISO 9001:2015 Certification",
-      issuer: "International Organization for Standardization",
-      category: "Quality Management System",
-      code: "CERT-ISO-9001-2025-TE",
-      description: "Certified operational excellence across industrial product sourcing, testing, documentation, and international export procedures.",
-      icon: Award
-    },
-    {
-      id: "license",
-      title: "Authorized Export License",
-      issuer: "Directorate General of Foreign Trade (DGFT)",
-      category: "International Trade License",
-      code: "IEC-GLOBAL-EX-88942",
-      description: "Government-accredited international trading status for cross-border export of heavy engineering equipment, sensors, and electrical components.",
-      icon: BadgeCheck
-    },
-    {
-      id: "qa",
-      title: "Zero-Defect Quality Assurance",
-      issuer: "Global Industrial Inspection Bureau",
-      category: "Factory Audit Seal",
-      code: "QA-AUDIT-PASS-100",
-      description: "Rigorous 5-point physical & electrical verification protocol executed prior to container sealing and ocean/air freight dispatch.",
-      icon: ShieldCheck
-    },
-    {
-      id: "compliance",
-      title: "RoHS & CE Compliance Seal",
-      issuer: "European Conformity & Environmental Agency",
-      category: "Global Regulatory Standard",
-      code: "CE-ROHS-2026-STND",
-      description: "Full compliance with hazardous substance limits and electromagnetic compatibility standards across European & North American markets.",
-      icon: FileCheck
-    }
-  ];
+export default function CertificationsSection({ data = [] }: { data?: any[] }) {
+  if (!data || data.length === 0) return null;
 
   return (
     <section id="certifications" className={styles.section}>
@@ -64,8 +27,8 @@ export default function CertificationsSection() {
 
         {/* Luxury Certificates Grid */}
         <div className={styles.grid}>
-          {certs.map((cert) => {
-            const IconComp = cert.icon;
+          {data.map((cert: any) => {
+            const IconComp = Award; // Default to Award since we don't store Lucide icons in JSON
             return (
               <div key={cert.id} className={`${styles.certCard} glass-card glass-card-gold`}>
                 

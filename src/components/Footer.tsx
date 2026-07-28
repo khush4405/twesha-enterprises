@@ -16,18 +16,9 @@ import {
 } from "lucide-react";
 import styles from "./Footer.module.css";
 
+import Link from "next/link";
+
 export default function Footer({ categories = [] }: { categories?: any[] }) {
-  const [emailInput, setEmailInput] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (emailInput.trim()) {
-      setSubscribed(true);
-      setEmailInput("");
-    }
-  };
-
   return (
     <footer id="footer" className={styles.footer}>
       
@@ -40,7 +31,7 @@ export default function Footer({ categories = [] }: { categories?: any[] }) {
             <div className={styles.brandCol}>
               <div className={styles.logoWrapper}>
                 <img 
-                  src="/Twesha EnterPrize logo.png" 
+                  src="/Twesha EnterPrize logo new.png" 
                   alt="Twesha Enterprises - Premium Industrial Import Export" 
                   className={styles.footerLogo} 
                 />
@@ -55,36 +46,23 @@ export default function Footer({ categories = [] }: { categories?: any[] }) {
               </div>
             </div>
 
-            {/* Newsletter Subscription */}
-            <div className={styles.newsletterCol}>
-              <h3 className={styles.colTitle}>Subscribe to Global Trade Insights</h3>
-              <p className={styles.colSub}>
-                Receive monthly updates on industrial tariff changes, OEM sourcing trends, and international logistics reports.
+            {/* CTA Section */}
+            <div className={styles.ctaCol}>
+              <h3 className={styles.ctaTitle}>
+                Ready to Discuss Your <span className={styles.highlightGold}>Instrumentation</span> Needs?
+              </h3>
+              <p className={styles.ctaSub}>
+                Get expert consultation and custom quotes for your process control requirements.
               </p>
 
-              {subscribed ? (
-                <div className={styles.subSuccess}>
-                  ✓ Thank you! You've been subscribed to Twesha Trade Briefing.
-                </div>
-              ) : (
-                <form onSubmit={handleSubscribe} className={styles.newsletterForm}>
-                  <div className={styles.glassInputGroup}>
-                    <Mail size={18} className={styles.inputIcon} />
-                    <input 
-                      type="email" 
-                      placeholder="Enter corporate email address..."
-                      value={emailInput}
-                      onChange={(e) => setEmailInput(e.target.value)}
-                      required
-                      className={styles.glassInput}
-                    />
-                    <button type="submit" className="btn-gold">
-                      <span>Subscribe</span>
-                      <Send size={14} />
-                    </button>
-                  </div>
-                </form>
-              )}
+              <div className={styles.ctaButtons}>
+                <Link href="/contact" className={styles.btnPrimary}>
+                  Get a Quote
+                </Link>
+                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className={styles.btnSecondary}>
+                  WhatsApp Us
+                </a>
+              </div>
             </div>
 
           </div>

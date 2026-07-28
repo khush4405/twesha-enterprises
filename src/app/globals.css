@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(135deg, #E6C657 0%, #D4AF37 50%, #B89220 100%);
   color: #081320;
   font-weight: 700;
-  border: none;
+  border: 1px solid transparent;
   padding: 0.85rem 1.8rem;
   border-radius: var(--radius-full);
   display: inline-flex;

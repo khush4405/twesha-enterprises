@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { X, Send, ShieldCheck, FileCheck2, Globe2 } from 'lucide-react';
 import styles from './GlobalQuoteModal.module.css';
 
@@ -22,6 +22,16 @@ export default function GlobalQuoteModal({ isOpen, onClose }: GlobalQuoteModalPr
   });
   
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [categories, setCategories] = useState<{title: string}[]>([]);
+
+  useEffect(() => {
+    fetch("/api/save-content")
+      .then(res => res.json())
+      .then(data => {
+         if (data?.categories) setCategories(data.categories);
+      })
+      .catch(err => console.error(err));
+  }, []);
 
   if (!isOpen) return null;
 
@@ -142,14 +152,12 @@ export default function GlobalQuoteModal({ isOpen, onClose }: GlobalQuoteModalPr
                 <div className={styles.inputGroup}>
                   <label className={styles.label}>Product Category</label>
                   <select name="category" value={formData.category} onChange={handleChange} className={styles.select}>
-                    <option value="Automation & Control">Industrial Automation & PLCs</option>
-                    <option value="Electrical Components">Electrical Components & Switchgear</option>
-                    <option value="Sensors & Detectors">Sensors & Detectors</option>
-                    <option value="Process Instruments">Process Instrumentation</option>
-                    <option value="Control Panels">Custom Control Panels</option>
-                    <option value="Industrial Safety">Industrial Safety Gear</option>
-                    <option value="Power Supplies">Power Supplies & SMPS</option>
-                    <option value="Engineering Sourcing">Turnkey Engineering Sourcing</option>
+                    {categories.length > 0 ? categories.map((c, i) => (
+                      <option key={i} value={c.title}>{c.title}</option>
+                    )) : (
+                      <option value="Loading">Loading categories...</option>
+                    )}
+                    <option value="Other Products">Other Products</option>
                   </select>
                 </div>
 

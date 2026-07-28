@@ -6,7 +6,10 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: radial-gradient(circle at 70% 30%, #0d2138 0%, var(--bg-navy) 50%, var(--bg-black) 100%);
+  background-image: linear-gradient(rgba(11, 17, 32, 0.7), rgba(11, 17, 32, 0.85)), url('/hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Watermark */
@@ -70,10 +73,11 @@
   margin: 0 auto;
   padding: 0 2.5rem;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   position: relative;
   z-index: 2;
 }
@@ -82,7 +86,8 @@
 .leftContent {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 .badge {
@@ -140,13 +145,14 @@
   color: var(--text-muted);
   max-width: 620px;
   line-height: 1.65;
-  margin-bottom: 2.2rem;
+  margin: 0 auto 2.2rem;
   font-weight: 400;
 }
 
 .heroButtons {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.2rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;

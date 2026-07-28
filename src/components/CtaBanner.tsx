@@ -1,12 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ArrowRight, Globe, Shield, Sparkles } from "lucide-react";
 import styles from "./CtaBanner.module.css";
-import GlobalQuoteModal from "./GlobalQuoteModal";
-
 export default function CtaBanner() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
@@ -36,14 +34,15 @@ export default function CtaBanner() {
                 Get customized factory pricing, ISO compliance verification, and ocean/air freight schedules for your next project.
               </p>
 
-              <div className={styles.actions}>
-                <button 
+              <div className={styles.ctaGroup}>
+                <Link 
+                  href="/contact" 
                   className="btn-gold" 
-                  onClick={() => setIsModalOpen(true)}
+                  style={{ textDecoration: 'none' }}
                 >
-                  <span>Start Your Project</span>
-                  <ArrowRight size={18} />
-                </button>
+                  <Globe size={18} />
+                  Request Global Quote
+                </Link>
                 
                 <div className={styles.trustBadge}>
                   <Shield size={16} className={styles.blueIcon} />
@@ -57,8 +56,6 @@ export default function CtaBanner() {
 
         </div>
       </section>
-
-      <GlobalQuoteModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }

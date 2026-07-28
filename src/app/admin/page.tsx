@@ -1,104 +1,84 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import styles from "./Admin.module.css";
-import CatalogManager from "./CatalogManager";
-import EnquiriesInbox from "./EnquiriesInbox";
-import CorporateMedia from "./CorporateMedia";
-import GlobalQuotesInbox from "./GlobalQuotesInbox";
+import PublishCenter from "./PublishCenter";
+import { FolderTree, MessageSquare, Package, Download } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function AdminDashboard() {
-  const [activeTab, setActiveTab] = useState("catalog");
-  const [content, setContent] = useState<any>(null);
-  const [enquiries, setEnquiries] = useState<any[]>([]);
-  const [quotes, setQuotes] = useState<any[]>([]);
-  const [saving, setSaving] = useState(false);
+  const [stats, setStats] = useState({ categories: 0, enquiries: 0, quotes: 0 });
 
   useEffect(() => {
-    fetch("/api/save-content").then(res => res.json()).then(data => setContent(data));
-    fetch("/api/enquiries").then(res => res.json()).then(data => setEnquiries(data));
-    fetch("/api/quotes").then(res => res.json()).then(data => setQuotes(data));
+    Promise.all([
+      fetch("/api/save-content").then(r => r.json()),
+      fetch("/api/enquiries").then(r => r.json()),
+      fetch("/api/quotes").then(r => r.json())
+    ]).then(([content, enq, quo]) => {
+      setStats({
+        categories: content.categories?.length || 0,
+        enquiries: enq?.length || 0,
+        quotes: quo?.length || 0,
+      });
+    }).catch(console.error);
   }, []);
 
-  const handlePublish = async () => {
-    setSaving(true);
-    await fetch("/api/save-content", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(content)
-    });
-    setSaving(false);
-    alert("Live site synchronized successfully!");
+  const handleBackup = async () => {
+    try {
+      const res = await fetch("/api/save-content");
+      const data = await res.json();
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `twesha_backup_${new Date().toISOString()}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      alert("Backup failed");
+    }
   };
-
-  const handleDownloadBackup = () => {
-    const blob = new Blob([JSON.stringify(content, null, 2)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `masterContent_backup_${new Date().toISOString()}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
-  if (!content) return <div style={{ padding: "2rem" }}>Loading Dashboard...</div>;
 
   return (
-    <div className={styles.adminLayout}>
-      <header className={styles.actionCenter}>
-        <h2>TWESHA - Control Panel</h2>
-        <div className={styles.actions}>
-          <button onClick={handleDownloadBackup} className={styles.btnSecondary}>
-            Download JSON Backup
-          </button>
-          <button onClick={handlePublish} className={styles.btnPrimary} disabled={saving}>
-            {saving ? "Publishing..." : "Publish Changes & Sync Live Site"}
-          </button>
+    <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+        <div>
+          <h1 style={{ fontSize: "2rem", margin: "0 0 0.5rem 0", fontFamily: "var(--font-heading)" }}>Dashboard Overview</h1>
+          <p style={{ margin: 0, color: "rgba(255,255,255,0.6)" }}>Manage your catalog, view inquiries, and publish changes.</p>
         </div>
-      </header>
+        <button 
+          onClick={handleBackup}
+          style={{ display: "flex", alignItems: "center", gap: "0.5rem", padding: "0.75rem 1.25rem", background: "rgba(21, 101, 255, 0.1)", border: "1px solid rgba(21, 101, 255, 0.5)", color: "#60A5FA", borderRadius: "8px", cursor: "pointer", fontWeight: 500 }}
+        >
+          <Download size={18} /> Backup JSON
+        </button>
+      </div>
 
-      <div className={styles.tabsContainer}>
-        <div className={styles.tabList}>
-          <button 
-            className={`${styles.tabBtn} ${activeTab === 'catalog' ? styles.active : ''}`}
-            onClick={() => setActiveTab('catalog')}
-          >
-            Tab A: Catalog Manager
-          </button>
-          <button 
-            className={`${styles.tabBtn} ${activeTab === 'enquiries' ? styles.active : ''}`}
-            onClick={() => setActiveTab('enquiries')}
-          >
-            Tab B: Enquiries Inbox
-          </button>
-          <button 
-            className={`${styles.tabBtn} ${activeTab === 'media' ? styles.active : ''}`}
-            onClick={() => setActiveTab('media')}
-          >
-            Tab C: Corporate Media
-          </button>
-          <button 
-            className={`${styles.tabBtn} ${activeTab === 'quotes' ? styles.active : ''}`}
-            onClick={() => setActiveTab('quotes')}
-          >
-            Tab D: Quote Requests
-          </button>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1.5rem" }}>
+        <div style={{ padding: "1.5rem", background: "rgba(255,255,255,0.03)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "1rem" }}>
+            <span style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.875rem" }}>Top Level Categories</span>
+            <FolderTree size={20} color="#D4AF37" />
+          </div>
+          <div style={{ fontSize: "2rem", fontWeight: "bold" }}>{stats.categories}</div>
         </div>
+        <div style={{ padding: "1.5rem", background: "rgba(255,255,255,0.03)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "1rem" }}>
+            <span style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.875rem" }}>New Enquiries</span>
+            <MessageSquare size={20} color="#60A5FA" />
+          </div>
+          <div style={{ fontSize: "2rem", fontWeight: "bold" }}>{stats.enquiries}</div>
+        </div>
+        <div style={{ padding: "1.5rem", background: "rgba(255,255,255,0.03)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "1rem" }}>
+            <span style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.875rem" }}>Quote Requests</span>
+            <Package size={20} color="#4ade80" />
+          </div>
+          <div style={{ fontSize: "2rem", fontWeight: "bold" }}>{stats.quotes}</div>
+        </div>
+      </div>
 
-        <div className={styles.tabContent}>
-          {activeTab === 'catalog' && (
-            <CatalogManager content={content} setContent={setContent} />
-          )}
-          {activeTab === 'enquiries' && (
-            <EnquiriesInbox enquiries={enquiries} />
-          )}
-          {activeTab === 'media' && (
-            <CorporateMedia content={content} setContent={setContent} />
-          )}
-          {activeTab === 'quotes' && (
-            <GlobalQuotesInbox quotes={quotes} />
-          )}
-        </div>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "1.5rem" }}>
+        <PublishCenter />
       </div>
     </div>
   );

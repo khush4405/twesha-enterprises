@@ -99,33 +99,63 @@ export default function GlobalPresenceMap() {
           <div className={styles.mapVisualContainer}>
             <div className={styles.worldMapBg}></div>
             
-            {/* SVG Animated Shipping Routes */}
             <svg className={styles.shippingSvg} viewBox="0 0 1000 500" fill="none">
-              {/* Route Arcs */}
-              <path d="M250,220 C400,100 650,150 780,240" stroke="rgba(21, 101, 255, 0.6)" strokeWidth="2.5" strokeDasharray="8 6" className={styles.animatedRoute} />
-              <path d="M780,240 C650,380 400,320 280,280" stroke="rgba(212, 175, 55, 0.6)" strokeWidth="2" strokeDasharray="6 4" className={styles.animatedRouteReverse} />
-              <path d="M500,180 C600,280 750,350 850,220" stroke="rgba(21, 101, 255, 0.5)" strokeWidth="2" strokeDasharray="5 5" className={styles.animatedRoute} />
+              <defs>
+                <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#D4AF37" stopOpacity="0.8" />
+                  <stop offset="100%" stopColor="#1565FF" stopOpacity="0.8" />
+                </linearGradient>
+              </defs>
               
-              {/* Pulsing Port Nodes */}
-              {/* Mumbai HQ */}
-              <circle cx="680" cy="240" r="8" fill="#D4AF37" />
-              <circle cx="680" cy="240" r="20" fill="#D4AF37" opacity="0.25" className={styles.pulseNode} />
+              {/* Origin Node: Gujarat, India */}
+              <circle cx="695" cy="225" r="4" fill="#D4AF37" />
+              <circle cx="695" cy="225" r="8" fill="none" stroke="#D4AF37" strokeWidth="1" />
 
-              {/* Singapore */}
-              <circle cx="780" cy="280" r="7" fill="#1565FF" />
-              <circle cx="780" cy="280" r="16" fill="#1565FF" opacity="0.3" className={styles.pulseNode} />
+              {/* Dynamic Routes & Destination Nodes based on active tab */}
+              {activeRegion === "asia" && (
+                <>
+                  {/* To Singapore (via Sri Lanka tip) */}
+                  <path d="M695,225 C700,265 720,280 790,280" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
+                  <circle cx="790" cy="280" r="4" fill="#1565FF" />
+                  
+                  {/* To Japan (via Singapore straits) */}
+                  <path d="M695,225 C700,265 720,280 790,280 C830,280 850,220 875,170" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
+                  <circle cx="875" cy="170" r="4" fill="#1565FF" />
+                </>
+              )}
 
-              {/* Rotterdam */}
-              <circle cx="520" cy="160" r="7" fill="#60A5FA" />
-              <circle cx="520" cy="160" r="16" fill="#60A5FA" opacity="0.3" className={styles.pulseNode} />
+              {activeRegion === "europe" && (
+                <>
+                  {/* To Rotterdam (via Suez, Med, Gibraltar, North Sea) */}
+                  <path d="M695,225 Q630,240 585,210 C530,190 480,190 485,180 C470,140 490,130 500,120" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
+                  <circle cx="500" cy="120" r="4" fill="#1565FF" />
+                </>
+              )}
 
-              {/* Jebel Ali */}
-              <circle cx="610" cy="220" r="7" fill="#D4AF37" />
-              <circle cx="610" cy="220" r="14" fill="#D4AF37" opacity="0.3" className={styles.pulseNode} />
+              {activeRegion === "middleeast" && (
+                <>
+                  {/* To UAE (across Arabian Sea) */}
+                  <path d="M695,225 Q670,240 645,230" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
+                  <circle cx="645" cy="230" r="4" fill="#1565FF" />
 
-              {/* Houston */}
-              <circle cx="250" cy="220" r="7" fill="#1565FF" />
-              <circle cx="250" cy="220" r="16" fill="#1565FF" opacity="0.3" className={styles.pulseNode} />
+                  {/* To Egypt / Suez (Red Sea) */}
+                  <path d="M695,225 Q630,240 585,210" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
+                  <circle cx="585" cy="210" r="4" fill="#1565FF" />
+                </>
+              )}
+
+              {activeRegion === "americas" && (
+                <>
+                  {/* To USA (Houston via Suez and Gibraltar) */}
+                  <path d="M695,225 Q630,240 585,210 C530,190 480,190 485,180 C400,200 300,220 220,200" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
+                  <circle cx="220" cy="200" r="4" fill="#1565FF" />
+
+                  {/* To Brazil (via Cape of Good Hope, South Africa) */}
+                  <path d="M695,225 C660,300 590,380 550,380 C450,380 380,360 330,340" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
+                  <circle cx="330" cy="340" r="4" fill="#1565FF" />
+                </>
+              )}
+
             </svg>
 
             {/* Floating Live Region Card Overlay */}

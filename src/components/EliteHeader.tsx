@@ -4,17 +4,16 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Search, Menu, X, ArrowRight, ShieldCheck, Globe } from "lucide-react";
 import styles from "./EliteHeader.module.css";
-import GlobalQuoteModal from "./GlobalQuoteModal";
 
 interface Category {
   id: string;
   title: string;
   slug: string;
+  description?: string;
 }
 
 export default function EliteHeader({ categories = [] }: { categories?: Category[] }) {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
 
@@ -27,13 +26,13 @@ export default function EliteHeader({ categories = [] }: { categories?: Category
   }, []);
 
   const navItems = [
-    { label: "Home", href: "#hero" },
-    { label: "About", href: "#about" },
-    { label: "Products", href: "#products", isDropdown: true },
-    { label: "Industries", href: "#why-choose-us" },
-    { label: "Global Trade", href: "#global-presence" },
-    { label: "Certifications", href: "#certifications" },
-    { label: "Contact", href: "#footer" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/#about" },
+    { label: "Products", href: "/products", isDropdown: true },
+    { label: "Certificates", href: "/#certifications" },
+    { label: "Videos", href: "/#videos" },
+    { label: "Clients", href: "/#clients" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -42,9 +41,8 @@ export default function EliteHeader({ categories = [] }: { categories?: Category
         <div className={styles.navBar}>
           {/* Brand Logo */}
           <Link href="/" className={styles.logoContainer}>
-            <div className={styles.logoGlow}></div>
-            <img 
-              src="/Twesha EnterPrize logo.png" 
+            <img
+              src="/twesha-logo-subtle.png"
               alt="Twesha Enterprises - Premium Industrial Import & Export" 
               className={styles.logoImage} 
             />
@@ -59,10 +57,10 @@ export default function EliteHeader({ categories = [] }: { categories?: Category
                 onMouseEnter={() => item.isDropdown && setProductsDropdownOpen(true)}
                 onMouseLeave={() => item.isDropdown && setProductsDropdownOpen(false)}
               >
-                <a href={item.href} className={styles.navLink}>
+                <Link href={item.href} className={styles.navLink}>
                   {item.label}
                   {item.isDropdown && <span className={styles.chevron}>▾</span>}
-                </a>
+                </Link>
 
                 {/* Glass Dropdown for Products */}
                 {item.isDropdown && (
@@ -72,26 +70,16 @@ export default function EliteHeader({ categories = [] }: { categories?: Category
                       <span>Industrial Categories</span>
                     </div>
                     <div className={styles.dropdownGrid}>
-                      <a href="#products" className={styles.dropdownItem}>
-                        <span className={styles.itemTitle}>Automation & Control</span>
-                        <span className={styles.itemSub}>PLC, SCADA, Drives</span>
-                      </a>
-                      <a href="#products" className={styles.dropdownItem}>
-                        <span className={styles.itemTitle}>Sensors & Instrumentation</span>
-                        <span className={styles.itemSub}>Flow, Temp, Pressure</span>
-                      </a>
-                      <a href="#products" className={styles.dropdownItem}>
-                        <span className={styles.itemTitle}>Electrical Components</span>
-                        <span className={styles.itemSub}>Switchgear, Relays</span>
-                      </a>
-                      <a href="#products" className={styles.dropdownItem}>
-                        <span className={styles.itemTitle}>Power Supplies</span>
-                        <span className={styles.itemSub}>Transformers, Inverters</span>
-                      </a>
+                      {categories.slice(0, 4).map((cat) => (
+                        <Link key={cat.id} href={`/products/${cat.slug}`} className={styles.dropdownItem} onClick={() => setProductsDropdownOpen(false)}>
+                          <span className={styles.itemTitle}>{cat.title}</span>
+                          <span className={styles.itemSub}>{cat.description ? (cat.description.length > 30 ? cat.description.substring(0, 30) + '...' : cat.description) : 'Explore products'}</span>
+                        </Link>
+                      ))}
                     </div>
-                    <a href="#products" className={styles.dropdownFooter}>
-                      View All 10 Categories <ArrowRight size={14} />
-                    </a>
+                    <Link href="/products" className={styles.dropdownFooter} onClick={() => setProductsDropdownOpen(false)}>
+                      View All {categories.length} Categories <ArrowRight size={14} />
+                    </Link>
                   </div>
                 )}
               </div>
@@ -100,13 +88,14 @@ export default function EliteHeader({ categories = [] }: { categories?: Category
 
           {/* Actions */}
           <div className={styles.actions}>
-            <button 
+            <Link 
+              href="/contact"
               className={styles.quoteBtn} 
-              onClick={() => setIsModalOpen(true)}
+              style={{ textDecoration: 'none' }}
             >
               <span>Request Quote</span>
               <ArrowRight size={16} />
-            </button>
+            </Link>
 
             <button 
               className={styles.mobileToggle}
@@ -132,21 +121,18 @@ export default function EliteHeader({ categories = [] }: { categories?: Category
                   {item.label}
                 </a>
               ))}
-              <button 
+              <Link 
+                href="/contact"
                 className={styles.mobileQuoteBtn} 
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  setIsModalOpen(true);
-                }}
+                onClick={() => setMobileMenuOpen(false)}
+                style={{ textAlign: 'center', display: 'block', textDecoration: 'none' }}
               >
                 Request Quote
-              </button>
+              </Link>
             </div>
           </div>
         )}
       </header>
-
-      <GlobalQuoteModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }

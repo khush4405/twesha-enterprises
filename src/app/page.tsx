@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import EliteHeader from "@/components/EliteHeader";
 import HeroSection from "@/components/HeroSection";
 import AboutTwesha from "@/components/AboutTwesha";
 import CatalogExplorer from "@/components/CatalogExplorer";
@@ -10,13 +9,12 @@ import WorkflowTimeline from "@/components/WorkflowTimeline";
 import CorporateTestimonials from "@/components/CorporateTestimonials";
 import CertificationsSection from "@/components/CertificationsSection";
 import CtaBanner from "@/components/CtaBanner";
-import Footer from "@/components/Footer";
 
 export const dynamic = 'force-dynamic';
 
 export default function Home() {
   const dataPath = path.join(process.cwd(), "src", "data", "masterContent.json");
-  let masterContent = { categories: [] };
+  let masterContent: any = { categories: [] };
   try {
     masterContent = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
   } catch (e) {
@@ -24,10 +22,7 @@ export default function Home() {
   }
 
   return (
-    <main style={{ minHeight: "100vh", backgroundColor: "var(--bg-navy-dark)", color: "var(--text-white)" }}>
-      {/* 1. Glass Floating Header */}
-      <EliteHeader categories={masterContent.categories} />
-      
+    <div style={{ minHeight: "100vh", backgroundColor: "var(--bg-navy-dark)", color: "var(--text-white)" }}>
       {/* 2. Fullscreen Hero Section */}
       <HeroSection />
 
@@ -50,13 +45,10 @@ export default function Home() {
       <CorporateTestimonials />
 
       {/* 9. Luxury Certifications */}
-      <CertificationsSection />
+      <CertificationsSection data={masterContent.certificates || []} />
 
       {/* 10. CTA Banner */}
       <CtaBanner />
-
-      {/* 11. Dark Footer */}
-      <Footer categories={masterContent.categories} />
-    </main>
+    </div>
   );
 }
