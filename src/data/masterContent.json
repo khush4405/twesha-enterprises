@@ -5,7 +5,19 @@
       "title": "Heating Solution",
       "slug": "heating-solution",
       "id": "1784784482074",
-      "children": []
+      "children": [
+        {
+          "type": "product",
+          "keySpecifications": [],
+          "requestQuoteOption": true,
+          "title": "poiuytrewq",
+          "image": "",
+          "shortDescription": "iuytrvfcdxs",
+          "longDescription": "oiuytrewqkjhgfds",
+          "slug": "poiuytrewq",
+          "id": "1785219315450"
+        }
+      ]
     },
     {
       "type": "category",
