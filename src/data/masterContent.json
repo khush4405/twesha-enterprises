@@ -24,13 +24,7 @@
       "coverImage": "/instruments.png"
     }
   ],
-  "certificates": [
-    {
-      "id": "cert1",
-      "title": "ISO 9001:2015",
-      "image": "/Twesha EnterPrize logo.png"
-    }
-  ],
+  "certificates": [],
   "gallery": [],
   "videos": []
 }
