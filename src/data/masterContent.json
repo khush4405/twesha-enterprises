@@ -377,6 +377,52 @@
           "title": "Thermic Fluid Systems",
           "slug": "thermic-fluid-systems",
           "id": "1785295978650"
+        },
+        {
+          "type": "product",
+          "keySpecifications": [
+            {
+              "label": "Product Name",
+              "value": "Description"
+            },
+            {
+              "label": "Electric Hot Air Generator",
+              "value": "Clean electric heating system delivering controlled hot air up to 500°C, ideal for precision drying, curing, and industrial process heating."
+            },
+            {
+              "label": "Gas Fired Hot Air Generator",
+              "value": "High-efficiency LPG/PNG fired generator designed for continuous hot air supply with excellent fuel economy and uniform temperature distribution."
+            }
+          ],
+          "requestQuoteOption": true,
+          "image": "",
+          "shortDescription": "Hot Air Generators are high-efficiency industrial heating systems designed to deliver clean, controlled, and uniform hot air for drying, curing, baking, and process heating applications. Engineered for continuous operation, they provide excellent thermal efficiency, reliable temperature control, and energy-saving performance across diverse industries.",
+          "title": "Hot Air Generator",
+          "longDescription": "Hot Air Generators are advanced thermal systems that produce a continuous supply of heated air for industrial drying, curing, heating, and process applications. Unlike steam-based heating systems, they deliver hot air directly to the process, ensuring faster heat transfer, improved energy efficiency, lower operating costs, and precise temperature control. Built for heavy-duty industrial environments, these systems are ideal for both batch and continuous production processes.\n\nOur range includes Electric Hot Air Generators for clean and emission-free heating, Gas Fired Hot Air Generators for high-efficiency industrial applications, Diesel & Oil Fired Hot Air Generators for large-scale thermal processing, Indirect Fired Hot Air Generators for contamination-free heating, Direct Fired Hot Air Generators for maximum thermal efficiency, and Custom Engineered Hot Air Systems tailored to specific process requirements. Each unit is manufactured using premium insulation, heavy-duty steel construction, high-performance heating elements or burners, and advanced temperature control systems to ensure reliable operation and long service life.\n\nAvailable in various capacities, airflow configurations, and operating temperatures, our Hot Air Generators can be customized with PLC/HMI automation, digital temperature controllers, variable airflow control, and multiple safety features. These systems are widely used in food processing, pharmaceuticals, chemicals, textiles, plastics, packaging, ceramics, agriculture, engineering, powder coating, and general manufacturing industries for drying, curing, preheating, baking, moisture removal, and process heating.\n\nDesigned for maximum thermal efficiency, low maintenance, and dependable performance, our Hot Air Generators help industries achieve faster production cycles, consistent product quality, and reduced energy consumption while maintaining precise temperature control.",
+          "applications": [
+            {
+              "title": "Drying & Dehumidification",
+              "desc": "Removes moisture from products, raw materials, and finished components efficiently."
+            },
+            {
+              "title": "Curing & Baking",
+              "desc": "Provides controlled hot air for paint curing, powder coating, baking, and surface finishing processes."
+            },
+            {
+              "title": "Process Heating",
+              "desc": "Delivers consistent hot air for ovens, dryers, furnaces, and industrial production lines."
+            },
+            {
+              "title": "Food & Pharmaceutical",
+              "desc": "Suitable for hygienic drying and temperature-controlled manufacturing processes."
+            },
+            {
+              "title": "General Manufacturing",
+              "desc": "Used in textiles, plastics, chemicals, ceramics, packaging, agriculture, and engineering industries for continuous thermal processing."
+            }
+          ],
+          "slug": "hot-air-generator",
+          "id": "1785296704760"
         }
       ],
       "description": "Our Heating Solutions are designed to deliver precise, energy-efficient, and reliable thermal performance for industrial processes. From process heating systems and electrical ovens to thermic fluid systems, flexible heaters, insulation, and electrical furnaces, we provide customized solutions for diverse manufacturing applications."
