@@ -239,6 +239,75 @@
           "title": "Electrical Ovens",
           "slug": "electrical-ovens",
           "id": "1785295551277"
+        },
+        {
+          "type": "product",
+          "keySpecifications": [
+            {
+              "label": "Product Name",
+              "value": "Description"
+            },
+            {
+              "label": "Muffle Furnace",
+              "value": "High-temperature insulated furnace operating up to 1800°C, designed for laboratory testing, ash analysis, calcination, and material research."
+            },
+            {
+              "label": "Heat Treatment Furnace",
+              "value": "Precision-controlled furnace for annealing, hardening, tempering, stress relieving, and normalizing of ferrous and non-ferrous metals."
+            },
+            {
+              "label": "Box Furnace",
+              "value": "Heavy-duty batch furnace with uniform heat distribution and programmable controls for industrial thermal processing."
+            },
+            {
+              "label": "Chamber Furnace",
+              "value": "Multi-purpose electric furnace suitable for heat treatment, drying, preheating, and component processing with excellent temperature uniformity."
+            },
+            {
+              "label": "Pit Furnace",
+              "value": "Vertical furnace engineered for long shafts, rods, and cylindrical components requiring deep and uniform heat treatment."
+            },
+            {
+              "label": "Bogie Hearth Furnace",
+              "value": "Large-capacity furnace with movable hearth for heavy components, dies, castings, and fabrication assemblies."
+            },
+            {
+              "label": "Laboratory Furnace",
+              "value": "Compact, high-accuracy furnace for testing, research, quality control, and scientific applications."
+            },
+            {
+              "label": "Custom Electrical Furnace",
+              "value": "Fully customized furnace with configurable chamber size, temperature range, insulation, power rating, and control systems for specialized industrial processes."
+            }
+          ],
+          "requestQuoteOption": true,
+          "shortDescription": "Electrical Furnaces are high-performance industrial heating systems designed for precise, high-temperature thermal processing. Engineered for uniform heat distribution, energy efficiency, and reliable operation, they are ideal for heat treatment, annealing, hardening, tempering, sintering, brazing, and laboratory applications across diverse industries.",
+          "longDescription": "Electrical Furnaces are essential thermal processing systems used wherever precise temperature control, clean electric heating, and consistent high-temperature performance are required. Designed for both batch and continuous industrial operations, these furnaces deliver exceptional heating uniformity, reduced energy consumption, and dependable long-term operation, making them suitable for demanding manufacturing and research environments.\n\nOur range of Electrical Furnaces includes Muffle Furnaces for laboratory testing and material analysis, Heat Treatment Furnaces for annealing, hardening, tempering, and stress relieving, Chamber Furnaces for general-purpose industrial heating, Box Furnaces for batch processing, Pit Furnaces for vertical heat treatment of long components, Bogie Hearth Furnaces for heavy workpieces, Laboratory Furnaces for research and quality control, and Custom-Engineered Furnaces designed to meet specific production requirements. These systems are manufactured using premium refractory insulation, heavy-duty steel construction, and high-efficiency heating elements to ensure rapid heat-up, excellent temperature stability, and extended service life.\n\nAvailable with advanced PID controllers, programmable temperature profiles, and multiple chamber sizes, our furnaces can be customized for different operating temperatures, capacities, and process requirements. They are widely used in the automotive, aerospace, metallurgy, foundry, tool room, ceramics, glass, electronics, pharmaceutical, research laboratories, and general engineering industries for heat treatment, sintering, calcination, preheating, aging, material testing, and other precision thermal processes.\n\nDesigned for safety, reliability, and energy-efficient performance, our Electrical Furnaces provide consistent heating results while helping manufacturers improve productivity, process quality, and operational efficiency.",
+          "applications": [
+            {
+              "title": "Heat Treatment",
+              "desc": "Annealing, hardening, tempering, stress relieving, and normalizing of metal components."
+            },
+            {
+              "title": "Laboratory & Research",
+              "desc": "Material testing, sample preparation, ash analysis, and scientific experiments."
+            },
+            {
+              "title": "Metal Processing",
+              "desc": "Heating of tools, dies, castings, forgings, and engineering components."
+            },
+            {
+              "title": "Ceramics & Glass",
+              "desc": "Sintering, firing, calcination, and high-temperature processing."
+            },
+            {
+              "title": "Manufacturing Industries",
+              "desc": "Precision thermal processing for automotive, aerospace, electronics, foundries, and general engineering."
+            }
+          ],
+          "title": "Electrical Furnace",
+          "slug": "electrical-furnace",
+          "id": "1785295735820"
         }
       ],
       "description": "Our Heating Solutions are designed to deliver precise, energy-efficient, and reliable thermal performance for industrial processes. From process heating systems and electrical ovens to thermic fluid systems, flexible heaters, insulation, and electrical furnaces, we provide customized solutions for diverse manufacturing applications."
