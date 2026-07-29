@@ -158,6 +158,87 @@
           ],
           "slug": "industrial-heaters",
           "id": "1785294856255"
+        },
+        {
+          "type": "product",
+          "keySpecifications": [
+            {
+              "label": "Product Name",
+              "value": "Description"
+            },
+            {
+              "label": "Customised Vacuum Oven",
+              "value": "Engineered for controlled vacuum-based drying and heat treatment where low-pressure processing is required."
+            },
+            {
+              "label": "Powder Coating & Paint Drying Oven",
+              "value": "Designed for uniform curing and drying of coated surfaces with stable temperature control."
+            },
+            {
+              "label": "Conveyor Belt Oven",
+              "value": "Continuous-flow oven for high-volume processing, heating, drying, and curing applications."
+            },
+            {
+              "label": "Welding Electrode Oven",
+              "value": "Used to keep electrodes dry and ready for reliable welding performance."
+            },
+            {
+              "label": "Flux Heating Oven",
+              "value": "Maintains flux at proper temperature for consistent handling and process quality."
+            },
+            {
+              "label": "Tray Dryer Oven",
+              "value": "Multi-tray drying system for batch processing of materials, components, and samples."
+            },
+            {
+              "label": "Laboratory Oven",
+              "value": "Precision oven for testing, drying, and thermal experiments in controlled environments."
+            },
+            {
+              "label": "Flux / Electrode Drying Oven",
+              "value": "Dual-purpose drying solution for welding consumables and process materials."
+            },
+            {
+              "label": "Drying Oven",
+              "value": "General-purpose industrial oven for moisture removal and thermal processing."
+            },
+            {
+              "label": "Portable Electrode Oven",
+              "value": "Compact, movable oven for storing and drying electrodes at job sites or workshops."
+            }
+          ],
+          "requestQuoteOption": true,
+          "shortDescription": "Electrical Ovens are industrial heating systems designed for precise temperature control, uniform heat distribution, and reliable drying, curing, baking, and heat-treatment performance across manufacturing and laboratory applications.",
+          "applications": [
+            {
+              "title": "Drying",
+              "desc": "Removes moisture from materials, components, and consumables."
+            },
+            {
+              "title": "Curing",
+              "desc": "Supports paint, coating, and surface treatment processes."
+            },
+            {
+              "title": "Heat Treatment",
+              "desc": "Provides controlled thermal processing for industrial parts."
+            },
+            {
+              "title": "Laboratory Use",
+              "desc": "Suitable for testing, research, and sample preparation."
+            },
+            {
+              "title": "Welding Consumables",
+              "desc": "Keeps electrodes and flux in proper condition for use."
+            },
+            {
+              "title": "Continuous Processing",
+              "desc": "Ideal for conveyor-based heating and production lines."
+            }
+          ],
+          "longDescription": "Electrical Ovens are advanced industrial heating systems engineered to deliver precise temperature control, uniform heat distribution, and energy-efficient thermal processing across a wide range of manufacturing and laboratory applications. Designed for continuous as well as batch operations, these ovens ensure consistent heating performance, improved product quality, and enhanced process reliability while minimizing energy consumption and maintenance requirements.\n\nOur comprehensive range includes Customised Vacuum Ovens for low-pressure drying and heat treatment, Powder Coating & Paint Drying Ovens for uniform curing of coated components, Conveyor Belt Ovens for continuous production lines, Tray Dryer Ovens for batch drying applications, Laboratory Ovens for testing, research, and quality control, Drying Ovens for moisture removal and thermal conditioning, Welding Electrode Ovens and Portable Electrode Ovens for maintaining welding electrodes in optimal condition, and Flux Heating & Flux Drying Ovens for preserving welding flux quality and preventing moisture absorption.\n\nManufactured using premium-grade insulation materials, heavy-duty steel construction, and high-performance electric heating elements, our ovens provide excellent temperature uniformity, rapid heat-up times, and reliable long-term operation. Available in multiple chamber sizes, temperature ranges, airflow configurations, and control systems, they can be customized to meet specific process requirements, production capacities, and industry standards.\n\nThese electrical ovens are widely used in automotive, aerospace, pharmaceutical, chemical, food processing, electronics, textile, metal fabrication, powder coating, welding, research laboratories, and general manufacturing industries. Whether the application requires drying, curing, baking, preheating, annealing, stress relieving, moisture removal, or precision thermal processing, our ovens are designed to deliver dependable performance, maximum energy efficiency, and accurate temperature control under demanding industrial conditions.\n\nWith customizable dimensions, heating capacities, control options, and automation features, our Electrical Ovens provide reliable, safe, and cost-effective heating solutions tailored to modern industrial processes, ensuring consistent product quality, reduced operating costs, and long service life.",
+          "title": "Electrical Ovens",
+          "slug": "electrical-ovens",
+          "id": "1785295551277"
         }
       ],
       "description": "Our Heating Solutions are designed to deliver precise, energy-efficient, and reliable thermal performance for industrial processes. From process heating systems and electrical ovens to thermic fluid systems, flexible heaters, insulation, and electrical furnaces, we provide customized solutions for diverse manufacturing applications."
