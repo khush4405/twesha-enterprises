@@ -191,7 +191,7 @@ export default function ProductDetail({ product }: { product: any }) {
         {activeTab === 'description' && (
           <div className={styles.contentBlock}>
             <h3>Overview</h3>
-            <p>
+            <p style={{ whiteSpace: "pre-line" }}>
               {product.longDescription || product.description || "The " + product.title + " represents the pinnacle of industrial engineering. Designed with precision components, it ensures long-term reliability and accurate performance under the most demanding conditions."}
             </p>
             <br />

@@ -22,7 +22,7 @@
 
 /* Top Section */
 .topSection {
-  padding: 5rem 0 4rem 0;
+  padding: 1.5rem 0 2.5rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: radial-gradient(circle at 20% 0%, rgba(21, 101, 255, 0.1) 0%, transparent 60%);
 }
@@ -40,11 +40,11 @@
 }
 
 .logoWrapper {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.4rem;
 }
 
 .footerLogo {
-  height: 50px;
+  height: 150px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));

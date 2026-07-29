@@ -115,16 +115,71 @@ export default function CatalogPage() {
     
     const newSpecs = [...(editItem.keySpecifications || [])];
     
-    for (const line of lines) {
-      const parts = line.split('\t');
-      if (parts.length >= 2) {
-        newSpecs.push({ label: parts[0].trim(), value: parts[1].trim() });
-      } else if (parts.length === 1) {
-        newSpecs.push({ label: parts[0].trim(), value: "" });
+    // Check if the data is tab-separated (e.g. pasted directly from Excel grid)
+    const isTabSeparated = lines.some((l: string) => l.includes('\t'));
+    
+    if (isTabSeparated) {
+      for (const line of lines) {
+        const parts = line.split('\t');
+        if (parts.length >= 2) {
+          newSpecs.push({ label: parts[0].trim(), value: parts.slice(1).join(' ').trim() });
+        } else if (parts.length === 1) {
+          newSpecs.push({ label: parts[0].trim(), value: "" });
+        }
+      }
+    } else {
+      // Interleaved format (Key on one line, Value on next line)
+      for (let i = 0; i < lines.length; i += 2) {
+        const label = lines[i].trim();
+        const value = (i + 1 < lines.length) ? lines[i + 1].trim() : "";
+        
+        // Skip common header strings often copied by mistake
+        if (label.toLowerCase() === "product name" || label.toLowerCase() === "specification" || label.toLowerCase().includes("specification / description")) {
+          continue;
+        }
+        
+        newSpecs.push({ label, value });
       }
     }
     
     setEditItem({ ...editItem, keySpecifications: newSpecs });
+  };
+
+  const handleBulkPasteApplications = (e: any) => {
+    e.preventDefault();
+    const pastedText = e.clipboardData.getData('text');
+    const lines = pastedText.split('\n').filter((l: string) => l.trim() !== '');
+    
+    const newApps = [...(editItem.applications || [])];
+    
+    // Check if the data is tab-separated (e.g. pasted directly from Excel grid)
+    const isTabSeparated = lines.some((l: string) => l.includes('\t'));
+    
+    if (isTabSeparated) {
+      for (const line of lines) {
+        const parts = line.split('\t');
+        if (parts.length >= 2) {
+          newApps.push({ title: parts[0].trim(), desc: parts.slice(1).join(' ').trim() });
+        } else if (parts.length === 1) {
+          newApps.push({ title: parts[0].trim(), desc: "" });
+        }
+      }
+    } else {
+      // Interleaved format (Key on one line, Value on next line)
+      for (let i = 0; i < lines.length; i += 2) {
+        const title = lines[i].trim();
+        const desc = (i + 1 < lines.length) ? lines[i + 1].trim() : "";
+        
+        // Skip common header strings often copied by mistake
+        if (title.toLowerCase() === "application" || title.toLowerCase() === "title" || title.toLowerCase().includes("description")) {
+          continue;
+        }
+        
+        newApps.push({ title, desc });
+      }
+    }
+    
+    setEditItem({ ...editItem, applications: newApps });
   };
 
   const getBreadcrumbs = () => {
@@ -323,6 +378,62 @@ export default function CatalogPage() {
                       <button onClick={() => setEditItem({...editItem, keySpecifications: [...(editItem.keySpecifications || []), { label: "", value: "" }]})} 
                         style={{ alignSelf: "flex-start", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "6px 12px", borderRadius: "6px", fontSize: "0.875rem", cursor: "pointer", marginTop: "0.5rem" }}>
                         + Add Row
+                      </button>
+                    </div>
+                  </div>
+
+                  <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "1.5rem" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
+                      <label style={{ fontSize: "1rem", fontWeight: 500 }}>Applications</label>
+                      <button onClick={(e) => {
+                        e.preventDefault();
+                        const ta = document.createElement("textarea");
+                        ta.style.position = "fixed";
+                        ta.style.top = "-9999px";
+                        ta.style.left = "-9999px";
+                        document.body.appendChild(ta);
+                        ta.focus();
+                        setTimeout(() => {
+                          ta.addEventListener("paste", handleBulkPasteApplications);
+                          document.execCommand("paste");
+                          ta.remove();
+                        }, 50);
+                      }} style={{ display: "flex", alignItems: "center", gap: "0.5rem", background: "rgba(255,255,255,0.1)", border: "none", color: "white", padding: "6px 12px", borderRadius: "6px", fontSize: "0.75rem", cursor: "pointer" }}
+                      title="Paste tabular data from Excel (Ctrl+V into the table area manually if this fails)">
+                        <ClipboardPaste size={14} /> Bulk Paste Helper
+                      </button>
+                    </div>
+                    
+                    {/* Fallback bulk paste area for browsers that block execCommand("paste") */}
+                    <textarea 
+                      placeholder="Or paste Excel data here..." 
+                      onPaste={handleBulkPasteApplications}
+                      style={{ width: "100%", padding: "0.5rem", background: "rgba(0,0,0,0.2)", border: "1px dashed rgba(255,255,255,0.2)", borderRadius: "6px", color: "white", marginBottom: "1rem", minHeight: "40px" }}
+                    />
+
+                    <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                      {(editItem.applications || []).map((app: any, aIdx: number) => (
+                        <div key={aIdx} style={{ display: "flex", gap: "0.5rem" }}>
+                          <input type="text" placeholder="Title (e.g. Oil & Gas)" value={app.title} onChange={e => {
+                            const newApps = [...editItem.applications];
+                            newApps[aIdx].title = e.target.value;
+                            setEditItem({...editItem, applications: newApps});
+                          }} style={{ padding: "0.75rem", background: "rgba(0,0,0,0.2)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", color: "white", flex: 1 }} />
+                          <input type="text" placeholder="Description" value={app.desc} onChange={e => {
+                            const newApps = [...editItem.applications];
+                            newApps[aIdx].desc = e.target.value;
+                            setEditItem({...editItem, applications: newApps});
+                          }} style={{ padding: "0.75rem", background: "rgba(0,0,0,0.2)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", color: "white", flex: 2 }} />
+                          <button onClick={() => {
+                            const newApps = [...editItem.applications];
+                            newApps.splice(aIdx, 1);
+                            setEditItem({...editItem, applications: newApps});
+                          }} style={{ background: "rgba(239, 68, 68, 0.1)", border: "none", color: "#ef4444", padding: "0 1rem", borderRadius: "6px", cursor: "pointer" }}><Trash2 size={16} /></button>
+                        </div>
+                      ))}
+                      <button onClick={() => setEditItem({...editItem, applications: [...(editItem.applications || []), { title: "", desc: "" }]})} 
+                        style={{ alignSelf: "flex-start", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "6px 12px", borderRadius: "6px", fontSize: "0.875rem", cursor: "pointer", marginTop: "0.5rem" }}>
+                        + Add Application
                       </button>
                     </div>
                   </div>

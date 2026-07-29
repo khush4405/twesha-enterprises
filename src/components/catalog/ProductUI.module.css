@@ -62,8 +62,9 @@
 .categoryOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, var(--bg-navy-dark) 0%, rgba(4, 9, 18, 0.1) 100%);
+  background: linear-gradient(to top, rgba(4, 9, 18, 0.55) 0%, transparent 32%);
   z-index: 1;
+  pointer-events: none;
 }
 
 .categoryContent {

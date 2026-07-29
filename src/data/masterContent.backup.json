@@ -1,0 +1,450 @@
+{
+  "categories": [
+    {
+      "type": "category",
+      "title": "Heating Solution",
+      "slug": "heating-solution",
+      "id": "1784784482074",
+      "children": [
+        {
+          "type": "product",
+          "keySpecifications": [
+            {
+              "label": "Heating Pad",
+              "value": "Heavy-duty, flexible electric pads built for extreme conditions; ideal for heating pipes, tanks, machinery, and composite materials."
+            },
+            {
+              "label": "Base Drum Heater",
+              "value": "Flat heating units placed directly beneath standard 55-gallon drums to apply conductive, upward thermal transfer with precise temperature control."
+            },
+            {
+              "label": "IBC Heater",
+              "value": "Custom-fit electric heaters designed for Intermediate Bulk Containers (IBC) to maintain liquid temperatures, reduce viscosity, and prevent freezing."
+            },
+            {
+              "label": "Hopper Heater",
+              "value": "Flexible or rigid heating elements applied to hoppers, silos, or chutes to prevent material clumping, freezing, or sticking during discharge."
+            },
+            {
+              "label": "Drum Heating Oven",
+              "value": "Industrial-grade heaters (wrap-around, base, or full-jacket) engineered to apply uniform, controlled heat to 55-gallon metal or steel drums."
+            },
+            {
+              "label": "Silicone Heating Pads",
+              "value": "Highly customizable, flexible flat heaters made from fiberglass-reinforced silicone rubber for precise, even surface heating and tight temperature control."
+            },
+            {
+              "label": "Insulation Jackets",
+              "value": "Removable and reusable tailored thermal blankets that trap heat to minimize energy loss while allowing easy access for equipment maintenance."
+            },
+            {
+              "label": "Heating Blanket",
+              "value": "Durable, flexible heating wraps constructed with insulated wires embedded in silicone or fabric to provide safe, controlled warmth on varied surfaces."
+            },
+            {
+              "label": "Heating Jackets",
+              "value": "Advanced wrap-around thermal systems providing efficient, uniform heat for tanks, vessels, and pipes to maintain optimal process temperatures."
+            },
+            {
+              "label": "Drum Heaters",
+              "value": "Flexible silicone rubber heating bands that wrap circumferentially around drums, utilizing wire or etched foil for even heat distribution and chemical resistance."
+            }
+          ],
+          "requestQuoteOption": true,
+          "title": "Flexible Heaters & Insulations",
+          "shortDescription": "Flexible Heaters & Insulations are engineered for efficient, uniform heat transfer and reliable thermal protection across industrial applications. Designed for pipes, tanks, drums, machinery, and process equipment, they offer energy-efficient heating, temperature stability, and customizable solutions for demanding environments.",
+          "longDescription": "Our Flexible Heaters and Insulations category offers a comprehensive suite of highly adaptable, industrial-grade thermal management solutions designed to meet the rigorous demands of modern manufacturing, processing, and storage facilities. Whether you need to maintain critical process temperatures, reduce the viscosity of thick fluids, prevent costly freezing in harsh cold-weather environments, or drastically minimize thermal loss to boost energy efficiency, our versatile product line delivers precise, uniform heat transfer exactly where it is needed most.\n\nEngineered to fit seamlessly around or beneath your most vital equipment, this category encompasses a wide variety of specialized form factors, including base drum heaters, custom-fit IBC (Intermediate Bulk Container) heaters, full-coverage heating jackets, and highly malleable silicone heating pads. Built from rugged, heat-resistant materials such as fiberglass-reinforced silicone rubber, durable steel housings, and weather-resistant industrial fabrics, these products are constructed to withstand exposure to harsh chemicals, moisture, extreme temperatures, and heavy mechanical wear.\n\nFor cylindrical storage and bulk liquid transport, our Drum Heaters, Base Drum Heaters, and Drum Heating Ovens provide comprehensive wrap-around or bottom-up conductive heating for standard 55-gallon steel or plastic drums. These units ensure that critical materials—such as oils, resins, adhesives, paints, and chemicals—remain at their optimal flow consistencies. Similarly, our IBC Heaters are tailored specifically for large cube-shaped tanks. They are widely utilized across the food & beverage, pharmaceutical, cosmetics, and petrochemical industries to maintain uniform product quality and prevent spoilage during long-term storage and handling.\n\nIn complex material handling and dispensing applications, our Hopper Heaters and flexible Heating Pads are invaluable. Applied directly to the exterior of silos, bins, chutes, pipes, and valves, they prevent bulk solids from clumping, bridging, or sticking to internal walls, ensuring a smooth, uninterrupted discharge. Featuring advanced wire-wound or etched foil heating elements, these flexible pads provide exceptionally even heat distribution and can be customized in shape, size, wattage, and voltage to accommodate complex surface geometries and tight, non-standard mounting spaces.\n\nTo complete your thermal management ecosystem, our Insulation Jackets (also known as removable insulation covers) and Heating Blankets offer superior heat retention and equipment protection. These tailored thermal blankets trap heat inside the application, drastically cutting power consumption and preventing temperature loss to the surrounding environment. Unlike permanent, hard-shell insulation, these jackets are designed to be easily removable and reusable, allowing operators quick and unhindered access for routine equipment inspection, maintenance, or repair.\n\nFrom simple freeze protection to complex, high-temperature composite curing, our flexible heating and insulation systems are designed to be paired with advanced temperature controllers and built-in thermostats. This guarantees safe, precise, and highly efficient thermal management across your entire operation, minimizing downtime and maximizing productivity.",
+          "slug": "flexible-heaters-insulations",
+          "id": "1785294312348"
+        },
+        {
+          "type": "product",
+          "keySpecifications": [
+            {
+              "label": "Product",
+              "value": "Description"
+            },
+            {
+              "label": "Cartridge Heaters",
+              "value": "High-watt density cylindrical heaters with stainless steel sheath, operating up to 800°C, ideal for molds, dies, hot plates, and precision process heating."
+            },
+            {
+              "label": "Band Heaters",
+              "value": "Mica or ceramic insulated clamp-on heaters delivering uniform barrel heating up to 600°C, available in custom diameters, voltages, and wattages."
+            },
+            {
+              "label": "Tubular Heaters",
+              "value": "Flexible stainless steel heating elements capable of straight or custom bends, suitable for air, liquid, and surface heating up to 750°C."
+            },
+            {
+              "label": "Immersion Heaters",
+              "value": "Flanged or screw-plug electric heaters for direct heating of water, oil, chemicals, and process fluids, available up to 100 kW."
+            },
+            {
+              "label": "Air Heaters",
+              "value": "Industrial air heating elements designed for ducts, dryers, and ovens, providing rapid heat transfer with operating temperatures up to 650°C."
+            },
+            {
+              "label": "Infrared Heaters",
+              "value": "High-efficiency radiant heaters delivering instant, contact-free heating up to 1000°C for drying, curing, forming, and surface processing."
+            },
+            {
+              "label": "Cast-in Heaters",
+              "value": "Precision aluminum or bronze cast heaters offering superior heat distribution, durability, and long service life for molds, platens, and packaging machinery."
+            },
+            {
+              "label": "Ceramic Band Heaters",
+              "value": "Energy-efficient insulated heaters with low heat loss and operating temperatures up to 800°C, ideal for extrusion and injection molding barrels."
+            },
+            {
+              "label": "Mica Band Heaters",
+              "value": "Compact, economical barrel heaters providing fast thermal response up to 450°C for plastic processing and packaging equipment."
+            },
+            {
+              "label": "Nozzle Heaters",
+              "value": "Compact brass or stainless steel heaters engineered for injection molding nozzles, ensuring accurate melt temperature and rapid heat recovery."
+            },
+            {
+              "label": "Coil Heaters",
+              "value": "High-performance micro tubular heaters with exceptional watt density and flexibility, designed for hot runner systems and precision industrial heating."
+            },
+            {
+              "label": "Strip Heaters",
+              "value": "Flat stainless steel heating elements for direct contact heating of dies, tanks, and metal surfaces with uniform thermal performance."
+            },
+            {
+              "label": "Duct Heaters",
+              "value": "Heavy-duty electric air heaters for HVAC and industrial ventilation systems, available in single or three-phase configurations up to 100 kW."
+            },
+            {
+              "label": "Flexible Heaters",
+              "value": "Thin, bendable silicone or polyimide heaters that conform to irregular surfaces while delivering precise, uniform heating up to 250°C."
+            },
+            {
+              "label": "Custom Industrial Heaters",
+              "value": "Engineered-to-order heating solutions with customizable size, voltage, wattage, sheath material, temperature range, and mounting options for specialized industrial applications."
+            }
+          ],
+          "requestQuoteOption": true,
+          "image": "",
+          "title": "Industrial Heaters",
+          "longDescription": "Industrial Heaters play a vital role in maintaining accurate process temperatures and ensuring efficient heat transfer across manufacturing and processing industries. At Twesha Enterprises, we offer a comprehensive range of high-performance industrial heating solutions designed to deliver consistent thermal output, maximum reliability, and long operational life.\n\nOur portfolio includes Cartridge Heaters, Band Heaters, Tubular Heaters, Immersion Heaters, Air Heaters, Infrared Heaters, Cast-in Heaters, Duct Heaters, Corrugation Heaters, and other custom-engineered heating elements. Manufactured using premium-grade materials and advanced heating technologies, these heaters provide excellent temperature uniformity, rapid heat-up, high insulation resistance, and superior energy efficiency.\n\nDesigned for demanding industrial environments, our heaters are suitable for applications in plastic processing, packaging machinery, food processing, pharmaceuticals, chemical plants, oil & gas, textile industries, laboratories, furnaces, ovens, water and oil heating systems, and industrial process equipment. They are available in a wide range of voltages, wattages, sizes, and configurations to meet specific customer requirements.\n\nEvery heating solution is manufactured with a focus on durability, safety, and performance, ensuring reliable operation even under continuous industrial use. Whether you require a standard heating element or a fully customized solution, our industrial heaters are engineered to improve process efficiency, reduce energy consumption, and provide dependable heating for critical applications.\n\nWith a commitment to quality, precision engineering, and customer-specific solutions, we deliver industrial heaters that meet the highest standards of performance across diverse industries.",
+          "shortDescription": "Industrial Heaters are engineered to provide efficient, reliable, and precise heating for a wide range of industrial processes. Our product range includes cartridge heaters, band heaters, tubular heaters, immersion heaters, air heaters, infrared heaters, and cast-in heaters, designed for superior thermal performance, long service life, and energy efficiency across diverse industrial applications.",
+          "applications": [
+            {
+              "title": "Plastic & Rubber Industry",
+              "desc": "Heating for injection molding, extrusion, and molding machines."
+            },
+            {
+              "title": "Food & Pharmaceutical",
+              "desc": "Used in ovens, dryers, sterilizers, and process heating equipment."
+            },
+            {
+              "title": "Chemical & Process Plants",
+              "desc": "Heating of tanks, reactors, pipelines, and processing vessels."
+            },
+            {
+              "title": "Packaging & Printing",
+              "desc": "Ideal for sealing, laminating, shrink wrapping, and drying applications."
+            },
+            {
+              "title": "Metal & Engineering",
+              "desc": "Used in dies, molds, furnaces, heat treatment, and industrial machinery."
+            },
+            {
+              "title": "General Manufacturing",
+              "desc": "Suitable for air, liquid, surface, and process heating across various industries."
+            }
+          ],
+          "slug": "industrial-heaters",
+          "id": "1785294856255"
+        },
+        {
+          "type": "product",
+          "keySpecifications": [
+            {
+              "label": "Product Name",
+              "value": "Description"
+            },
+            {
+              "label": "Customised Vacuum Oven",
+              "value": "Engineered for controlled vacuum-based drying and heat treatment where low-pressure processing is required."
+            },
+            {
+              "label": "Powder Coating & Paint Drying Oven",
+              "value": "Designed for uniform curing and drying of coated surfaces with stable temperature control."
+            },
+            {
+              "label": "Conveyor Belt Oven",
+              "value": "Continuous-flow oven for high-volume processing, heating, drying, and curing applications."
+            },
+            {
+              "label": "Welding Electrode Oven",
+              "value": "Used to keep electrodes dry and ready for reliable welding performance."
+            },
+            {
+              "label": "Flux Heating Oven",
+              "value": "Maintains flux at proper temperature for consistent handling and process quality."
+            },
+            {
+              "label": "Tray Dryer Oven",
+              "value": "Multi-tray drying system for batch processing of materials, components, and samples."
+            },
+            {
+              "label": "Laboratory Oven",
+              "value": "Precision oven for testing, drying, and thermal experiments in controlled environments."
+            },
+            {
+              "label": "Flux / Electrode Drying Oven",
+              "value": "Dual-purpose drying solution for welding consumables and process materials."
+            },
+            {
+              "label": "Drying Oven",
+              "value": "General-purpose industrial oven for moisture removal and thermal processing."
+            },
+            {
+              "label": "Portable Electrode Oven",
+              "value": "Compact, movable oven for storing and drying electrodes at job sites or workshops."
+            }
+          ],
+          "requestQuoteOption": true,
+          "shortDescription": "Electrical Ovens are industrial heating systems designed for precise temperature control, uniform heat distribution, and reliable drying, curing, baking, and heat-treatment performance across manufacturing and laboratory applications.",
+          "applications": [
+            {
+              "title": "Drying",
+              "desc": "Removes moisture from materials, components, and consumables."
+            },
+            {
+              "title": "Curing",
+              "desc": "Supports paint, coating, and surface treatment processes."
+            },
+            {
+              "title": "Heat Treatment",
+              "desc": "Provides controlled thermal processing for industrial parts."
+            },
+            {
+              "title": "Laboratory Use",
+              "desc": "Suitable for testing, research, and sample preparation."
+            },
+            {
+              "title": "Welding Consumables",
+              "desc": "Keeps electrodes and flux in proper condition for use."
+            },
+            {
+              "title": "Continuous Processing",
+              "desc": "Ideal for conveyor-based heating and production lines."
+            }
+          ],
+          "longDescription": "Electrical Ovens are advanced industrial heating systems engineered to deliver precise temperature control, uniform heat distribution, and energy-efficient thermal processing across a wide range of manufacturing and laboratory applications. Designed for continuous as well as batch operations, these ovens ensure consistent heating performance, improved product quality, and enhanced process reliability while minimizing energy consumption and maintenance requirements.\n\nOur comprehensive range includes Customised Vacuum Ovens for low-pressure drying and heat treatment, Powder Coating & Paint Drying Ovens for uniform curing of coated components, Conveyor Belt Ovens for continuous production lines, Tray Dryer Ovens for batch drying applications, Laboratory Ovens for testing, research, and quality control, Drying Ovens for moisture removal and thermal conditioning, Welding Electrode Ovens and Portable Electrode Ovens for maintaining welding electrodes in optimal condition, and Flux Heating & Flux Drying Ovens for preserving welding flux quality and preventing moisture absorption.\n\nManufactured using premium-grade insulation materials, heavy-duty steel construction, and high-performance electric heating elements, our ovens provide excellent temperature uniformity, rapid heat-up times, and reliable long-term operation. Available in multiple chamber sizes, temperature ranges, airflow configurations, and control systems, they can be customized to meet specific process requirements, production capacities, and industry standards.\n\nThese electrical ovens are widely used in automotive, aerospace, pharmaceutical, chemical, food processing, electronics, textile, metal fabrication, powder coating, welding, research laboratories, and general manufacturing industries. Whether the application requires drying, curing, baking, preheating, annealing, stress relieving, moisture removal, or precision thermal processing, our ovens are designed to deliver dependable performance, maximum energy efficiency, and accurate temperature control under demanding industrial conditions.\n\nWith customizable dimensions, heating capacities, control options, and automation features, our Electrical Ovens provide reliable, safe, and cost-effective heating solutions tailored to modern industrial processes, ensuring consistent product quality, reduced operating costs, and long service life.",
+          "title": "Electrical Ovens",
+          "slug": "electrical-ovens",
+          "id": "1785295551277"
+        },
+        {
+          "type": "product",
+          "keySpecifications": [
+            {
+              "label": "Product Name",
+              "value": "Description"
+            },
+            {
+              "label": "Muffle Furnace",
+              "value": "High-temperature insulated furnace operating up to 1800°C, designed for laboratory testing, ash analysis, calcination, and material research."
+            },
+            {
+              "label": "Heat Treatment Furnace",
+              "value": "Precision-controlled furnace for annealing, hardening, tempering, stress relieving, and normalizing of ferrous and non-ferrous metals."
+            },
+            {
+              "label": "Box Furnace",
+              "value": "Heavy-duty batch furnace with uniform heat distribution and programmable controls for industrial thermal processing."
+            },
+            {
+              "label": "Chamber Furnace",
+              "value": "Multi-purpose electric furnace suitable for heat treatment, drying, preheating, and component processing with excellent temperature uniformity."
+            },
+            {
+              "label": "Pit Furnace",
+              "value": "Vertical furnace engineered for long shafts, rods, and cylindrical components requiring deep and uniform heat treatment."
+            },
+            {
+              "label": "Bogie Hearth Furnace",
+              "value": "Large-capacity furnace with movable hearth for heavy components, dies, castings, and fabrication assemblies."
+            },
+            {
+              "label": "Laboratory Furnace",
+              "value": "Compact, high-accuracy furnace for testing, research, quality control, and scientific applications."
+            },
+            {
+              "label": "Custom Electrical Furnace",
+              "value": "Fully customized furnace with configurable chamber size, temperature range, insulation, power rating, and control systems for specialized industrial processes."
+            }
+          ],
+          "requestQuoteOption": true,
+          "shortDescription": "Electrical Furnaces are high-performance industrial heating systems designed for precise, high-temperature thermal processing. Engineered for uniform heat distribution, energy efficiency, and reliable operation, they are ideal for heat treatment, annealing, hardening, tempering, sintering, brazing, and laboratory applications across diverse industries.",
+          "longDescription": "Electrical Furnaces are essential thermal processing systems used wherever precise temperature control, clean electric heating, and consistent high-temperature performance are required. Designed for both batch and continuous industrial operations, these furnaces deliver exceptional heating uniformity, reduced energy consumption, and dependable long-term operation, making them suitable for demanding manufacturing and research environments.\n\nOur range of Electrical Furnaces includes Muffle Furnaces for laboratory testing and material analysis, Heat Treatment Furnaces for annealing, hardening, tempering, and stress relieving, Chamber Furnaces for general-purpose industrial heating, Box Furnaces for batch processing, Pit Furnaces for vertical heat treatment of long components, Bogie Hearth Furnaces for heavy workpieces, Laboratory Furnaces for research and quality control, and Custom-Engineered Furnaces designed to meet specific production requirements. These systems are manufactured using premium refractory insulation, heavy-duty steel construction, and high-efficiency heating elements to ensure rapid heat-up, excellent temperature stability, and extended service life.\n\nAvailable with advanced PID controllers, programmable temperature profiles, and multiple chamber sizes, our furnaces can be customized for different operating temperatures, capacities, and process requirements. They are widely used in the automotive, aerospace, metallurgy, foundry, tool room, ceramics, glass, electronics, pharmaceutical, research laboratories, and general engineering industries for heat treatment, sintering, calcination, preheating, aging, material testing, and other precision thermal processes.\n\nDesigned for safety, reliability, and energy-efficient performance, our Electrical Furnaces provide consistent heating results while helping manufacturers improve productivity, process quality, and operational efficiency.",
+          "applications": [
+            {
+              "title": "Heat Treatment",
+              "desc": "Annealing, hardening, tempering, stress relieving, and normalizing of metal components."
+            },
+            {
+              "title": "Laboratory & Research",
+              "desc": "Material testing, sample preparation, ash analysis, and scientific experiments."
+            },
+            {
+              "title": "Metal Processing",
+              "desc": "Heating of tools, dies, castings, forgings, and engineering components."
+            },
+            {
+              "title": "Ceramics & Glass",
+              "desc": "Sintering, firing, calcination, and high-temperature processing."
+            },
+            {
+              "title": "Manufacturing Industries",
+              "desc": "Precision thermal processing for automotive, aerospace, electronics, foundries, and general engineering."
+            }
+          ],
+          "title": "Electrical Furnace",
+          "slug": "electrical-furnace",
+          "id": "1785295735820"
+        },
+        {
+          "type": "product",
+          "keySpecifications": [
+            {
+              "label": "Product Name",
+              "value": "Description"
+            },
+            {
+              "label": "Electric Thermic Fluid Heater",
+              "value": "Electrically heated thermal oil system delivering precise temperatures up to 350°C with clean, emission-free operation."
+            },
+            {
+              "label": "Fuel Fired Thermic Fluid Heater",
+              "value": "Diesel, gas, or biomass-fired heating system designed for high-capacity industrial process heating with excellent fuel efficiency."
+            },
+            {
+              "label": "Thermal Oil Circulation System",
+              "value": "Complete circulation package with pumps, piping, filters, and controls for continuous and uniform heat transfer."
+            },
+            {
+              "label": "Heat Transfer Oil System",
+              "value": "Closed-loop heating system using premium thermal oil for stable, indirect heating with low operating pressure."
+            },
+            {
+              "label": "Expansion Tank Unit",
+              "value": "Safety component that accommodates thermal oil expansion while maintaining stable system pressure and reliable operation."
+            },
+            {
+              "label": "Heat Exchanger Unit",
+              "value": "Efficient heat transfer equipment designed to deliver controlled thermal energy between thermic fluid and process media."
+            },
+            {
+              "label": "Pump Skid Assembly",
+              "value": "Heavy-duty circulation pump package ensuring consistent thermal oil flow, high efficiency, and reliable system performance."
+            },
+            {
+              "label": "Custom Thermic Fluid System",
+              "value": "Engineered-to-order heating solution with customizable capacity, fuel type, temperature range, PLC controls, and automation features."
+            }
+          ],
+          "requestQuoteOption": true,
+          "shortDescription": "Thermic Fluid Systems are advanced indirect heating solutions designed to deliver safe, uniform, and energy-efficient heat transfer for high-temperature industrial processes. Engineered for continuous operation, they provide precise temperature control, improved thermal efficiency, and reliable performance across diverse manufacturing industries.",
+          "longDescription": "Thermic Fluid Systems are highly efficient indirect heating systems that use a heat transfer fluid to deliver controlled thermal energy without the need for high-pressure steam. Designed for continuous industrial operation, these systems provide uniform heating, excellent temperature stability, faster heat transfer, and reduced operating costs, making them an ideal solution for modern process industries.\n\nOur comprehensive range includes Thermic Fluid Heaters, Heat Transfer Oil Systems, Oil Circulation Units, Expansion Tanks, Pump Skids, Heat Exchangers, Fuel-Fired Thermic Fluid Systems, Electric Thermic Fluid Heaters, and Custom-Engineered Thermal Oil Systems. Every system is manufactured using heavy-duty steel construction, premium insulation, high-efficiency heating coils, and advanced control panels to ensure safe operation, low heat loss, and long service life. These systems are available in horizontal and vertical configurations with customized heating capacities, operating temperatures, fuel options, and automation levels to suit specific industrial requirements.\n\nThermic Fluid Systems are widely used for reactor heating, storage tank heating, drying plants, ovens, calendaring machines, laminating equipment, textile processing, food processing, chemical manufacturing, pharmaceutical production, plastics, rubber, paper, plywood, bitumen, and general process heating. Their ability to provide consistent temperatures without scaling, corrosion, or excessive system pressure makes them a preferred heating solution for demanding industrial applications.\n\nWith customizable capacities, intelligent temperature control, and energy-efficient operation, our Thermic Fluid Systems deliver dependable thermal performance, enhanced process productivity, and lower maintenance costs while ensuring maximum safety and long-term operational reliability.",
+          "applications": [
+            {
+              "title": "Chemical & Pharmaceutical",
+              "desc": "Reactor heating, mixing vessels, and process temperature control."
+            },
+            {
+              "title": "Food & Textile Industry",
+              "desc": "Drying, cooking, calendaring, laminating, and thermal processing."
+            },
+            {
+              "title": "Plastic & Rubber Processing",
+              "desc": "Mold heating, extrusion, and manufacturing process heating."
+            },
+            {
+              "title": "Paper, Plywood & Packaging",
+              "desc": "Roll heating, drying, curing, and adhesive processing."
+            },
+            {
+              "title": "General Manufacturing",
+              "desc": "Indirect heating for tanks, heat exchangers, reactors, and industrial production lines."
+            }
+          ],
+          "title": "Thermic Fluid Systems",
+          "slug": "thermic-fluid-systems",
+          "id": "1785295978650"
+        },
+        {
+          "type": "product",
+          "keySpecifications": [
+            {
+              "label": "Product Name",
+              "value": "Description"
+            },
+            {
+              "label": "Electric Hot Air Generator",
+              "value": "Clean electric heating system delivering controlled hot air up to 500°C, ideal for precision drying, curing, and industrial process heating."
+            },
+            {
+              "label": "Gas Fired Hot Air Generator",
+              "value": "High-efficiency LPG/PNG fired generator designed for continuous hot air supply with excellent fuel economy and uniform temperature distribution."
+            }
+          ],
+          "requestQuoteOption": true,
+          "image": "",
+          "shortDescription": "Hot Air Generators are high-efficiency industrial heating systems designed to deliver clean, controlled, and uniform hot air for drying, curing, baking, and process heating applications. Engineered for continuous operation, they provide excellent thermal efficiency, reliable temperature control, and energy-saving performance across diverse industries.",
+          "title": "Hot Air Generator",
+          "longDescription": "Hot Air Generators are advanced thermal systems that produce a continuous supply of heated air for industrial drying, curing, heating, and process applications. Unlike steam-based heating systems, they deliver hot air directly to the process, ensuring faster heat transfer, improved energy efficiency, lower operating costs, and precise temperature control. Built for heavy-duty industrial environments, these systems are ideal for both batch and continuous production processes.\n\nOur range includes Electric Hot Air Generators for clean and emission-free heating, Gas Fired Hot Air Generators for high-efficiency industrial applications, Diesel & Oil Fired Hot Air Generators for large-scale thermal processing, Indirect Fired Hot Air Generators for contamination-free heating, Direct Fired Hot Air Generators for maximum thermal efficiency, and Custom Engineered Hot Air Systems tailored to specific process requirements. Each unit is manufactured using premium insulation, heavy-duty steel construction, high-performance heating elements or burners, and advanced temperature control systems to ensure reliable operation and long service life.\n\nAvailable in various capacities, airflow configurations, and operating temperatures, our Hot Air Generators can be customized with PLC/HMI automation, digital temperature controllers, variable airflow control, and multiple safety features. These systems are widely used in food processing, pharmaceuticals, chemicals, textiles, plastics, packaging, ceramics, agriculture, engineering, powder coating, and general manufacturing industries for drying, curing, preheating, baking, moisture removal, and process heating.\n\nDesigned for maximum thermal efficiency, low maintenance, and dependable performance, our Hot Air Generators help industries achieve faster production cycles, consistent product quality, and reduced energy consumption while maintaining precise temperature control.",
+          "applications": [
+            {
+              "title": "Drying & Dehumidification",
+              "desc": "Removes moisture from products, raw materials, and finished components efficiently."
+            },
+            {
+              "title": "Curing & Baking",
+              "desc": "Provides controlled hot air for paint curing, powder coating, baking, and surface finishing processes."
+            },
+            {
+              "title": "Process Heating",
+              "desc": "Delivers consistent hot air for ovens, dryers, furnaces, and industrial production lines."
+            },
+            {
+              "title": "Food & Pharmaceutical",
+              "desc": "Suitable for hygienic drying and temperature-controlled manufacturing processes."
+            },
+            {
+              "title": "General Manufacturing",
+              "desc": "Used in textiles, plastics, chemicals, ceramics, packaging, agriculture, and engineering industries for continuous thermal processing."
+            }
+          ],
+          "slug": "hot-air-generator",
+          "id": "1785296704760"
+        }
+      ],
+      "description": "Our Heating Solutions are designed to deliver precise, energy-efficient, and reliable thermal performance for industrial processes. From process heating systems and electrical ovens to thermic fluid systems, flexible heaters, insulation, and electrical furnaces, we provide customized solutions for diverse manufacturing applications."
+    },
+    {
+      "type": "category",
+      "title": "Engineering Products",
+      "slug": "engineering-products",
+      "id": "1784784465286",
+      "children": [],
+      "description": ""
+    },
+    {
+      "type": "category",
+      "title": "Instrumentation Products",
+      "slug": "instrumentation-products",
+      "id": "1784784505227",
+      "children": [],
+      "coverImage": "/instruments.png"
+    }
+  ],
+  "certificates": [],
+  "gallery": [],
+  "videos": []
+}

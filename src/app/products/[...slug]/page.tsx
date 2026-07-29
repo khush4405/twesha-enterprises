@@ -1,4 +1,5 @@
-import masterContentData from "@/data/masterContent.json";
+import fs from "fs";
+import path from "path";
 import CategoryGrid from "@/components/CategoryGrid";
 import ProductDetail from "@/components/ProductDetail";
 import ProductsHero from "@/components/catalog/ProductsHero";
@@ -6,7 +7,18 @@ import styles from "@/components/catalog/ProductUI.module.css";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
-const masterContent = masterContentData as any;
+// Read the CMS data at request time so admin edits appear without a rebuild.
+export const dynamic = "force-dynamic";
+
+function loadMasterContent(): any {
+  try {
+    const p = path.join(process.cwd(), "src", "data", "masterContent.json");
+    return JSON.parse(fs.readFileSync(p, "utf-8"));
+  } catch (e) {
+    console.error("Failed to read masterContent.json", e);
+    return { categories: [] };
+  }
+}
 
 // Helper function to find node by slug path
 function findNodeByPath(data: any[], slugs: string[]): any | null {
@@ -26,7 +38,8 @@ function findNodeByPath(data: any[], slugs: string[]): any | null {
 
 export default async function DynamicProductPage({ params }: { params: Promise<{ slug: string[] }> }) {
   const { slug } = await params;
-  
+
+  const masterContent = loadMasterContent();
   const targetNode = findNodeByPath(masterContent.categories || [], slug || []);
 
   if (!targetNode) {
