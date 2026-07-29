@@ -61,10 +61,6 @@
           "type": "product",
           "keySpecifications": [
             {
-              "label": "Specification",
-              "value": "Details"
-            },
-            {
               "label": "Product Category",
               "value": "Industrial Heaters"
             },
@@ -147,10 +143,6 @@
           "longDescription": "Industrial Heaters play a vital role in maintaining accurate process temperatures and ensuring efficient heat transfer across manufacturing and processing industries. At Twesha Enterprises, we offer a comprehensive range of high-performance industrial heating solutions designed to deliver consistent thermal output, maximum reliability, and long operational life.\n\nOur portfolio includes Cartridge Heaters, Band Heaters, Tubular Heaters, Immersion Heaters, Air Heaters, Infrared Heaters, Cast-in Heaters, Duct Heaters, Corrugation Heaters, and other custom-engineered heating elements. Manufactured using premium-grade materials and advanced heating technologies, these heaters provide excellent temperature uniformity, rapid heat-up, high insulation resistance, and superior energy efficiency.\n\nDesigned for demanding industrial environments, our heaters are suitable for applications in plastic processing, packaging machinery, food processing, pharmaceuticals, chemical plants, oil & gas, textile industries, laboratories, furnaces, ovens, water and oil heating systems, and industrial process equipment. They are available in a wide range of voltages, wattages, sizes, and configurations to meet specific customer requirements.\n\nEvery heating solution is manufactured with a focus on durability, safety, and performance, ensuring reliable operation even under continuous industrial use. Whether you require a standard heating element or a fully customized solution, our industrial heaters are engineered to improve process efficiency, reduce energy consumption, and provide dependable heating for critical applications.\n\nWith a commitment to quality, precision engineering, and customer-specific solutions, we deliver industrial heaters that meet the highest standards of performance across diverse industries.",
           "shortDescription": "Industrial Heaters are engineered to provide efficient, reliable, and precise heating for a wide range of industrial processes. Our product range includes cartridge heaters, band heaters, tubular heaters, immersion heaters, air heaters, infrared heaters, and cast-in heaters, designed for superior thermal performance, long service life, and energy efficiency across diverse industrial applications.",
           "applications": [
-            {
-              "title": "Application",
-              "desc": "Description"
-            },
             {
               "title": "Plastic & Rubber Industry",
               "desc": "Heating for injection molding, extrusion, and molding machines."
