@@ -61,80 +61,68 @@
           "type": "product",
           "keySpecifications": [
             {
-              "label": "Product Category",
-              "value": "Industrial Heaters"
+              "label": "Product",
+              "value": "Description"
             },
             {
-              "label": "Heater Types",
-              "value": "Cartridge, Band, Tubular, Immersion, Air, Infrared, Cast-in, Duct, Nozzle, Ceramic & Custom Heaters"
+              "label": "Cartridge Heaters",
+              "value": "High-watt density cylindrical heaters with stainless steel sheath, operating up to 800°C, ideal for molds, dies, hot plates, and precision process heating."
             },
             {
-              "label": "Heating Medium",
-              "value": "Air, Water, Oil, Gas, Metal Surfaces, Molds, Dies, Process Equipment"
+              "label": "Band Heaters",
+              "value": "Mica or ceramic insulated clamp-on heaters delivering uniform barrel heating up to 600°C, available in custom diameters, voltages, and wattages."
             },
             {
-              "label": "Operating Voltage",
-              "value": "12V – 600V AC/DC (Custom Available)"
+              "label": "Tubular Heaters",
+              "value": "Flexible stainless steel heating elements capable of straight or custom bends, suitable for air, liquid, and surface heating up to 750°C."
             },
             {
-              "label": "Power Rating",
-              "value": "50W – 50kW+ (Application Dependent)"
+              "label": "Immersion Heaters",
+              "value": "Flanged or screw-plug electric heaters for direct heating of water, oil, chemicals, and process fluids, available up to 100 kW."
             },
             {
-              "label": "Temperature Range",
-              "value": "Ambient to 1200°C (Depending on Heater Type)"
+              "label": "Air Heaters",
+              "value": "Industrial air heating elements designed for ducts, dryers, and ovens, providing rapid heat transfer with operating temperatures up to 650°C."
             },
             {
-              "label": "Heating Element Material",
-              "value": "Nichrome (NiCr), Kanthal, Stainless Steel Sheathed Elements"
+              "label": "Infrared Heaters",
+              "value": "High-efficiency radiant heaters delivering instant, contact-free heating up to 1000°C for drying, curing, forming, and surface processing."
             },
             {
-              "label": "Sheath Material",
-              "value": "SS304, SS316, Incoloy, Brass, Copper, Mild Steel"
+              "label": "Cast-in Heaters",
+              "value": "Precision aluminum or bronze cast heaters offering superior heat distribution, durability, and long service life for molds, platens, and packaging machinery."
             },
             {
-              "label": "Insulation Material",
-              "value": "High Purity Magnesium Oxide (MgO), Ceramic Insulation"
+              "label": "Ceramic Band Heaters",
+              "value": "Energy-efficient insulated heaters with low heat loss and operating temperatures up to 800°C, ideal for extrusion and injection molding barrels."
             },
             {
-              "label": "Temperature Control",
-              "value": "Thermostat, PID Controller, Thermocouple Compatible"
+              "label": "Mica Band Heaters",
+              "value": "Compact, economical barrel heaters providing fast thermal response up to 450°C for plastic processing and packaging equipment."
             },
             {
-              "label": "Mounting Options",
-              "value": "Threaded, Flanged, Clamp, Bolt-On, Slip-On, Insert Type"
+              "label": "Nozzle Heaters",
+              "value": "Compact brass or stainless steel heaters engineered for injection molding nozzles, ensuring accurate melt temperature and rapid heat recovery."
             },
             {
-              "label": "Heating Method",
-              "value": "Conduction, Convection, Radiation"
+              "label": "Coil Heaters",
+              "value": "High-performance micro tubular heaters with exceptional watt density and flexibility, designed for hot runner systems and precision industrial heating."
             },
             {
-              "label": "Power Supply",
-              "value": "Single Phase / Three Phase"
+              "label": "Strip Heaters",
+              "value": "Flat stainless steel heating elements for direct contact heating of dies, tanks, and metal surfaces with uniform thermal performance."
             },
             {
-              "label": "Protection Rating",
-              "value": "IP54 to IP67 (Model Dependent)"
+              "label": "Duct Heaters",
+              "value": "Heavy-duty electric air heaters for HVAC and industrial ventilation systems, available in single or three-phase configurations up to 100 kW."
             },
             {
-              "label": "Energy Efficiency",
-              "value": "High Thermal Efficiency with Low Heat Loss"
+              "label": "Flexible Heaters",
+              "value": "Thin, bendable silicone or polyimide heaters that conform to irregular surfaces while delivering precise, uniform heating up to 250°C."
             },
             {
-              "label": "Customization",
-              "value": "Voltage, Wattage, Dimensions, Shape, Mounting, Lead Exit, Terminal Type"
-            },
-            {
-              "label": "Applications",
-              "value": "Plastic Processing, Packaging, Chemical, Pharmaceutical, Food Processing, Textile, Oil & Gas, Rubber, Printing, Laboratory Equipment"
-            },
-            {
-              "label": "Standards",
-              "value": "Manufactured as per Industrial Quality Standards"
-            },
-            {
-              "label": "Warranty",
-              "value": "As per Product Model"
+              "label": "Custom Industrial Heaters",
+              "value": "Engineered-to-order heating solutions with customizable size, voltage, wattage, sheath material, temperature range, and mounting options for specialized industrial applications."
             }
           ],
           "requestQuoteOption": true,
