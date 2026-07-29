@@ -5,7 +5,59 @@
       "title": "Heating Solution",
       "slug": "heating-solution",
       "id": "1784784482074",
-      "children": [],
+      "children": [
+        {
+          "type": "product",
+          "keySpecifications": [
+            {
+              "label": "Heating Pad",
+              "value": "Heavy-duty, flexible electric pads built for extreme conditions; ideal for heating pipes, tanks, machinery, and composite materials."
+            },
+            {
+              "label": "Base Drum Heater",
+              "value": "Flat heating units placed directly beneath standard 55-gallon drums to apply conductive, upward thermal transfer with precise temperature control."
+            },
+            {
+              "label": "IBC Heater",
+              "value": "Custom-fit electric heaters designed for Intermediate Bulk Containers (IBC) to maintain liquid temperatures, reduce viscosity, and prevent freezing."
+            },
+            {
+              "label": "Hopper Heater",
+              "value": "Flexible or rigid heating elements applied to hoppers, silos, or chutes to prevent material clumping, freezing, or sticking during discharge."
+            },
+            {
+              "label": "Drum Heating Oven",
+              "value": "Industrial-grade heaters (wrap-around, base, or full-jacket) engineered to apply uniform, controlled heat to 55-gallon metal or steel drums."
+            },
+            {
+              "label": "Silicone Heating Pads",
+              "value": "Highly customizable, flexible flat heaters made from fiberglass-reinforced silicone rubber for precise, even surface heating and tight temperature control."
+            },
+            {
+              "label": "Insulation Jackets",
+              "value": "Removable and reusable tailored thermal blankets that trap heat to minimize energy loss while allowing easy access for equipment maintenance."
+            },
+            {
+              "label": "Heating Blanket",
+              "value": "Durable, flexible heating wraps constructed with insulated wires embedded in silicone or fabric to provide safe, controlled warmth on varied surfaces."
+            },
+            {
+              "label": "Heating Jackets",
+              "value": "Advanced wrap-around thermal systems providing efficient, uniform heat for tanks, vessels, and pipes to maintain optimal process temperatures."
+            },
+            {
+              "label": "Drum Heaters",
+              "value": "Flexible silicone rubber heating bands that wrap circumferentially around drums, utilizing wire or etched foil for even heat distribution and chemical resistance."
+            }
+          ],
+          "requestQuoteOption": true,
+          "title": "Flexible Heaters & Insulations",
+          "shortDescription": "Flexible Heaters & Insulations are engineered for efficient, uniform heat transfer and reliable thermal protection across industrial applications. Designed for pipes, tanks, drums, machinery, and process equipment, they offer energy-efficient heating, temperature stability, and customizable solutions for demanding environments.",
+          "longDescription": "Our Flexible Heaters and Insulations category offers a comprehensive suite of highly adaptable, industrial-grade thermal management solutions designed to meet the rigorous demands of modern manufacturing, processing, and storage facilities. Whether you need to maintain critical process temperatures, reduce the viscosity of thick fluids, prevent costly freezing in harsh cold-weather environments, or drastically minimize thermal loss to boost energy efficiency, our versatile product line delivers precise, uniform heat transfer exactly where it is needed most.\n\nEngineered to fit seamlessly around or beneath your most vital equipment, this category encompasses a wide variety of specialized form factors, including base drum heaters, custom-fit IBC (Intermediate Bulk Container) heaters, full-coverage heating jackets, and highly malleable silicone heating pads. Built from rugged, heat-resistant materials such as fiberglass-reinforced silicone rubber, durable steel housings, and weather-resistant industrial fabrics, these products are constructed to withstand exposure to harsh chemicals, moisture, extreme temperatures, and heavy mechanical wear.\n\nFor cylindrical storage and bulk liquid transport, our Drum Heaters, Base Drum Heaters, and Drum Heating Ovens provide comprehensive wrap-around or bottom-up conductive heating for standard 55-gallon steel or plastic drums. These units ensure that critical materials—such as oils, resins, adhesives, paints, and chemicals—remain at their optimal flow consistencies. Similarly, our IBC Heaters are tailored specifically for large cube-shaped tanks. They are widely utilized across the food & beverage, pharmaceutical, cosmetics, and petrochemical industries to maintain uniform product quality and prevent spoilage during long-term storage and handling.\n\nIn complex material handling and dispensing applications, our Hopper Heaters and flexible Heating Pads are invaluable. Applied directly to the exterior of silos, bins, chutes, pipes, and valves, they prevent bulk solids from clumping, bridging, or sticking to internal walls, ensuring a smooth, uninterrupted discharge. Featuring advanced wire-wound or etched foil heating elements, these flexible pads provide exceptionally even heat distribution and can be customized in shape, size, wattage, and voltage to accommodate complex surface geometries and tight, non-standard mounting spaces.\n\nTo complete your thermal management ecosystem, our Insulation Jackets (also known as removable insulation covers) and Heating Blankets offer superior heat retention and equipment protection. These tailored thermal blankets trap heat inside the application, drastically cutting power consumption and preventing temperature loss to the surrounding environment. Unlike permanent, hard-shell insulation, these jackets are designed to be easily removable and reusable, allowing operators quick and unhindered access for routine equipment inspection, maintenance, or repair.\n\nFrom simple freeze protection to complex, high-temperature composite curing, our flexible heating and insulation systems are designed to be paired with advanced temperature controllers and built-in thermostats. This guarantees safe, precise, and highly efficient thermal management across your entire operation, minimizing downtime and maximizing productivity.",
+          "slug": "flexible-heaters-insulations",
+          "id": "1785294312348"
+        }
+      ],
       "description": "Our Heating Solutions are designed to deliver precise, energy-efficient, and reliable thermal performance for industrial processes. From process heating systems and electrical ovens to thermic fluid systems, flexible heaters, insulation, and electrical furnaces, we provide customized solutions for diverse manufacturing applications."
     },
     {
