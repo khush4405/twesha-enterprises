@@ -3214,8 +3214,668 @@
       "title": "Instrumentation Products",
       "slug": "instrumentation-products",
       "id": "1784784505227",
-      "children": [],
-      "coverImage": "/instruments.png"
+      "children": [
+        {
+          "type": "product",
+          "id": "1798000000000",
+          "title": "Automation Products",
+          "slug": "automation-products",
+          "image": "/products/automation-products.png",
+          "shortDescription": "Control panel automation hardware - power supplies, PLCs, I/O, HMI, networking and terminals.",
+          "longDescription": "A complete hardware set for building and integrating industrial control systems, covering everything from the incoming supply to the operator interface.\n\nEight product groups are available: Power Supplies, PLCs and Remote I/O, Open Automation Platforms, Distribution and Device Terminal Blocks, HMI Panels and Industrial PCs, Terminal Blocks, Industrial Ethernet Switches, and Cables and Connectors.\n\nControllers are programmed to IEC 61131-3, so logic developed on one platform transfers to another without a rewrite. Remote I/O is offered in IP20 for cabinet mounting and IP65/IP67 for direct field installation, which removes long sensor home-runs and cuts wiring cost substantially on distributed plant.\n\nNetworking hardware is specified for industrial rather than office conditions: extended temperature range, redundant ring topologies that recover in milliseconds, and DIN rail mounting. Terminal and distribution blocks use push-in or spring-cage technology, which speeds up panel building and removes the re-torquing maintenance that screw terminals require.",
+          "keySpecifications": [
+            {
+              "label": "Product Scope",
+              "value": "Power supplies, controllers, I/O, HMI, networking, terminals and cabling"
+            },
+            {
+              "label": "Programming Standard",
+              "value": "IEC 61131-3 compliant controller programming"
+            },
+            {
+              "label": "Protection Ratings",
+              "value": "IP20 for cabinet mounting; IP65 and IP67 for field-mounted I/O"
+            },
+            {
+              "label": "Mounting",
+              "value": "DIN rail, panel and rack mounting options"
+            },
+            {
+              "label": "Supply Voltage",
+              "value": "24 V DC standard; 110-230 V AC input on power supplies"
+            },
+            {
+              "label": "Communication",
+              "value": "Industrial Ethernet, PROFINET, Modbus TCP/RTU, IO-Link"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "-25 C to +60 C, product dependent"
+            },
+            {
+              "label": "Certification",
+              "value": "CE, UL and ATEX/IECEx variants available"
+            },
+            {
+              "label": "Product Groups",
+              "value": "Power Supplies, PLCs and Remote I/O, Open Automation Platforms, Distribution and Device Terminal Blocks, HMI Panels and Industrial PCs, Terminal Blocks, Industrial Ethernet Switches, Cables and Connectors"
+            },
+            {
+              "label": "Power Supplies",
+              "value": "DIN rail, panel and rack-mount supplies with wide input range and redundancy options."
+            },
+            {
+              "label": "PLCs and Remote I/O",
+              "value": "Industrial controllers and distributed I/O in IP20, IP65 and IP67, programmed to IEC 61131-3."
+            },
+            {
+              "label": "Open Automation Platforms",
+              "value": "Modular open-ecosystem controllers supporting third-party software and containerised applications."
+            },
+            {
+              "label": "Distribution and Device Terminal Blocks",
+              "value": "Ready-to-connect distribution blocks for space-saving, expandable cabinet wiring."
+            },
+            {
+              "label": "HMI Panels and Industrial PCs",
+              "value": "Operator panels and industrial PCs for visualisation, monitoring and machine control."
+            },
+            {
+              "label": "Terminal Blocks",
+              "value": "Screw, spring-cage and push-in terminals with bridging accessories for control wiring."
+            },
+            {
+              "label": "Industrial Ethernet Switches",
+              "value": "Managed and unmanaged switches with Gigabit, PoE and ring redundancy for harsh environments."
+            },
+            {
+              "label": "Cables and Connectors",
+              "value": "Sensor/actuator cables, data and power lines, and industrial circular connectors."
+            }
+          ],
+          "applications": [
+            {
+              "title": "Factory Automation",
+              "desc": "Control panel builds, machine control and production line integration."
+            },
+            {
+              "title": "Process Plants",
+              "desc": "DCS and PLC cabinets, remote I/O stations and marshalling panels."
+            },
+            {
+              "title": "Power Distribution",
+              "desc": "Substation control, energy monitoring and protection systems."
+            },
+            {
+              "title": "Infrastructure",
+              "desc": "Water utilities, building management and transport systems."
+            }
+          ],
+          "requestQuoteOption": true
+        },
+        {
+          "type": "product",
+          "id": "1798000000001",
+          "title": "Flow Measurement",
+          "slug": "flow-measurement",
+          "image": "",
+          "shortDescription": "Complete flow metering range covering liquids, gases and steam across eleven technologies.",
+          "longDescription": "Flow measurement covers eleven distinct technologies, because no single principle handles every fluid well. Selecting correctly is largely a question of matching the physics to the medium.\n\nAvailable types: Oval Gear Flow Meter, Vortex Flow Meter, Turbine Flow Meter, Electromagnetic Flow Meter, Helical Rotor Flow Meter, Swirl Flow Meter, Thermal Mass Flow Meter, Coriolis Mass Flow Meter, Fuel Consumption Meter, Plastic Helical Flow Sensor & Meter, and Flow Switches.\n\nFor conductive liquids including dirty water, slurries and effluent, an electromagnetic meter is usually the right answer: it has no obstruction in the bore, so there is no pressure drop and nothing to clog or wear. For viscous fluids such as oils and resins, positive displacement types (oval gear, helical rotor) hold accuracy where turbine and vortex meters degrade. Steam and gas are typically handled by vortex or thermal mass, the latter measuring mass directly and so removing the need for separate pressure and temperature compensation.\n\nWhere the highest accuracy is required, or where density and mass are needed alongside volume, Coriolis measures all three directly. Every meter is factory flow-calibrated and supplied with a traceable certificate.",
+          "keySpecifications": [
+            {
+              "label": "Measurement Principles",
+              "value": "Positive displacement, vortex shedding, turbine, electromagnetic, thermal mass and Coriolis"
+            },
+            {
+              "label": "Line Size Range",
+              "value": "DN 6 to DN 600, technology dependent"
+            },
+            {
+              "label": "Accuracy",
+              "value": "±0.1% to ±1.5% of reading, depending on principle and application"
+            },
+            {
+              "label": "Wetted Materials",
+              "value": "SS 304 / SS 316 / SS 316L, PTFE, PP, Hastelloy and ceramic liners"
+            },
+            {
+              "label": "Process Temperature",
+              "value": "-40 C to +350 C, technology dependent"
+            },
+            {
+              "label": "Process Pressure",
+              "value": "Up to 100 bar, size and type dependent"
+            },
+            {
+              "label": "Output Signals",
+              "value": "4-20 mA, pulse, Modbus RTU/TCP, HART, relay and totaliser outputs"
+            },
+            {
+              "label": "Display",
+              "value": "Local LCD with instantaneous rate and cumulative totaliser"
+            },
+            {
+              "label": "Enclosure",
+              "value": "IP65 / IP67; flameproof and intrinsically safe versions available"
+            },
+            {
+              "label": "Calibration",
+              "value": "Factory flow-calibrated with traceable certificate"
+            },
+            {
+              "label": "Available Types",
+              "value": "Oval Gear Flow Meter, Vortex Flow Meter, Turbine Flow Meter, Electromagnetic Flow Meter, Helical Rotor Flow Meter, Swirl Flow Meter, Thermal Mass Flow Meter, Coriolis Mass Flow Meter, Fuel Consumption Meter, Plastic Helical Flow Sensor & Meter, Flow Switches"
+            },
+            {
+              "label": "Oval Gear Flow Meter",
+              "value": "Positive displacement measurement for viscous liquids such as oils, resins and syrups, unaffected by viscosity changes."
+            },
+            {
+              "label": "Vortex Flow Meter",
+              "value": "Measures steam, gas and liquid by shedding frequency; no moving parts and excellent long-term stability."
+            },
+            {
+              "label": "Turbine Flow Meter",
+              "value": "High-accuracy measurement of clean, low-viscosity liquids using a rotor whose speed is proportional to flow."
+            },
+            {
+              "label": "Electromagnetic Flow Meter",
+              "value": "Obstruction-free measurement of conductive liquids including slurries and effluent, with zero pressure drop."
+            },
+            {
+              "label": "Helical Rotor Flow Meter",
+              "value": "Positive displacement measurement for high-viscosity fluids where other technologies lose accuracy."
+            },
+            {
+              "label": "Swirl Flow Meter",
+              "value": "Dual-sensor design for air and gas with built-in pressure and temperature compensation."
+            },
+            {
+              "label": "Thermal Mass Flow Meter",
+              "value": "Direct mass flow sensing for air and gas without separate pressure and temperature correction."
+            },
+            {
+              "label": "Coriolis Mass Flow Meter",
+              "value": "Simultaneous direct measurement of mass flow, density and temperature at the highest accuracy class."
+            },
+            {
+              "label": "Fuel Consumption Meter",
+              "value": "Dual-sensor supply and return measurement for accurate diesel engine and generator fuel monitoring."
+            },
+            {
+              "label": "Plastic Helical Flow Sensor & Meter",
+              "value": "Corrosion-resistant sensors and digital meters for water and chemical dosing lines."
+            },
+            {
+              "label": "Flow Switches",
+              "value": "Simple on/off flow detection for pump protection, cooling circuits and low-flow alarms."
+            }
+          ],
+          "applications": [
+            {
+              "title": "Water & Wastewater",
+              "desc": "Treatment plants, distribution networks and effluent monitoring."
+            },
+            {
+              "title": "Chemical Processing",
+              "desc": "Batch dosing, reactor charging and transfer measurement."
+            },
+            {
+              "title": "Food & Beverage",
+              "desc": "Hygienic process lines, CIP systems and utility metering."
+            },
+            {
+              "title": "Textiles & Dyeing",
+              "desc": "Dye dosing, water consumption and process temperature control."
+            }
+          ],
+          "requestQuoteOption": true
+        },
+        {
+          "type": "product",
+          "id": "1798000000002",
+          "title": "Level Measurement",
+          "slug": "level-measurement",
+          "image": "",
+          "shortDescription": "Continuous level transmitters, point-level switches and non-contact ultrasonic measurement.",
+          "longDescription": "Level instrumentation divides into two distinct jobs, and confusing them is a common specification error. Continuous measurement reports how much is in the vessel at any moment; point-level detection simply reports whether the medium is present at one specific height.\n\nThree groups are available: Level Transmitters, Level Switches and Ultrasonic Level Measurement.\n\nTransmitters give an analogue reading across the full tank range and are used for inventory management, batch control and closed-loop regulation. Switches are simpler and considerably cheaper, and are the correct choice for high and low alarms, pump start/stop control and dry-run protection, where an analogue value would be redundant.\n\nUltrasonic measurement is non-contact, working by time-of-flight from a transducer above the surface. Because nothing touches the medium it suits aggressive chemicals, sludge and open channels, though it needs care where heavy vapour, foam or dust would attenuate the signal. Where those conditions exist, guided wave radar is generally the better answer.",
+          "keySpecifications": [
+            {
+              "label": "Measurement Principles",
+              "value": "Guided wave and non-contact radar, ultrasonic, hydrostatic, float, capacitance and vibrating fork"
+            },
+            {
+              "label": "Measuring Range",
+              "value": "Up to 30 m depending on technology"
+            },
+            {
+              "label": "Accuracy",
+              "value": "±2 mm to ±0.5% of span, technology dependent"
+            },
+            {
+              "label": "Wetted Materials",
+              "value": "SS 316 / SS 316L, PTFE, PP and Hastelloy"
+            },
+            {
+              "label": "Process Temperature",
+              "value": "-40 C to +250 C, technology dependent"
+            },
+            {
+              "label": "Process Pressure",
+              "value": "Vacuum to 40 bar"
+            },
+            {
+              "label": "Output Signals",
+              "value": "4-20 mA with HART, Modbus RTU, relay contacts for switches"
+            },
+            {
+              "label": "Enclosure",
+              "value": "IP66 / IP67; flameproof and intrinsically safe versions available"
+            },
+            {
+              "label": "Mounting",
+              "value": "Flanged, threaded, sanitary tri-clamp and top or side entry"
+            },
+            {
+              "label": "Available Types",
+              "value": "Level Transmitters, Level Switches, Ultrasonic Level Measurement"
+            },
+            {
+              "label": "Level Transmitters",
+              "value": "Continuous level measurement by radar, ultrasonic, hydrostatic or capacitance, giving an analogue reading of tank contents."
+            },
+            {
+              "label": "Level Switches",
+              "value": "Point-level detection for high and low alarms, pump control and dry-run protection using float, vibrating fork or capacitance sensing."
+            },
+            {
+              "label": "Ultrasonic Level Measurement",
+              "value": "Non-contact continuous measurement using time-of-flight, suited to open channels, sumps and aggressive liquids where nothing should touch the medium."
+            }
+          ],
+          "applications": [
+            {
+              "title": "Water & Wastewater",
+              "desc": "Treatment plants, distribution networks and effluent monitoring."
+            },
+            {
+              "title": "Chemical Processing",
+              "desc": "Batch dosing, reactor charging and transfer measurement."
+            },
+            {
+              "title": "Food & Beverage",
+              "desc": "Hygienic process lines, CIP systems and utility metering."
+            },
+            {
+              "title": "Textiles & Dyeing",
+              "desc": "Dye dosing, water consumption and process temperature control."
+            }
+          ],
+          "requestQuoteOption": true
+        },
+        {
+          "type": "product",
+          "id": "1798000000003",
+          "title": "Heating Solution & Temperature Measurement",
+          "slug": "heating-solution-and-temperature-measurement",
+          "image": "",
+          "shortDescription": "Temperature sensors, process control instruments, flameproof instrumentation and industrial heating equipment.",
+          "longDescription": "This range covers both the measurement of process temperature and the equipment that generates and controls it.\n\nSeven groups are available: Process Heating Solution, Temperature Sensors, Process Control Instruments, Flow & Level Indicator, Flame Proof Instruments, Electrical Oven and Electrical Furnace.\n\nOn the measurement side, the primary choice is between RTD and thermocouple. RTDs (Pt100, Pt1000) are more accurate and more stable over time, and are the default below roughly 600 C. Thermocouples cover a far wider range, respond faster and cost less, which makes them the practical choice for furnace and high-temperature duty. Both are normally installed in a thermowell so the sensor can be replaced without breaking process containment.\n\nHead-mounted transmitters convert the sensor output to 4-20 mA at the point of measurement, which matters because raw millivolt and resistance signals degrade over long cable runs. For hazardous areas, flameproof and intrinsically safe variants are available with the appropriate certification.",
+          "keySpecifications": [
+            {
+              "label": "Sensor Types",
+              "value": "RTD (Pt100 / Pt1000) and thermocouple (K, J, T, R, S, B)"
+            },
+            {
+              "label": "Temperature Range",
+              "value": "-200 C to +1600 C, sensor type dependent"
+            },
+            {
+              "label": "Accuracy Class",
+              "value": "Class A / Class AA to IEC 60751 for RTDs"
+            },
+            {
+              "label": "Sheath Materials",
+              "value": "SS 316 / SS 310 / Inconel 600 / ceramic"
+            },
+            {
+              "label": "Process Connections",
+              "value": "Threaded, flanged, sanitary and compression fittings with thermowells"
+            },
+            {
+              "label": "Output Signals",
+              "value": "Direct sensor, 4-20 mA head transmitter, HART and Modbus RTU"
+            },
+            {
+              "label": "Hazardous Area",
+              "value": "Flameproof (Ex d) and intrinsically safe (Ex ia) versions available"
+            },
+            {
+              "label": "Control Instruments",
+              "value": "PID controllers, indicators, scanners, data loggers and recorders"
+            },
+            {
+              "label": "Calibration",
+              "value": "Factory calibrated with traceable certificate"
+            },
+            {
+              "label": "Available Types",
+              "value": "Process Heating Solution, Temperature Sensors, Process Control Instruments, Flow & Level Indicator, Flame Proof Instruments, Electrical Oven, Electrical Furnace"
+            },
+            {
+              "label": "Process Heating Solution",
+              "value": "Engineered heating systems for tanks, pipelines and process vessels including thermic fluid circuits."
+            },
+            {
+              "label": "Temperature Sensors",
+              "value": "RTD and thermocouple assemblies with thermowells for process temperature measurement."
+            },
+            {
+              "label": "Process Control Instruments",
+              "value": "PID controllers, digital indicators, multi-channel scanners and data loggers."
+            },
+            {
+              "label": "Flow & Level Indicator",
+              "value": "Local and panel-mount indicators displaying flow rate, totals and tank level."
+            },
+            {
+              "label": "Flame Proof Instruments",
+              "value": "Ex d certified sensors, transmitters and enclosures for hazardous area installation."
+            },
+            {
+              "label": "Electrical Oven",
+              "value": "Industrial ovens for drying, curing and heat treatment with uniform temperature distribution."
+            },
+            {
+              "label": "Electrical Furnace",
+              "value": "High-temperature furnaces for annealing, hardening and laboratory applications."
+            }
+          ],
+          "applications": [
+            {
+              "title": "Pharmaceutical",
+              "desc": "Clean utilities, reactor monitoring and validated process lines."
+            },
+            {
+              "title": "Chemical & Petrochemical",
+              "desc": "Corrosive media measurement and hazardous area installations."
+            },
+            {
+              "title": "Oil & Gas",
+              "desc": "Custody transfer, wellhead monitoring and refinery process control."
+            },
+            {
+              "title": "Power Generation",
+              "desc": "Boiler feedwater, steam metering and turbine auxiliary systems."
+            }
+          ],
+          "requestQuoteOption": true
+        },
+        {
+          "type": "product",
+          "id": "1798000000004",
+          "title": "Pressure Gauges & Transmitters",
+          "slug": "pressure-gauges-and-transmitters",
+          "image": "",
+          "shortDescription": "Mechanical pressure gauges and electronic transmitters across bourdon, diaphragm, capsule and sealed types.",
+          "longDescription": "Pressure instrumentation spans simple mechanical indication through to electronic transmission, and the sensing element determines what each type can handle.\n\nFive groups are available: Bourdon Type, Diaphragm Operated Type, Capsule Operated Type, Chemical Seal and Pressure Transmitters.\n\nA bourdon tube is the workhorse of industrial pressure measurement, covering roughly 0.6 bar upward with good accuracy and low cost. Below that its sensitivity falls away, which is where a diaphragm element takes over — and a diaphragm also copes far better with viscous, crystallising or particle-laden media that would block a bourdon tube's narrow bore. For very low pressures and draught measurement in millibar ranges, a capsule element is required.\n\nChemical seals isolate the element entirely behind a flush diaphragm, with the intervening space filled by a transmission fluid. This is what allows a standard gauge to be used on corrosive acids, molten polymers or media that would otherwise attack or clog it. Electronic transmitters convert pressure to 4-20 mA or a digital protocol for control system integration.",
+          "keySpecifications": [
+            {
+              "label": "Dial Sizes",
+              "value": "40, 50, 63, 100, 150 and 250 mm"
+            },
+            {
+              "label": "Measuring Ranges",
+              "value": "Vacuum -1 bar to 1000 bar; low-range capsule from 0-2.5 mbar"
+            },
+            {
+              "label": "Accuracy Class",
+              "value": "±0.25% to ±1.6% of full scale, type dependent"
+            },
+            {
+              "label": "Wetted Materials",
+              "value": "SS 316 / SS 316L, Monel, Hastelloy, tantalum and PTFE-lined"
+            },
+            {
+              "label": "Case Material",
+              "value": "SS 304 / SS 316 weatherproof cases; glycerine filled options"
+            },
+            {
+              "label": "Process Connections",
+              "value": "1/4 inch, 1/2 inch NPT/BSP, flanged and sanitary tri-clamp"
+            },
+            {
+              "label": "Protection Rating",
+              "value": "IP65 standard; IP67 on filled and electronic versions"
+            },
+            {
+              "label": "Transmitter Output",
+              "value": "4-20 mA two-wire with HART, 0-10 V, Modbus RTU"
+            },
+            {
+              "label": "Standards",
+              "value": "Manufactured to EN 837-1 / ASME B40.100"
+            },
+            {
+              "label": "Calibration",
+              "value": "Individually calibrated with traceable test certificate"
+            },
+            {
+              "label": "Available Types",
+              "value": "Bourdon Type, Diaphragm Operated Type, Capsule Operated Type, Chemical Seal, Pressure Transmitters"
+            },
+            {
+              "label": "Bourdon Type",
+              "value": "The standard industrial mechanical gauge, covering heavy duty, test/master, electric contact, economical, safety pattern and utility variants."
+            },
+            {
+              "label": "Diaphragm Operated Type",
+              "value": "For low pressures and viscous or crystallising media; includes Schaffer, compact seal, sanitary and homogenizer patterns."
+            },
+            {
+              "label": "Capsule Operated Type",
+              "value": "Very low pressure and draught measurement in millibar ranges, including compact capsule gauges."
+            },
+            {
+              "label": "Chemical Seal",
+              "value": "Diaphragm seal assemblies isolating the gauge from corrosive, hot or clogging media; includes compact diaphragm sealed and maximum reading pointer types."
+            },
+            {
+              "label": "Pressure Transmitters",
+              "value": "Electronic transmitters and digital gauges giving 4-20 mA, HART or Modbus output for remote monitoring and control."
+            }
+          ],
+          "applications": [
+            {
+              "title": "Pharmaceutical",
+              "desc": "Clean utilities, reactor monitoring and validated process lines."
+            },
+            {
+              "title": "Chemical & Petrochemical",
+              "desc": "Corrosive media measurement and hazardous area installations."
+            },
+            {
+              "title": "Oil & Gas",
+              "desc": "Custody transfer, wellhead monitoring and refinery process control."
+            },
+            {
+              "title": "Power Generation",
+              "desc": "Boiler feedwater, steam metering and turbine auxiliary systems."
+            }
+          ],
+          "requestQuoteOption": true
+        },
+        {
+          "type": "product",
+          "id": "1798000000005",
+          "title": "Analytical Instruments & Pneumatic Products",
+          "slug": "analytical-instruments-and-pneumatic-products",
+          "image": "",
+          "shortDescription": "Water quality analysers measuring pH, ORP, conductivity, TDS, salinity and resistivity.",
+          "longDescription": "Analytical instrumentation measures the chemical properties of a process fluid rather than its physical movement, and in water treatment and chemical dosing these readings drive the control loop directly.\n\nThree instruments are available: Digital pH Sensor (Modbus RS485), Conductivity / TDS / Salinity / Resistivity Meter, and pH / ORP Analyzer.\n\npH measurement is temperature-dependent, so automatic compensation via an integral Pt1000 is essential — an uncompensated reading can be out by several tenths of a pH unit across a normal process temperature swing. Digital sensors with direct Modbus output avoid the signal degradation that affects high-impedance analogue pH cabling, which is a frequent cause of drifting readings on long runs.\n\nConductivity, TDS, salinity and resistivity are all derived from the same underlying measurement, so a single sensor reports whichever unit the application calls for. ORP (redox potential) is measured alongside pH for disinfection control and chemical reaction monitoring.",
+          "keySpecifications": [
+            {
+              "label": "Parameters Measured",
+              "value": "pH, ORP, conductivity, TDS, salinity and resistivity"
+            },
+            {
+              "label": "pH Range",
+              "value": "0 to 14 pH with ±0.02 pH resolution"
+            },
+            {
+              "label": "ORP Range",
+              "value": "-2000 to +2000 mV"
+            },
+            {
+              "label": "Conductivity Range",
+              "value": "0.055 µS/cm to 200 mS/cm across cell constants"
+            },
+            {
+              "label": "Temperature Compensation",
+              "value": "Automatic, via integral Pt1000 sensor"
+            },
+            {
+              "label": "Output & Communication",
+              "value": "4-20 mA, RS485 Modbus RTU, relay contacts"
+            },
+            {
+              "label": "Electrode Body",
+              "value": "Glass, PPS or PTFE with process-compatible junctions"
+            },
+            {
+              "label": "Protection Rating",
+              "value": "IP65 / IP68 sensors; IP65 panel and field instruments"
+            },
+            {
+              "label": "Mounting",
+              "value": "Submersion, insertion, flow-through and panel mount"
+            },
+            {
+              "label": "Calibration",
+              "value": "Field-calibratable against standard buffer solutions"
+            },
+            {
+              "label": "Available Instruments",
+              "value": "Digital pH Sensor (Modbus RS485), Conductivity / TDS / Salinity / Resistivity Meter, pH / ORP Analyzer"
+            },
+            {
+              "label": "Digital pH Sensor (Modbus RS485)",
+              "value": "Networked digital pH sensor with on-board temperature compensation and direct Modbus RS485 output for IoT and SCADA integration."
+            },
+            {
+              "label": "Conductivity / TDS / Salinity / Resistivity Meter",
+              "value": "Multi-parameter water quality analyser measuring conductivity and its derived values from a single sensor."
+            },
+            {
+              "label": "pH / ORP Analyzer",
+              "value": "Combined pH and redox potential analyser with dual relay control outputs for dosing and alarm duty."
+            }
+          ],
+          "applications": [
+            {
+              "title": "Water & Wastewater",
+              "desc": "Treatment plants, distribution networks and effluent monitoring."
+            },
+            {
+              "title": "Chemical Processing",
+              "desc": "Batch dosing, reactor charging and transfer measurement."
+            },
+            {
+              "title": "Food & Beverage",
+              "desc": "Hygienic process lines, CIP systems and utility metering."
+            },
+            {
+              "title": "Textiles & Dyeing",
+              "desc": "Dye dosing, water consumption and process temperature control."
+            }
+          ],
+          "requestQuoteOption": true
+        },
+        {
+          "type": "product",
+          "id": "1798000000006",
+          "title": "Dew Point & Humidity Transmitters",
+          "slug": "dew-point-and-humidity-transmitters",
+          "image": "",
+          "shortDescription": "Capacitive dew point and humidity transmitters for compressed air and industrial gas systems.",
+          "longDescription": "Dew point is the temperature at which moisture in a gas begins to condense, and in compressed air systems it is the single most useful indicator of dryer performance. Condensation downstream causes corrosion in distribution pipework, damages pneumatic tooling and ruins product in direct-contact applications, so continuous monitoring is far cheaper than the consequences of missing it.\n\nTwo variants are available: Corrosion-Resistant Dew Point Transmitter and Dew Point Transmitter for Corrosive Environments.\n\nBoth use a capacitive thin-film polymer element, which measures moisture by the change in dielectric constant as water is absorbed. The difference between them is protection: the first carries a coated sensor for gas streams containing trace corrosives, while the second adds reinforced sensor protection and heavier construction for continuous duty in genuinely aggressive environments.\n\nMeasurement covers -80 C to +20 C dew point, spanning everything from ordinary refrigerated dryers through to desiccant systems serving instrument air and critical process applications.",
+          "keySpecifications": [
+            {
+              "label": "Measured Parameters",
+              "value": "Dew point temperature, relative humidity, absolute humidity and ppm moisture"
+            },
+            {
+              "label": "Dew Point Range",
+              "value": "-80 C to +20 C Td"
+            },
+            {
+              "label": "Accuracy",
+              "value": "±1 C Td typical over the working range"
+            },
+            {
+              "label": "Humidity Range",
+              "value": "0 to 100% RH"
+            },
+            {
+              "label": "Sensor Technology",
+              "value": "Capacitive thin-film polymer sensing element"
+            },
+            {
+              "label": "Wetted Materials",
+              "value": "SS 316L body with corrosion-resistant sensor coating"
+            },
+            {
+              "label": "Operating Pressure",
+              "value": "Vacuum to 50 bar"
+            },
+            {
+              "label": "Output Signals",
+              "value": "4-20 mA, RS485 Modbus RTU, optional relay"
+            },
+            {
+              "label": "Process Connection",
+              "value": "G1/2 inch or 1/2 inch NPT threaded"
+            },
+            {
+              "label": "Response Time",
+              "value": "Typically under 30 seconds to 63% of step change"
+            },
+            {
+              "label": "Available Types",
+              "value": "Corrosion-Resistant Dew Point Transmitter, Dew Point Transmitter for Corrosive Environments"
+            },
+            {
+              "label": "Corrosion-Resistant Dew Point Transmitter",
+              "value": "Coated capacitive sensor for compressed air and gas systems where trace corrosives would degrade a standard element."
+            },
+            {
+              "label": "Dew Point Transmitter for Corrosive Environments",
+              "value": "Heavy-duty construction with reinforced sensor protection for continuous service in aggressive gas streams."
+            }
+          ],
+          "applications": [
+            {
+              "title": "Pharmaceutical",
+              "desc": "Clean utilities, reactor monitoring and validated process lines."
+            },
+            {
+              "title": "Chemical & Petrochemical",
+              "desc": "Corrosive media measurement and hazardous area installations."
+            },
+            {
+              "title": "Oil & Gas",
+              "desc": "Custody transfer, wellhead monitoring and refinery process control."
+            },
+            {
+              "title": "Power Generation",
+              "desc": "Boiler feedwater, steam metering and turbine auxiliary systems."
+            }
+          ],
+          "requestQuoteOption": true
+        }
+      ],
+      "coverImage": "/instruments.png",
+      "description": "Precision process instrumentation and automation - flow, level, temperature, pressure and analytical measurement, dew point monitoring and complete control panel hardware for pharmaceutical, chemical, oil and gas, power and water treatment plant."
     }
   ],
   "certificates": [],
