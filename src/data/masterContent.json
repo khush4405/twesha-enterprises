@@ -3207,7 +3207,8 @@
           "image": "/products/hose-pipes.png"
         }
       ],
-      "description": "Precision instrumentation fittings, valves, manifolds and flanges for process control, oil and gas, power generation and chemical plant. Supplied in stainless steel, carbon steel and exotic alloys with full material traceability and export documentation."
+      "description": "Precision instrumentation fittings, valves, manifolds and flanges for process control, oil and gas, power generation and chemical plant. Supplied in stainless steel, carbon steel and exotic alloys with full material traceability and export documentation.",
+      "coverImage": "/products/Engineering-products.png"
     },
     {
       "type": "category",
