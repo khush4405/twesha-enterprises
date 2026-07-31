@@ -26,6 +26,14 @@ IMGDIR = os.path.join(ROOT, "public", "products")
 WEBPREFIX = "/products/"
 EXTS = {".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif", ".svg"}
 
+# Filenames that don't match their item's slug. Maps item slug -> file stem.
+ALIASES = {
+    "heating-solution-and-temperature-measurement": "temperature-measurement",
+    "pressure-gauges-and-transmitters": "pressure-measurement",
+    "analytical-instruments-and-pneumatic-products": "ph-sensor",
+    "dew-point-and-humidity-transmitters": "dew-transmitter",
+}
+
 
 def norm(text):
     text = str(text).lower()
@@ -44,7 +52,11 @@ def collect_files():
         stem, ext = os.path.splitext(fn)
         if ext.lower() not in EXTS:
             continue
-        out.setdefault(norm(stem), WEBPREFIX + fn)
+        key = norm(stem)
+        # A file already named exactly as the slug wins over a loose variant
+        # (e.g. "tube-to-tube-unions.jpg" beats "tube to tube unions.png").
+        if key not in out or stem == key:
+            out[key] = WEBPREFIX + fn
     return out
 
 
@@ -70,7 +82,10 @@ def main():
 
     def walk(nodes):
         for n in nodes:
-            keys = [norm(n.get("slug", "")), norm(n.get("title", ""))]
+            slug = n.get("slug", "")
+            keys = [norm(slug), norm(n.get("title", ""))]
+            if slug in ALIASES:
+                keys.insert(0, norm(ALIASES[slug]))
             hit = next((files[k] for k in keys if k in files), None)
             label = f"{n.get('title')} ({n.get('type')})"
             if hit:

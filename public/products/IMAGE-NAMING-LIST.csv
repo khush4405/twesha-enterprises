@@ -1,141 +1,55 @@
-﻿Type,Located In,Product / Category Name,Slug,NAME YOUR FILE EXACTLY THIS
-CATEGORY,Engineering Products,Tube Fittings,tube-fittings,tube-fittings.jpg
-CATEGORY,Engineering Products > Tube Fittings,Tube to Tube Unions,tube-to-tube-unions,tube-to-tube-unions.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Tube Unions,Union,union,union.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Tube Unions,Reducing Union,reducing-union,reducing-union.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Tube Unions,Bulkhead Union - BU,bulkhead-union-bu,bulkhead-union-bu.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Tube Unions,Union Elbow,union-elbow,union-elbow.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Tube Unions,Union Tee,union-tee,union-tee.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Tube Unions,Cross,cross,cross.jpg
-CATEGORY,Engineering Products > Tube Fittings,Tube to Male Pipe,tube-to-male-pipe,tube-to-male-pipe.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Male Pipe,Male Connector (Imperial) - MCN,male-connector-imperial-mcn,male-connector-imperial-mcn.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Male Pipe,Male Connector (Metric) - MCN,male-connector-metric-mcn,male-connector-metric-mcn.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Male Pipe,Male Connector BSP Taper - MCB,male-connector-bsp-taper-mcb,male-connector-bsp-taper-mcb.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Male Pipe,Male Connector BSPP - MCBP,male-connector-bspp-mcbp,male-connector-bspp-mcbp.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Male Pipe,Bulkhead Male Connector,bulkhead-male-connector,bulkhead-male-connector.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Male Pipe,Male Elbow NPT - MEN,male-elbow-npt-men,male-elbow-npt-men.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Male Pipe,Male Elbow BSP Taper - MEB,male-elbow-bsp-taper-meb,male-elbow-bsp-taper-meb.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Male Pipe,Male Elbow NPT 45° - METN,male-elbow-npt-45-metn,male-elbow-npt-45-metn.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Male Pipe,Male Run Tee,male-run-tee,male-run-tee.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Male Pipe,Male Branch Tee,male-branch-tee,male-branch-tee.jpg
-CATEGORY,Engineering Products > Tube Fittings,Tube to Female Pipe,tube-to-female-pipe,tube-to-female-pipe.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Female Pipe,Female Connector NPT - FCN,female-connector-npt-fcn,female-connector-npt-fcn.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Female Pipe,Female Connector BSP - FCB,female-connector-bsp-fcb,female-connector-bsp-fcb.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Female Pipe,BSPP Gauge Connector - MFCBP,bspp-gauge-connector-mfcbp,bspp-gauge-connector-mfcbp.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Female Pipe,Female Bulkhead Connector NPT - FBCN,female-bulkhead-connector-npt-fbcn,female-bulkhead-connector-npt-fbcn.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Female Pipe,Female Elbow,female-elbow,female-elbow.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Female Pipe,Female Run Tee,female-run-tee,female-run-tee.jpg
-PRODUCT,Engineering Products > Tube Fittings > Tube to Female Pipe,Female Branch Tee,female-branch-tee,female-branch-tee.jpg
-CATEGORY,Engineering Products > Tube Fittings,Components,components,components.jpg
-PRODUCT,Engineering Products > Tube Fittings > Components,Blanking End,blanking-end,blanking-end.jpg
-PRODUCT,Engineering Products > Tube Fittings > Components,Blanking Plug,blanking-plug,blanking-plug.jpg
-PRODUCT,Engineering Products > Tube Fittings > Components,Nut,nut,nut.jpg
-PRODUCT,Engineering Products > Tube Fittings > Components,Front Ferrule,front-ferrule,front-ferrule.jpg
-PRODUCT,Engineering Products > Tube Fittings > Components,Back Ferrule,back-ferrule,back-ferrule.jpg
-CATEGORY,Engineering Products,Pipe Fittings,pipe-fittings,pipe-fittings.jpg
-CATEGORY,Engineering Products > Pipe Fittings,Instrument Pipe Fittings,instrument-pipe-fittings,instrument-pipe-fittings.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,CNP Close Nipple (Male Both Ends),cnp-close-nipple-male-both-ends,cnp-close-nipple-male-both-ends.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,NP Hex Nipple (Male NPT Both Ends),np-hex-nipple-male-npt-both-ends,np-hex-nipple-male-npt-both-ends.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,RNP Hex Reducing Nipple,rnp-hex-reducing-nipple,rnp-hex-reducing-nipple.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,LNP Hex Long Nipple (Male NPT Both Ends),lnp-hex-long-nipple-male-npt-both-ends,lnp-hex-long-nipple-male-npt-both-ends.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,AP Adaptor (Female NPT to Male NPT),ap-adaptor-female-npt-to-male-npt,ap-adaptor-female-npt-to-male-npt.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,RAP Reducing Adaptor,rap-reducing-adaptor,rap-reducing-adaptor.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,RBP Reducing Bushing,rbp-reducing-bushing,rbp-reducing-bushing.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,CGP Hex Coupling (Female NPT Both Ends),cgp-hex-coupling-female-npt-both-ends,cgp-hex-coupling-female-npt-both-ends.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,RCGP Reducing Coupling,rcgp-reducing-coupling,rcgp-reducing-coupling.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,CPP Cap (Female NPT),cpp-cap-female-npt,cpp-cap-female-npt.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,PP Plug (Male NPT),pp-plug-male-npt,pp-plug-male-npt.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,FLP Female Elbow (Female NPT Both Ends),flp-female-elbow-female-npt-both-ends,flp-female-elbow-female-npt-both-ends.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,SLP Street Elbow (Female to Male NPT),slp-street-elbow-female-to-male-npt,slp-street-elbow-female-to-male-npt.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,RSLP Reducing Street Elbow,rslp-reducing-street-elbow,rslp-reducing-street-elbow.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,MLP Male Elbow (Male NPT Both Ends),mlp-male-elbow-male-npt-both-ends,mlp-male-elbow-male-npt-both-ends.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,FTP Female Tee (Female NPT All Ports),ftp-female-tee-female-npt-all-ports,ftp-female-tee-female-npt-all-ports.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,STP Street Tee (Female by Run Tee),stp-street-tee-female-by-run-tee,stp-street-tee-female-by-run-tee.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,FTBM Female Branch Tee,ftbm-female-branch-tee,ftbm-female-branch-tee.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,MTP Male Tee (Male NPT All Branches),mtp-male-tee-male-npt-all-branches,mtp-male-tee-male-npt-all-branches.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Instrument Pipe Fittings,CSP Cross (Male NPT All Ports),csp-cross-male-npt-all-ports,csp-cross-male-npt-all-ports.jpg
-CATEGORY,Engineering Products > Pipe Fittings,Socket Welded Forged Fittings,socket-welded-forged-fittings,socket-welded-forged-fittings.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Socket Welded Forged Fittings,"90° Elbow, NBSW, 3000# / 6000# / 9000#",90-elbow-nbsw-3000-6000-9000,90-elbow-nbsw-3000-6000-9000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Socket Welded Forged Fittings,"Cross, NBSW, 3000# / 6000# / 9000#",cross-nbsw-3000-6000-9000,cross-nbsw-3000-6000-9000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Socket Welded Forged Fittings,"Equal Tee, NBSW, 3000# / 6000# / 9000#",equal-tee-nbsw-3000-6000-9000,equal-tee-nbsw-3000-6000-9000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Socket Welded Forged Fittings,"45° Elbow, NBSW, 3000# / 6000# / 9000#",45-elbow-nbsw-3000-6000-9000,45-elbow-nbsw-3000-6000-9000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Socket Welded Forged Fittings,"Full Coupling, NBSW, 3000# / 6000# / 9000#",full-coupling-nbsw-3000-6000-9000,full-coupling-nbsw-3000-6000-9000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Socket Welded Forged Fittings,"Half Coupling, NBSW, 3000# / 6000# / 9000#",half-coupling-nbsw-3000-6000-9000,half-coupling-nbsw-3000-6000-9000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Socket Welded Forged Fittings,"3 Piece Union, NBSW, 3000# / 6000# / 9000#",3-piece-union-nbsw-3000-6000-9000,3-piece-union-nbsw-3000-6000-9000.jpg
-CATEGORY,Engineering Products > Pipe Fittings,Threaded Fittings,threaded-fittings,threaded-fittings.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Threaded Fittings,"90° Elbow, Threaded, 3000# / 6000#",90-elbow-threaded-3000-6000,90-elbow-threaded-3000-6000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Threaded Fittings,"45° Elbow, Threaded, 3000# / 6000#",45-elbow-threaded-3000-6000,45-elbow-threaded-3000-6000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Threaded Fittings,"Equal Tee, Threaded, 3000# / 6000#",equal-tee-threaded-3000-6000,equal-tee-threaded-3000-6000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Threaded Fittings,"Cross, Threaded, 3000# / 6000#",cross-threaded-3000-6000,cross-threaded-3000-6000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Threaded Fittings,"Full Coupling, Threaded, 3000# / 6000#",full-coupling-threaded-3000-6000,full-coupling-threaded-3000-6000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Threaded Fittings,"Half Coupling, Threaded, 3000# / 6000#",half-coupling-threaded-3000-6000,half-coupling-threaded-3000-6000.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Threaded Fittings,"Union, Threaded, 3000# / 6000#",union-threaded-3000-6000,union-threaded-3000-6000.jpg
-CATEGORY,Engineering Products > Pipe Fittings,Nipples,nipples,nipples.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Nipples,Pipe Nipple (NBPL x NBPL),pipe-nipple-nbpl-x-nbpl,pipe-nipple-nbpl-x-nbpl.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Nipples,Pipe Nipple (NBPL x NPTM),pipe-nipple-nbpl-x-nptm,pipe-nipple-nbpl-x-nptm.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Nipples,Pipe Nipple (NPTM x NPTM),pipe-nipple-nptm-x-nptm,pipe-nipple-nptm-x-nptm.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Nipples,Swage Nipple (NBPL x NBPL),swage-nipple-nbpl-x-nbpl,swage-nipple-nbpl-x-nbpl.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Nipples,Swage Nipple (NBPL x NPTM),swage-nipple-nbpl-x-nptm,swage-nipple-nbpl-x-nptm.jpg
-PRODUCT,Engineering Products > Pipe Fittings > Nipples,Swage Nipple (NPTM x NPTM),swage-nipple-nptm-x-nptm,swage-nipple-nptm-x-nptm.jpg
-CATEGORY,Engineering Products,Valves,valves,valves.jpg
-CATEGORY,Engineering Products > Valves,Needle Valves,needle-valves,needle-valves.jpg
-PRODUCT,Engineering Products > Valves > Needle Valves,Needle Valve (F x F),needle-valve-f-x-f,needle-valve-f-x-f.jpg
-PRODUCT,Engineering Products > Valves > Needle Valves,Needle Valve (M x F),needle-valve-m-x-f,needle-valve-m-x-f.jpg
-PRODUCT,Engineering Products > Valves > Needle Valves,Needle Valve (M x M),needle-valve-m-x-m,needle-valve-m-x-m.jpg
-PRODUCT,Engineering Products > Valves > Needle Valves,Needle Valve – Angle Type (F x F),needle-valve-angle-type-f-x-f,needle-valve-angle-type-f-x-f.jpg
-PRODUCT,Engineering Products > Valves > Needle Valves,Needle Valve – Angle Type (M x F),needle-valve-angle-type-m-x-f,needle-valve-angle-type-m-x-f.jpg
-PRODUCT,Engineering Products > Valves > Needle Valves,Needle Valve – Angle Type (M x M),needle-valve-angle-type-m-x-m,needle-valve-angle-type-m-x-m.jpg
-PRODUCT,Engineering Products > Valves > Needle Valves,Needle Valve (Tube OD),needle-valve-tube-od,needle-valve-tube-od.jpg
-PRODUCT,Engineering Products > Valves > Needle Valves,Needle Valve (M x F) with Vent Plug,needle-valve-m-x-f-with-vent-plug,needle-valve-m-x-f-with-vent-plug.jpg
-PRODUCT,Engineering Products > Valves > Needle Valves,Needle Valve (M x F) with Drain Plug,needle-valve-m-x-f-with-drain-plug,needle-valve-m-x-f-with-drain-plug.jpg
-PRODUCT,Engineering Products > Valves > Needle Valves,Needle Valve – Male Inlet x 3,needle-valve-male-inlet-x-3,needle-valve-male-inlet-x-3.jpg
-CATEGORY,Engineering Products > Valves,Ball Valves,ball-valves,ball-valves.jpg
-PRODUCT,Engineering Products > Valves > Ball Valves,Ball Valve,ball-valve,ball-valve.jpg
-PRODUCT,Engineering Products > Valves > Ball Valves,2 Way Ball Valve,2-way-ball-valve,2-way-ball-valve.jpg
-PRODUCT,Engineering Products > Valves > Ball Valves,3 Way Ball Valve,3-way-ball-valve,3-way-ball-valve.jpg
-PRODUCT,Engineering Products > Valves > Ball Valves,5 Way Ball Valve (OD Type),5-way-ball-valve-od-type,5-way-ball-valve-od-type.jpg
-PRODUCT,Engineering Products > Valves > Ball Valves,3 Piece Ball Valve,3-piece-ball-valve,3-piece-ball-valve.jpg
-CATEGORY,Engineering Products > Valves,Gate Valves,gate-valves,gate-valves.jpg
-PRODUCT,Engineering Products > Valves > Gate Valves,Gate Valve 800#,gate-valve-800,gate-valve-800.jpg
-PRODUCT,Engineering Products > Valves > Gate Valves,Gate Valve 1500#,gate-valve-1500,gate-valve-1500.jpg
-PRODUCT,Engineering Products > Valves > Gate Valves,Gate Valve 2500#,gate-valve-2500,gate-valve-2500.jpg
-CATEGORY,Engineering Products > Valves,Globe Valves,globe-valves,globe-valves.jpg
-PRODUCT,Engineering Products > Valves > Globe Valves,Globe Valve 800#,globe-valve-800,globe-valve-800.jpg
-PRODUCT,Engineering Products > Valves > Globe Valves,Globe Valve 1500#,globe-valve-1500,globe-valve-1500.jpg
-PRODUCT,Engineering Products > Valves > Globe Valves,Globe Valve 2500#,globe-valve-2500,globe-valve-2500.jpg
-CATEGORY,Engineering Products,"Check, Relief & Quick Release Valves",check-relief-quick-release-valves,check-relief-quick-release-valves.jpg
-PRODUCT,"Engineering Products > Check, Relief & Quick Release Valves",Non-Return Valves,non-return-valves,non-return-valves.jpg
-PRODUCT,"Engineering Products > Check, Relief & Quick Release Valves",Pressure Relief Valves,pressure-relief-valves,pressure-relief-valves.jpg
-PRODUCT,"Engineering Products > Check, Relief & Quick Release Valves",Quick Release Couplings,quick-release-couplings,quick-release-couplings.jpg
-CATEGORY,Engineering Products,Manifold Valves,manifold-valves,manifold-valves.jpg
-CATEGORY,Engineering Products > Manifold Valves,2 Way Manifold Valves,2-way-manifold-valves,2-way-manifold-valves.jpg
-PRODUCT,Engineering Products > Manifold Valves > 2 Way Manifold Valves,2M-01,2m-01,2m-01.jpg
-PRODUCT,Engineering Products > Manifold Valves > 2 Way Manifold Valves,2M-02,2m-02,2m-02.jpg
-PRODUCT,Engineering Products > Manifold Valves > 2 Way Manifold Valves,2M-03,2m-03,2m-03.jpg
-PRODUCT,Engineering Products > Manifold Valves > 2 Way Manifold Valves,2M-04,2m-04,2m-04.jpg
-PRODUCT,Engineering Products > Manifold Valves > 2 Way Manifold Valves,2M-05,2m-05,2m-05.jpg
-CATEGORY,Engineering Products > Manifold Valves,3 Way Manifold Valves,3-way-manifold-valves,3-way-manifold-valves.jpg
-PRODUCT,Engineering Products > Manifold Valves > 3 Way Manifold Valves,3M-01,3m-01,3m-01.jpg
-PRODUCT,Engineering Products > Manifold Valves > 3 Way Manifold Valves,3M-02,3m-02,3m-02.jpg
-PRODUCT,Engineering Products > Manifold Valves > 3 Way Manifold Valves,3M-03,3m-03,3m-03.jpg
-PRODUCT,Engineering Products > Manifold Valves > 3 Way Manifold Valves,3M-04,3m-04,3m-04.jpg
-PRODUCT,Engineering Products > Manifold Valves > 3 Way Manifold Valves,3M-05,3m-05,3m-05.jpg
-CATEGORY,Engineering Products > Manifold Valves,5 Way Manifold Valves,5-way-manifold-valves,5-way-manifold-valves.jpg
-PRODUCT,Engineering Products > Manifold Valves > 5 Way Manifold Valves,5M-01,5m-01,5m-01.jpg
-PRODUCT,Engineering Products > Manifold Valves > 5 Way Manifold Valves,5M-02,5m-02,5m-02.jpg
-CATEGORY,Engineering Products,Instrumentation Hardware,instrumentation-hardware,instrumentation-hardware.jpg
-PRODUCT,Engineering Products > Instrumentation Hardware,Air Headers,air-headers,air-headers.jpg
-PRODUCT,Engineering Products > Instrumentation Hardware,Condensate Pots,condensate-pots,condensate-pots.jpg
-PRODUCT,Engineering Products > Instrumentation Hardware,Syphons,syphons,syphons.jpg
-CATEGORY,Engineering Products,Sampling Bombs,sampling-bombs,sampling-bombs.jpg
-PRODUCT,Engineering Products > Sampling Bombs,Sampling Bombs,sampling-bombs,sampling-bombs.jpg
-CATEGORY,Engineering Products,Flanges,flanges,flanges.jpg
-PRODUCT,Engineering Products > Flanges,Blind Flange (BLRF),blind-flange-blrf,blind-flange-blrf.jpg
-PRODUCT,Engineering Products > Flanges,Lap Joint Flange,lap-joint-flange,lap-joint-flange.jpg
-PRODUCT,Engineering Products > Flanges,Slip-On Raised Face Flange (SORF),slip-on-raised-face-flange-sorf,slip-on-raised-face-flange-sorf.jpg
-PRODUCT,Engineering Products > Flanges,Socket Weld Raised Face Flange (SWRF),socket-weld-raised-face-flange-swrf,socket-weld-raised-face-flange-swrf.jpg
-PRODUCT,Engineering Products > Flanges,Threaded Flange,threaded-flange,threaded-flange.jpg
-PRODUCT,Engineering Products > Flanges,Weld Neck Raised Face Flange (WNRF),weld-neck-raised-face-flange-wnrf,weld-neck-raised-face-flange-wnrf.jpg
-CATEGORY,Engineering Products,Tubes,tubes,tubes.jpg
-PRODUCT,Engineering Products > Tubes,Imperial Tubing,imperial-tubing,imperial-tubing.jpg
-PRODUCT,Engineering Products > Tubes,Metric Tubing,metric-tubing,metric-tubing.jpg
+﻿Type,Located In,Name,Slug,NAME YOUR FILE EXACTLY THIS,Current Image
+CATEGORY,,Heating Solution,heating-solution,heating-solution.jpg,MISSING
+PRODUCT,Heating Solution,Flexible Heaters & Insulations,flexible-heaters-insulations,flexible-heaters-insulations.jpg,/products/Flexible Heaters & Insulations.png
+PRODUCT,Heating Solution,Industrial Heaters,industrial-heaters,industrial-heaters.jpg,/products/Industrial Heaters.png
+PRODUCT,Heating Solution,Electrical Ovens,electrical-ovens,electrical-ovens.jpg,/products/Electrical Ovens.png
+PRODUCT,Heating Solution,Electrical Furnace,electrical-furnace,electrical-furnace.jpg,/products/Electrical Furnace.png
+PRODUCT,Heating Solution,Thermic Fluid Systems,thermic-fluid-systems,thermic-fluid-systems.jpg,/products/Thermic Fluid Systems.png
+PRODUCT,Heating Solution,Hot Air Generator,hot-air-generator,hot-air-generator.jpg,/products/Hot Air Generator.png
+CATEGORY,,Engineering Products,engineering-products,engineering-products.jpg,MISSING
+CATEGORY,Engineering Products,Tube Fittings,tube-fittings,tube-fittings.jpg,/products/tube-fittings.png
+PRODUCT,Engineering Products > Tube Fittings,Tube to Tube Unions,tube-to-tube-unions,tube-to-tube-unions.jpg,/products/tube-to-tube-unions.jpg
+PRODUCT,Engineering Products > Tube Fittings,Tube to Male Pipe,tube-to-male-pipe,tube-to-male-pipe.jpg,/products/tube-to-male-pipe.jpg
+PRODUCT,Engineering Products > Tube Fittings,Tube to Female Pipe,tube-to-female-pipe,tube-to-female-pipe.jpg,/products/tube-to-female-pipe.png
+PRODUCT,Engineering Products > Tube Fittings,Components,components,components.jpg,/products/components.png
+CATEGORY,Engineering Products,Pipe Fittings,pipe-fittings,pipe-fittings.jpg,/products/pipe-fittings.png
+PRODUCT,Engineering Products > Pipe Fittings,Instrument Pipe Fittings,instrument-pipe-fittings,instrument-pipe-fittings.jpg,/products/instrument-pipe-fittings.png
+PRODUCT,Engineering Products > Pipe Fittings,Socket Welded Forged Fittings,socket-welded-forged-fittings,socket-welded-forged-fittings.jpg,/products/socket-welded-forged-fittings.png
+PRODUCT,Engineering Products > Pipe Fittings,Threaded Fittings,threaded-fittings,threaded-fittings.jpg,/products/threaded-fittings.png
+PRODUCT,Engineering Products > Pipe Fittings,Nipples,nipples,nipples.jpg,/products/nipples.png
+CATEGORY,Engineering Products,Valves,valves,valves.jpg,/products/valves.png
+PRODUCT,Engineering Products > Valves,Needle Valves,needle-valves,needle-valves.jpg,MISSING
+PRODUCT,Engineering Products > Valves,Ball Valves,ball-valves,ball-valves.jpg,/products/ball-valves.png
+PRODUCT,Engineering Products > Valves,Gate Valves,gate-valves,gate-valves.jpg,/products/gate-valves.png
+PRODUCT,Engineering Products > Valves,Globe Valves,globe-valves,globe-valves.jpg,/products/globe-valves.png
+CATEGORY,Engineering Products,"Check, Relief & Quick Release Valves",check-relief-quick-release-valves,check-relief-quick-release-valves.jpg,/products/check-relief-quick-release-valves.png
+PRODUCT,"Engineering Products > Check, Relief & Quick Release Valves",Non-Return Valves,non-return-valves,non-return-valves.jpg,/products/non-return-valves.png
+PRODUCT,"Engineering Products > Check, Relief & Quick Release Valves",Pressure Relief Valves,pressure-relief-valves,pressure-relief-valves.jpg,/products/pressure-relief-valves.png
+PRODUCT,"Engineering Products > Check, Relief & Quick Release Valves",Quick Release Couplings,quick-release-couplings,quick-release-couplings.jpg,/products/quick-release-couplings.png
+CATEGORY,Engineering Products,Manifold Valves,manifold-valves,manifold-valves.jpg,/products/manifold-valves.png
+PRODUCT,Engineering Products > Manifold Valves,2 Way Manifold Valves,2-way-manifold-valves,2-way-manifold-valves.jpg,/products/2-way-manifold-valves.png
+PRODUCT,Engineering Products > Manifold Valves,3 Way Manifold Valves,3-way-manifold-valves,3-way-manifold-valves.jpg,/products/3-way-manifold-valves.png
+PRODUCT,Engineering Products > Manifold Valves,5 Way Manifold Valves,5-way-manifold-valves,5-way-manifold-valves.jpg,/products/5-way-manifold-valves.png
+CATEGORY,Engineering Products,Instrumentation Hardware,instrumentation-hardware,instrumentation-hardware.jpg,/products/instrumentation-hardware.png
+PRODUCT,Engineering Products > Instrumentation Hardware,Air Headers,air-headers,air-headers.jpg,/products/air-headers.png
+PRODUCT,Engineering Products > Instrumentation Hardware,Condensate Pots,condensate-pots,condensate-pots.jpg,/products/condensate-pots.png
+PRODUCT,Engineering Products > Instrumentation Hardware,Syphons,syphons,syphons.jpg,/products/syphons.png
+PRODUCT,Engineering Products,Sampling Bombs,sampling-bombs,sampling-bombs.jpg,/products/sampling-bombs.png
+PRODUCT,Engineering Products,Flanges,flanges,flanges.jpg,/products/flanges.png
+PRODUCT,Engineering Products,Tubes,tubes,tubes.jpg,/products/tubes.png
+CATEGORY,Engineering Products,Hose Pipes,hose-pipes,hose-pipes.jpg,/products/hose-pipes.png
+PRODUCT,Engineering Products > Hose Pipes,SFN (Secondary Fluid Network),sfn-secondary-fluid-network,sfn-secondary-fluid-network.jpg,/products/sfn-secondary-fluid-network.png
+PRODUCT,Engineering Products > Hose Pipes,Corrugated Stainless Steel Hose,corrugated-stainless-steel-hose,corrugated-stainless-steel-hose.jpg,/products/corrugated-stainless-steel-hose.png
+PRODUCT,Engineering Products > Hose Pipes,Corrugated Metal Hose Assemblies,corrugated-metal-hose-assemblies,corrugated-metal-hose-assemblies.jpg,/products/corrugated-metal-hose-assemblies.png
+PRODUCT,Engineering Products > Hose Pipes,Stripwound Metal Hose,stripwound-metal-hose,stripwound-metal-hose.jpg,/products/stripwound-metal-hose.png
+PRODUCT,Engineering Products > Hose Pipes,Metal Bellows & Expansion Joints,metal-bellows-and-expansion-joints,metal-bellows-and-expansion-joints.jpg,/products/metal-bellows-and-expansion-joints.png
+PRODUCT,Engineering Products > Hose Pipes,Flexible Composite Hose,flexible-composite-hose,flexible-composite-hose.jpg,/products/flexible-composite-hose.png
+PRODUCT,Engineering Products > Hose Pipes,Flexible PTFE Hose,flexible-ptfe-hose,flexible-ptfe-hose.jpg,/products/flexible-ptfe-hose.png
+CATEGORY,,Instrumentation Products,instrumentation-products,instrumentation-products.jpg,MISSING
+PRODUCT,Instrumentation Products,Automation Products,automation-products,automation-products.jpg,MISSING
+PRODUCT,Instrumentation Products,Flow Measurement,flow-measurement,flow-measurement.jpg,MISSING
+PRODUCT,Instrumentation Products,Level Measurement,level-measurement,level-measurement.jpg,MISSING
+PRODUCT,Instrumentation Products,Heating Solution & Temperature Measurement,heating-solution-and-temperature-measurement,heating-solution-and-temperature-measurement.jpg,MISSING
+PRODUCT,Instrumentation Products,Pressure Gauges & Transmitters,pressure-gauges-and-transmitters,pressure-gauges-and-transmitters.jpg,MISSING
+PRODUCT,Instrumentation Products,Analytical Instruments & Pneumatic Products,analytical-instruments-and-pneumatic-products,analytical-instruments-and-pneumatic-products.jpg,MISSING
+PRODUCT,Instrumentation Products,Dew Point & Humidity Transmitters,dew-point-and-humidity-transmitters,dew-point-and-humidity-transmitters.jpg,MISSING

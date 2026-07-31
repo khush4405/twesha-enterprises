@@ -430,7 +430,8 @@
         }
       ],
       "description": "Our Heating Solutions are designed to deliver precise, energy-efficient, and reliable thermal performance for industrial processes. From process heating systems and electrical ovens to thermic fluid systems, flexible heaters, insulation, and electrical furnaces, we provide customized solutions for diverse manufacturing applications.",
-      "coverImage": "/products/Heating-Solution.png"
+      "coverImage": "/products/Heating-Solution.png",
+      "image": "/products/Heating-Solution.png"
     },
     {
       "type": "category",
@@ -3208,7 +3209,8 @@
         }
       ],
       "description": "Precision instrumentation fittings, valves, manifolds and flanges for process control, oil and gas, power generation and chemical plant. Supplied in stainless steel, carbon steel and exotic alloys with full material traceability and export documentation.",
-      "coverImage": "/products/Engineering-products.png"
+      "coverImage": "/products/Engineering-products.png",
+      "image": "/products/Engineering-products.png"
     },
     {
       "type": "category",
@@ -3319,7 +3321,7 @@
           "id": "1798000000001",
           "title": "Flow Measurement",
           "slug": "flow-measurement",
-          "image": "",
+          "image": "/products/flow-measurement.png",
           "shortDescription": "Complete flow metering range covering liquids, gases and steam across eleven technologies.",
           "longDescription": "Flow measurement covers eleven distinct technologies, because no single principle handles every fluid well. Selecting correctly is largely a question of matching the physics to the medium.\n\nAvailable types: Oval Gear Flow Meter, Vortex Flow Meter, Turbine Flow Meter, Electromagnetic Flow Meter, Helical Rotor Flow Meter, Swirl Flow Meter, Thermal Mass Flow Meter, Coriolis Mass Flow Meter, Fuel Consumption Meter, Plastic Helical Flow Sensor & Meter, and Flow Switches.\n\nFor conductive liquids including dirty water, slurries and effluent, an electromagnetic meter is usually the right answer: it has no obstruction in the bore, so there is no pressure drop and nothing to clog or wear. For viscous fluids such as oils and resins, positive displacement types (oval gear, helical rotor) hold accuracy where turbine and vortex meters degrade. Steam and gas are typically handled by vortex or thermal mass, the latter measuring mass directly and so removing the need for separate pressure and temperature compensation.\n\nWhere the highest accuracy is required, or where density and mass are needed alongside volume, Coriolis measures all three directly. Every meter is factory flow-calibrated and supplied with a traceable certificate.",
           "keySpecifications": [
@@ -3437,7 +3439,7 @@
           "id": "1798000000002",
           "title": "Level Measurement",
           "slug": "level-measurement",
-          "image": "",
+          "image": "/products/level-measurement.png",
           "shortDescription": "Continuous level transmitters, point-level switches and non-contact ultrasonic measurement.",
           "longDescription": "Level instrumentation divides into two distinct jobs, and confusing them is a common specification error. Continuous measurement reports how much is in the vessel at any moment; point-level detection simply reports whether the medium is present at one specific height.\n\nThree groups are available: Level Transmitters, Level Switches and Ultrasonic Level Measurement.\n\nTransmitters give an analogue reading across the full tank range and are used for inventory management, batch control and closed-loop regulation. Switches are simpler and considerably cheaper, and are the correct choice for high and low alarms, pump start/stop control and dry-run protection, where an analogue value would be redundant.\n\nUltrasonic measurement is non-contact, working by time-of-flight from a transducer above the surface. Because nothing touches the medium it suits aggressive chemicals, sludge and open channels, though it needs care where heavy vapour, foam or dust would attenuate the signal. Where those conditions exist, guided wave radar is generally the better answer.",
           "keySpecifications": [
@@ -3519,7 +3521,7 @@
           "id": "1798000000003",
           "title": "Heating Solution & Temperature Measurement",
           "slug": "heating-solution-and-temperature-measurement",
-          "image": "",
+          "image": "/products/temperature-measurement.png",
           "shortDescription": "Temperature sensors, process control instruments, flameproof instrumentation and industrial heating equipment.",
           "longDescription": "This range covers both the measurement of process temperature and the equipment that generates and controls it.\n\nSeven groups are available: Process Heating Solution, Temperature Sensors, Process Control Instruments, Flow & Level Indicator, Flame Proof Instruments, Electrical Oven and Electrical Furnace.\n\nOn the measurement side, the primary choice is between RTD and thermocouple. RTDs (Pt100, Pt1000) are more accurate and more stable over time, and are the default below roughly 600 C. Thermocouples cover a far wider range, respond faster and cost less, which makes them the practical choice for furnace and high-temperature duty. Both are normally installed in a thermowell so the sensor can be replaced without breaking process containment.\n\nHead-mounted transmitters convert the sensor output to 4-20 mA at the point of measurement, which matters because raw millivolt and resistance signals degrade over long cable runs. For hazardous areas, flameproof and intrinsically safe variants are available with the appropriate certification.",
           "keySpecifications": [
@@ -3617,7 +3619,7 @@
           "id": "1798000000004",
           "title": "Pressure Gauges & Transmitters",
           "slug": "pressure-gauges-and-transmitters",
-          "image": "",
+          "image": "/products/pressure-measurement.png",
           "shortDescription": "Mechanical pressure gauges and electronic transmitters across bourdon, diaphragm, capsule and sealed types.",
           "longDescription": "Pressure instrumentation spans simple mechanical indication through to electronic transmission, and the sensing element determines what each type can handle.\n\nFive groups are available: Bourdon Type, Diaphragm Operated Type, Capsule Operated Type, Chemical Seal and Pressure Transmitters.\n\nA bourdon tube is the workhorse of industrial pressure measurement, covering roughly 0.6 bar upward with good accuracy and low cost. Below that its sensitivity falls away, which is where a diaphragm element takes over — and a diaphragm also copes far better with viscous, crystallising or particle-laden media that would block a bourdon tube's narrow bore. For very low pressures and draught measurement in millibar ranges, a capsule element is required.\n\nChemical seals isolate the element entirely behind a flush diaphragm, with the intervening space filled by a transmission fluid. This is what allows a standard gauge to be used on corrosive acids, molten polymers or media that would otherwise attack or clog it. Electronic transmitters convert pressure to 4-20 mA or a digital protocol for control system integration.",
           "keySpecifications": [
@@ -3711,7 +3713,7 @@
           "id": "1798000000005",
           "title": "Analytical Instruments & Pneumatic Products",
           "slug": "analytical-instruments-and-pneumatic-products",
-          "image": "",
+          "image": "/products/ph-sensor.png",
           "shortDescription": "Water quality analysers measuring pH, ORP, conductivity, TDS, salinity and resistivity.",
           "longDescription": "Analytical instrumentation measures the chemical properties of a process fluid rather than its physical movement, and in water treatment and chemical dosing these readings drive the control loop directly.\n\nThree instruments are available: Digital pH Sensor (Modbus RS485), Conductivity / TDS / Salinity / Resistivity Meter, and pH / ORP Analyzer.\n\npH measurement is temperature-dependent, so automatic compensation via an integral Pt1000 is essential — an uncompensated reading can be out by several tenths of a pH unit across a normal process temperature swing. Digital sensors with direct Modbus output avoid the signal degradation that affects high-impedance analogue pH cabling, which is a frequent cause of drifting readings on long runs.\n\nConductivity, TDS, salinity and resistivity are all derived from the same underlying measurement, so a single sensor reports whichever unit the application calls for. ORP (redox potential) is measured alongside pH for disinfection control and chemical reaction monitoring.",
           "keySpecifications": [
@@ -3797,7 +3799,7 @@
           "id": "1798000000006",
           "title": "Dew Point & Humidity Transmitters",
           "slug": "dew-point-and-humidity-transmitters",
-          "image": "",
+          "image": "/products/dew-transmitter.png",
           "shortDescription": "Capacitive dew point and humidity transmitters for compressed air and industrial gas systems.",
           "longDescription": "Dew point is the temperature at which moisture in a gas begins to condense, and in compressed air systems it is the single most useful indicator of dryer performance. Condensation downstream causes corrosion in distribution pipework, damages pneumatic tooling and ruins product in direct-contact applications, so continuous monitoring is far cheaper than the consequences of missing it.\n\nTwo variants are available: Corrosion-Resistant Dew Point Transmitter and Dew Point Transmitter for Corrosive Environments.\n\nBoth use a capacitive thin-film polymer element, which measures moisture by the change in dielectric constant as water is absorbed. The difference between them is protection: the first carries a coated sensor for gas streams containing trace corrosives, while the second adds reinforced sensor protection and heavier construction for continuous duty in genuinely aggressive environments.\n\nMeasurement covers -80 C to +20 C dew point, spanning everything from ordinary refrigerated dryers through to desiccant systems serving instrument air and critical process applications.",
           "keySpecifications": [

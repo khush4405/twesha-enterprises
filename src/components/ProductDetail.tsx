@@ -82,16 +82,16 @@ export default function ProductDetail({ product }: { product: any }) {
           }}></div>
 
           {/* Product Image */}
-          <div style={{ position: "relative", zIndex: 2, width: "100%", height: "100%", padding: "2rem" }}>
+          <div style={{ position: "relative", zIndex: 2, width: "100%", height: "100%", overflow: "hidden" }}>
             {product.image || product.coverImage ? (
-              <img 
-                src={product.image || product.coverImage} 
+              <img
+                src={product.image || product.coverImage}
                 alt={product.title}
-                style={{ 
-                  width: "100%", 
-                  height: "100%", 
-                  objectFit: "contain",
-                  filter: "drop-shadow(0 20px 30px rgba(0,0,0,0.8))"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block"
                 }}
               />
             ) : (
