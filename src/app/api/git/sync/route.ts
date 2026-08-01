@@ -1,12 +1,17 @@
 import { NextResponse } from 'next/server';
 import { exec } from 'child_process';
 import { promisify } from 'util';
-import path from 'path';
+import { authGuard } from '@/lib/auth-guard';
 
 const execAsync = promisify(exec);
 
 export async function POST() {
   try {
+    const auth = await authGuard();
+    if (!auth.success) {
+      return NextResponse.json({ success: false, message: auth.error }, { status: 401 });
+    }
+
     const cwd = process.cwd();
     
     // Check if there are any changes in the masterContent.json or generally
@@ -29,6 +34,6 @@ export async function POST() {
     return NextResponse.json({ success: true, message: 'Synced to live site successfully!' }, { status: 200 });
   } catch (error: any) {
     console.error('Git sync error:', error);
-    return NextResponse.json({ error: error.message || 'Failed to sync' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to sync. Check server logs.' }, { status: 500 });
   }
 }

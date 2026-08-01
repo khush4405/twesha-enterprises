@@ -1,9 +1,19 @@
 import { NextResponse } from 'next/server';
 import { verifyPassword, signToken } from '@/lib/auth';
 import { cookies } from 'next/headers';
+import { rateLimit } from '@/lib/rate-limit';
 
 export async function POST(request: Request) {
   try {
+    const ip = request.headers.get('x-forwarded-for') || '127.0.0.1';
+    
+    // 5 attempts per minute
+    const limitResult = rateLimit(ip, { maxRequests: 5, windowMs: 60 * 1000 });
+    
+    if (!limitResult.success) {
+      return NextResponse.json({ error: 'Too many attempts. Please try again later.' }, { status: 429 });
+    }
+
     const { username, password } = await request.json();
 
     const expectedUsername = process.env.ADMIN_USERNAME || 'admin';

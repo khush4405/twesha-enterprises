@@ -1,8 +1,16 @@
 import { SignJWT, jwtVerify } from "jose";
 import bcrypt from "bcryptjs";
 
-const JWT_SECRET = process.env.JWT_SECRET || "default_secret";
-const key = new TextEncoder().encode(JWT_SECRET);
+const JWT_SECRET = process.env.JWT_SECRET;
+
+if (!JWT_SECRET || JWT_SECRET === "default_secret" || JWT_SECRET === "super_secret_jwt_key_change_in_production") {
+  if (process.env.NODE_ENV === 'production') {
+    throw new Error("FATAL: JWT_SECRET environment variable is missing or insecure in production.");
+  }
+}
+
+const finalSecret = JWT_SECRET || "default_secret";
+const key = new TextEncoder().encode(finalSecret);
 
 export async function verifyPassword(password: string): Promise<boolean> {
   const hash = process.env.ADMIN_PASSWORD_HASH;
