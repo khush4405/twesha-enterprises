@@ -87,6 +87,8 @@ export default function ProductDetail({ product }: { product: any }) {
               <img
                 src={product.image || product.coverImage}
                 alt={product.title}
+                loading="eager"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "100%",

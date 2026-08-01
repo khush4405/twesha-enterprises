@@ -88,15 +88,18 @@ def main():
                 keys.insert(0, norm(ALIASES[slug]))
             hit = next((files[k] for k in keys if k in files), None)
             label = f"{n.get('title')} ({n.get('type')})"
+            # The CMS edits categories via `coverImage` and products via
+            # `image`. Writing the wrong one makes admin edits look ignored.
+            field = "coverImage" if n.get("type") == "category" else "image"
             if hit:
                 used.add(hit)
-                if n.get("image") and not args.overwrite:
-                    skipped.append((label, n["image"]))
+                if n.get(field) and not args.overwrite:
+                    skipped.append((label, n[field]))
                 else:
-                    n["image"] = hit
+                    n[field] = hit
                     matched.append((label, hit))
             else:
-                if not n.get("image"):
+                if not n.get(field):
                     missing.append(label)
             if n.get("type") == "category":
                 walk(n.get("children", []))

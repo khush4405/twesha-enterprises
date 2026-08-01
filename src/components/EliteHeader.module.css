@@ -110,6 +110,19 @@
   margin-top: 0.8rem;
 }
 
+/* Invisible bridge across the 0.8rem gap between the nav item and the menu.
+   Without it the pointer leaves .navItemWrapper mid-travel, onMouseLeave
+   fires, and the menu closes before you reach it. It is a child of the menu,
+   so it only exists while the menu is open. */
+.dropdownMenu::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0.8rem;
+}
+
 .dropdownActive {
   opacity: 1;
   visibility: visible;

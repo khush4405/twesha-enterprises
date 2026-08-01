@@ -31,7 +31,7 @@ export default function Footer({ categories = [] }: { categories?: any[] }) {
             <div className={styles.brandCol}>
               <div className={styles.logoWrapper}>
                 <img 
-                  src="/Twesha EnterPrize logo new.png" 
+                  src="/Twesha EnterPrize logo new.webp" 
                   alt="Twesha Enterprise - Premium Industrial Import Export" 
                   className={styles.footerLogo} 
                 />
@@ -83,7 +83,8 @@ export default function Footer({ categories = [] }: { categories?: any[] }) {
                 <li><a href="#products">Industrial Products</a></li>
                 <li><a href="#why-choose-us">Why Choose Us</a></li>
                 <li><a href="#global-presence">Global Trade Map</a></li>
-                <li><a href="#certifications">Certifications</a></li>
+                <li><Link href="/certificates">Certifications</Link></li>
+                <li><Link href="/videos">Videos</Link></li>
               </ul>
             </div>
 

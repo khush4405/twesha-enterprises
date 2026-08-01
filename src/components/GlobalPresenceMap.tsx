@@ -1,7 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Globe2, Navigation2, Anchor, ShieldCheck, MapPin, ArrowUpRight } from "lucide-react";
+import { Globe2, Navigation2, Anchor, ShieldCheck, MapPin } from "lucide-react";
+import {
+  MAP_W, MAP_H, ORIGIN, REGION_GEO, project, smoothPath, regionTransform,
+} from "@/lib/tradeRoutes";
 import styles from "./GlobalPresenceMap.module.css";
 
 interface Region {
@@ -41,8 +44,8 @@ export default function GlobalPresenceMap() {
       name: "Middle East & Africa",
       portsCount: 10,
       hubsCount: 3,
-      featuredCountries: ["UAE (Jebel Ali)", "Saudi Arabia", "Qatar", "Oman", "Egypt"],
-      keyCorridor: "Jebel Ali → Dammam → Suez Canal Route",
+      featuredCountries: ["UAE", "Saudi Arabia", "Qatar", "Oman", "Egypt"],
+      keyCorridor: "UAE → Dammam → Suez Canal Route",
       status: "Energy & Infrastructure Corridor"
     },
     {
@@ -93,73 +96,117 @@ export default function GlobalPresenceMap() {
         </div>
 
         {/* Map & Stats Interactive Container */}
-        <div className={`${styles.mapCard} glass-card`}>
-          
+        <div className={styles.mapLayout}>
+
           {/* Map Interactive Visual */}
+          <div className={`${styles.mapCard} glass-card`}>
           <div className={styles.mapVisualContainer}>
-            <div className={styles.worldMapBg}></div>
-            
-            <svg className={styles.shippingSvg} viewBox="0 0 1000 500" fill="none">
+
+            <svg
+              className={styles.shippingSvg}
+              viewBox={`0 0 ${MAP_W} ${MAP_H}`}
+              fill="none"
+              preserveAspectRatio="xMidYMid slice"
+            >
               <defs>
-                <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#D4AF37" stopOpacity="0.8" />
-                  <stop offset="100%" stopColor="#1565FF" stopOpacity="0.8" />
+                <linearGradient id="laneGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#D4AF37" />
+                  <stop offset="55%" stopColor="#4d8bff" />
+                  <stop offset="100%" stopColor="#1565FF" />
                 </linearGradient>
+                <filter id="laneGlow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="3" result="b" />
+                  <feMerge>
+                    <feMergeNode in="b" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+                <radialGradient id="oceanTint" cx="50%" cy="50%" r="70%">
+                  <stop offset="0%" stopColor="#0d2036" stopOpacity="0.0" />
+                  <stop offset="100%" stopColor="#020408" stopOpacity="0.85" />
+                </radialGradient>
               </defs>
-              
-              {/* Origin Node: Gujarat, India */}
-              <circle cx="695" cy="225" r="4" fill="#D4AF37" />
-              <circle cx="695" cy="225" r="8" fill="none" stroke="#D4AF37" strokeWidth="1" />
 
-              {/* Dynamic Routes & Destination Nodes based on active tab */}
-              {activeRegion === "asia" && (
-                <>
-                  {/* To Singapore (via Sri Lanka tip) */}
-                  <path d="M695,225 C700,265 720,280 790,280" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
-                  <circle cx="790" cy="280" r="4" fill="#1565FF" />
-                  
-                  {/* To Japan (via Singapore straits) */}
-                  <path d="M695,225 C700,265 720,280 790,280 C830,280 850,220 875,170" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
-                  <circle cx="875" cy="170" r="4" fill="#1565FF" />
-                </>
-              )}
+              {/* Everything geographic lives in this group so the map graphic and
+                  the routes zoom together and stay aligned. */}
+              <g className={styles.geoLayer} transform={regionTransform(activeRegion)}>
+                <image
+                  href="/world-map.svg"
+                  x="0" y="0" width={MAP_W} height={MAP_H}
+                  className={styles.landmass}
+                  preserveAspectRatio="none"
+                />
 
-              {activeRegion === "europe" && (
-                <>
-                  {/* To Rotterdam (via Suez, Med, Gibraltar, North Sea) */}
-                  <path d="M695,225 Q630,240 585,210 C530,190 480,190 485,180 C470,140 490,130 500,120" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
-                  <circle cx="500" cy="120" r="4" fill="#1565FF" />
-                </>
-              )}
+                {REGION_GEO[activeRegion]?.routes.map((route, i) => {
+                  const d = smoothPath(route.points);
+                  const [dx, dy] = project(route.points[route.points.length - 1]);
+                  return (
+                    <g key={`${activeRegion}-${route.label}`}>
+                      {/* faint base lane */}
+                      <path d={d} className={styles.laneBase} vectorEffect="non-scaling-stroke" />
+                      {/* animated draw-in */}
+                      <path
+                        d={d}
+                        className={styles.laneDraw}
+                        pathLength={1}
+                        vectorEffect="non-scaling-stroke"
+                        filter="url(#laneGlow)"
+                        style={{ animationDelay: `${i * 0.35}s` }}
+                      />
+                      {/* flowing dashes along the lane */}
+                      <path
+                        d={d}
+                        className={styles.laneFlow}
+                        vectorEffect="non-scaling-stroke"
+                        style={{ animationDelay: `${i * 0.35 + 1.1}s` }}
+                      />
+                      {/* destination */}
+                      <g style={{ animationDelay: `${i * 0.35 + 1.4}s` }} className={styles.destGroup}>
+                        <circle cx={dx} cy={dy} r={7} className={styles.destHalo} />
+                        <circle cx={dx} cy={dy} r={3.2} className={styles.destDot} />
+                        <text x={dx} y={dy - 13} className={styles.destLabel} textAnchor="middle">
+                          {route.label}
+                        </text>
+                      </g>
+                    </g>
+                  );
+                })}
 
-              {activeRegion === "middleeast" && (
-                <>
-                  {/* To UAE (across Arabian Sea) */}
-                  <path d="M695,225 Q670,240 645,230" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
-                  <circle cx="645" cy="230" r="4" fill="#1565FF" />
+                {/* Origin: Kandla Port, Gujarat */}
+                {(() => {
+                  const [ox, oy] = project(ORIGIN);
+                  return (
+                    <g>
+                      <circle cx={ox} cy={oy} r={9} className={styles.originPulse} />
+                      <circle cx={ox} cy={oy} r={4.2} className={styles.originDot} />
+                      <text x={ox} y={oy + 20} className={styles.originLabel} textAnchor="middle">
+                        Gujarat, India
+                      </text>
+                    </g>
+                  );
+                })()}
+              </g>
 
-                  {/* To Egypt / Suez (Red Sea) */}
-                  <path d="M695,225 Q630,240 585,210" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
-                  <circle cx="585" cy="210" r="4" fill="#1565FF" />
-                </>
-              )}
-
-              {activeRegion === "americas" && (
-                <>
-                  {/* To USA (Houston via Suez and Gibraltar) */}
-                  <path d="M695,225 Q630,240 585,210 C530,190 480,190 485,180 C400,200 300,220 220,200" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
-                  <circle cx="220" cy="200" r="4" fill="#1565FF" />
-
-                  {/* To Brazil (via Cape of Good Hope, South Africa) */}
-                  <path d="M695,225 C660,300 590,380 550,380 C450,380 380,360 330,340" stroke="url(#blueGrad)" strokeWidth="2" strokeDasharray="4 4" className={styles.staticRoute} />
-                  <circle cx="330" cy="340" r="4" fill="#1565FF" />
-                </>
-              )}
-
+              <rect x="0" y="0" width={MAP_W} height={MAP_H} fill="url(#oceanTint)" pointerEvents="none" />
             </svg>
 
-            {/* Floating Live Region Card Overlay */}
-            <div className={`${styles.floatingRegionOverlay} glass-card glass-card-gold`}>
+          </div>
+
+          {/* Bottom Bar Metrics */}
+          <div className={styles.mapFooter}>
+            <div className={styles.footerMetric}>
+              <Navigation2 size={18} className={styles.blueIcon} />
+              <span>Full Container Load (FCL) &amp; Less Container Load (LCL) Logistics</span>
+            </div>
+            <div className={styles.footerMetric}>
+              <ShieldCheck size={18} className={styles.goldIcon} />
+              <span>Comprehensive Marine Cargo Insurance Coverage</span>
+            </div>
+          </div>
+          </div>
+
+          {/* Region detail panel - beside the map, never covering it */}
+          <aside className={`${styles.regionPanel} glass-card glass-card-gold`} key={activeRegion}>
               <div className={styles.overlayHeader}>
                 <Anchor size={18} className={styles.goldIcon} />
                 <span className={styles.overlayTitle}>{currentRegion.name}</span>
@@ -190,21 +237,7 @@ export default function GlobalPresenceMap() {
                   ))}
                 </div>
               </div>
-            </div>
-
-          </div>
-
-          {/* Bottom Bar Metrics */}
-          <div className={styles.mapFooter}>
-            <div className={styles.footerMetric}>
-              <Navigation2 size={18} className={styles.blueIcon} />
-              <span>Full Container Load (FCL) & Less Container Load (LCL) Logistics</span>
-            </div>
-            <div className={styles.footerMetric}>
-              <ShieldCheck size={18} className={styles.goldIcon} />
-              <span>Comprehensive Marine Cargo Insurance Coverage</span>
-            </div>
-          </div>
+          </aside>
 
         </div>
 

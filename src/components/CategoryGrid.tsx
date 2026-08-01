@@ -2,6 +2,7 @@
 
 import { ArrowRight, Package } from "lucide-react";
 import Link from "next/link";
+import { cardSrcSet, CARD_SIZES } from "@/lib/img";
 import styles from "./catalog/ProductUI.module.css";
 
 export default function CategoryGrid({ items, basePath = "/products" }: { items: any[], basePath?: string }) {
@@ -39,10 +40,16 @@ export default function CategoryGrid({ items, basePath = "/products" }: { items:
                 >
                   <div className={styles.categoryImageWrapper}>
                     {item.image || item.coverImage ? (
-                      <img 
-                        src={item.image || item.coverImage} 
-                        alt={item.title} 
+                      <img
+                        src={item.image || item.coverImage}
+                        srcSet={cardSrcSet(item.image || item.coverImage)}
+                        sizes={CARD_SIZES}
+                        alt={item.title}
                         className={styles.categoryImage}
+                        loading="lazy"
+                        decoding="async"
+                        width={1200}
+                        height={750}
                       />
                     ) : (
                       <Package size={64} color="rgba(255,255,255,0.1)" />
@@ -98,10 +105,16 @@ export default function CategoryGrid({ items, basePath = "/products" }: { items:
                   
                   <div className={styles.productImageWrapper}>
                     {item.image || item.coverImage ? (
-                      <img 
-                        src={item.image || item.coverImage} 
-                        alt={item.title} 
+                      <img
+                        src={item.image || item.coverImage}
+                        srcSet={cardSrcSet(item.image || item.coverImage)}
+                        sizes={CARD_SIZES}
+                        alt={item.title}
                         className={styles.productImage}
+                        loading="lazy"
+                        decoding="async"
+                        width={1200}
+                        height={750}
                       />
                     ) : (
                       <Package size={48} color="rgba(21, 101, 255, 0.2)" />

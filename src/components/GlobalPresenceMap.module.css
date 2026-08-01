@@ -98,32 +98,136 @@
   position: relative;
 }
 
+/* Map on the left, region detail beside it - the panel never covers the map */
+.mapLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
 .mapVisualContainer {
   position: relative;
   width: 100%;
-  height: 480px;
-  background: radial-gradient(circle at 50% 50%, rgba(8, 19, 32, 0.8) 0%, rgba(2, 4, 8, 0.95) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 520px;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 45%, rgba(12, 28, 51, 0.9) 0%, rgba(2, 4, 8, 0.98) 100%);
 }
 
-.worldMapBg {
-  position: absolute;
-  inset: 0;
-  background-image: url('/world-map.svg');
-  background-size: 80% auto;
-  background-position: center 40%;
-  background-repeat: no-repeat;
-  opacity: 0.15;
-  filter: invert(1) hue-rotate(180deg) brightness(1.2) sepia(0.5);
-  mask-image: radial-gradient(ellipse at center, black 40%, transparent 90%);
-  animation: pulseOpacity 8s infinite alternate;
+/* The whole geographic layer zooms as one, so routes stay locked to the map */
+.geoLayer {
+  transition: transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: 0 0;
 }
 
-@keyframes pulseOpacity {
-  0% { opacity: 0.1; }
-  100% { opacity: 0.25; }
+.landmass {
+  opacity: 0.3;
+  filter: invert(1) sepia(1) saturate(0.45) hue-rotate(178deg) brightness(0.62);
+}
+
+/* ---------- Shipping lanes ---------- */
+
+.laneBase {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.13);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+.laneDraw {
+  fill: none;
+  stroke: url(#laneGrad);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: drawLane 1.6s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.laneFlow {
+  fill: none;
+  stroke: #cfe3ff;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-dasharray: 2 26;
+  opacity: 0;
+  animation: flowFade 0.5s ease forwards, flowMove 2.6s linear infinite;
+}
+
+/* ---------- Nodes ---------- */
+
+.originDot { fill: var(--premium-gold); }
+
+.originPulse {
+  fill: none;
+  stroke: var(--premium-gold);
+  stroke-width: 1.2;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pulseRing 2.4s ease-out infinite;
+}
+
+.originLabel {
+  fill: var(--premium-gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  paint-order: stroke;
+  stroke: rgba(2, 4, 8, 0.85);
+  stroke-width: 3px;
+}
+
+.destGroup {
+  opacity: 0;
+  animation: popIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.destDot { fill: #7fb0ff; }
+
+.destHalo {
+  fill: none;
+  stroke: #1565FF;
+  stroke-width: 1.2;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pulseRing 2.4s ease-out infinite;
+}
+
+.destLabel {
+  fill: #cfe3ff;
+  font-size: 10.5px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: rgba(2, 4, 8, 0.85);
+  stroke-width: 3px;
+}
+
+@keyframes drawLane {
+  from { stroke-dashoffset: 1; }
+  to   { stroke-dashoffset: 0; }
+}
+@keyframes flowFade {
+  to { opacity: 0.9; }
+}
+@keyframes flowMove {
+  to { stroke-dashoffset: -280; }
+}
+@keyframes pulseRing {
+  0%   { transform: scale(0.6); opacity: 0.9; }
+  70%  { transform: scale(1.9); opacity: 0; }
+  100% { transform: scale(1.9); opacity: 0; }
+}
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .geoLayer { transition: none; }
+  .laneDraw, .laneFlow, .originPulse, .destHalo, .destGroup { animation: none; }
+  .laneDraw { stroke-dashoffset: 0; }
+  .laneFlow { opacity: 0.9; }
+  .destGroup { opacity: 1; }
 }
 
 .shippingSvg {
@@ -131,22 +235,22 @@
   inset: 0;
   width: 100%;
   height: 100%;
-}
-
-.staticRoute {
-  fill: none;
+  display: block;
 }
 
 /* Floating Region Card Overlay */
-.floatingRegionOverlay {
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-  width: 380px;
+.regionPanel {
+  position: relative;
+  width: 100%;
   padding: 1.6rem;
-  z-index: 10;
   border-radius: var(--radius-md);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  animation: panelIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .overlayHeader {
@@ -271,15 +375,20 @@
   font-weight: 500;
 }
 
-@media (max-width: 900px) {
-  .floatingRegionOverlay {
-    position: relative;
-    bottom: auto;
-    right: auto;
+@media (max-width: 1100px) {
+  .mapLayout {
+    grid-template-columns: 1fr;
+  }
+  .regionPanel {
     width: 100%;
-    border-radius: 0;
   }
   .mapVisualContainer {
-    height: 320px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mapVisualContainer {
+    height: 300px;
   }
 }

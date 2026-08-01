@@ -1,0 +1,7 @@
+# Original un-optimised source images (kept locally, never deployed)
+_original-images/
+
+# Archives and scratch
+backup_code.zip
+scripts/
+*.backup.json

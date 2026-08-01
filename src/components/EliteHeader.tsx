@@ -29,9 +29,8 @@ export default function EliteHeader({ categories = [] }: { categories?: Category
     { label: "Home", href: "/" },
     { label: "About", href: "/#about" },
     { label: "Products", href: "/products", isDropdown: true },
-    { label: "Certificates", href: "/#certifications" },
-    { label: "Videos", href: "/#videos" },
-    { label: "Clients", href: "/#clients" },
+    { label: "Certificates", href: "/certificates" },
+    { label: "Videos", href: "/videos" },
     { label: "Contact", href: "/contact" },
   ];
 
@@ -42,7 +41,7 @@ export default function EliteHeader({ categories = [] }: { categories?: Category
           {/* Brand Logo */}
           <Link href="/" className={styles.logoContainer}>
             <img
-              src="/twesha-logo-subtle.png"
+              src="/twesha-logo-subtle.webp"
               alt="Twesha Enterprise - Premium Industrial Import & Export" 
               className={styles.logoImage} 
             />

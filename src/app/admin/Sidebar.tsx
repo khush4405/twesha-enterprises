@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, FolderTree, FileCheck, Image as ImageIcon, Video, Home, Info, Phone, MessageSquare, UploadCloud, Settings } from "lucide-react";
+import { LayoutDashboard, FolderTree, FileCheck, Video, Home, Info, Phone, MessageSquare, UploadCloud, Settings } from "lucide-react";
 import styles from "./AdminLayout.module.css";
 
 const NAV_ITEMS = [
@@ -14,7 +14,6 @@ const NAV_ITEMS = [
   { name: "Certificates", href: "/admin/certificates", icon: FileCheck },
   
   { group: "Media Library" },
-  { name: "Gallery", href: "/admin/gallery", icon: ImageIcon },
   { name: "Videos", href: "/admin/videos", icon: Video },
   
   { group: "System" },
