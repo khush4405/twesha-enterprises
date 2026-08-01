@@ -3881,7 +3881,13 @@
       "description": "Precision process instrumentation and automation - flow, level, temperature, pressure and analytical measurement, dew point monitoring and complete control panel hardware for pharmaceutical, chemical, oil and gas, power and water treatment plant."
     }
   ],
-  "certificates": [],
+  "certificates": [
+    {
+      "id": "1785566442654",
+      "title": "New Certificate",
+      "image": ""
+    }
+  ],
   "gallery": [],
   "videos": []
 }
