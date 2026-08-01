@@ -144,7 +144,7 @@ export default function ProductDetail({ product }: { product: any }) {
             </Link>
 
             <a 
-              href="https://wa.me/yourwhatsappnumber" 
+              href="https://api.whatsapp.com/send/?phone=919426129718&text&type=phone_number&app_absent=0" 
               target="_blank"
               rel="noopener noreferrer"
               className="btn-glass"

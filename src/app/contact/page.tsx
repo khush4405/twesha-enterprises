@@ -98,7 +98,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <a href={`https://wa.me/${contactInfo.whatsapp.replace(/[^0-9]/g, '')}`} target="_blank" rel="noopener noreferrer" className={styles.whatsappCard}>
+              <a href="https://api.whatsapp.com/send/?phone=919426129718&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className={styles.whatsappCard}>
                 <div className={styles.whatsappIconBox}>
                   <MessageCircle size={24} />
                 </div>
