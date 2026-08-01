@@ -13,6 +13,12 @@ export const transporter = nodemailer.createTransport({
     user,
     pass,
   },
+  // VERCEL FIX: Force IPv4, as IPv6 to Gmail often times out on Vercel Serverless
+  tls: { rejectUnauthorized: false }, // avoid TLS cert issues
+  family: 4, // Force IPv4
+  connectionTimeout: 60000,
+  greetingTimeout: 30000,
+  socketTimeout: 60000,
 } as any); // THIS CAST IS CRITICAL for Serverless/Next.js builds
 
 export const emailConfig = {

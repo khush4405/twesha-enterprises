@@ -3,6 +3,8 @@ import { z } from 'zod';
 import { transporter, emailConfig } from '@/lib/nodemailer';
 import { rateLimit } from '@/lib/rate-limit';
 
+export const maxDuration = 60; // Set Vercel function timeout to 60 seconds
+
 const formSchema = z.object({
   firstName: z.string().min(1, "Name is required"),
   lastName: z.string().optional(),
