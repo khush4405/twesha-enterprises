@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
           </div>
           <h2 className={styles.title}>
             Why Fortune 500 Leaders Choose <br />
-            <span className="gold-gradient-text">Twesha Enterprises</span>
+            <span className="gold-gradient-text">Twesha Enterprise</span>
           </h2>
           <p className={styles.subtitle}>
             We combine high-precision engineering standards with global trade velocity. 

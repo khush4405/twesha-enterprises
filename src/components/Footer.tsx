@@ -32,12 +32,12 @@ export default function Footer({ categories = [] }: { categories?: any[] }) {
               <div className={styles.logoWrapper}>
                 <img 
                   src="/Twesha EnterPrize logo new.png" 
-                  alt="Twesha Enterprises - Premium Industrial Import Export" 
+                  alt="Twesha Enterprise - Premium Industrial Import Export" 
                   className={styles.footerLogo} 
                 />
               </div>
               <p className={styles.brandDesc}>
-                Twesha Enterprises is an international industrial import-export powerhouse, 
+                Twesha Enterprise is an international industrial import-export powerhouse, 
                 connecting global engineering manufacturers with high-growth markets worldwide.
               </p>
               <div className={styles.certBadge}>
@@ -119,7 +119,7 @@ export default function Footer({ categories = [] }: { categories?: any[] }) {
               <div className={styles.contactDetails}>
                 <div className={styles.contactItem}>
                   <MapPin size={18} className={styles.goldIcon} />
-                  <span>Twesha Enterprises HQ, Industrial Trade Center, Mumbai, Maharashtra, India</span>
+                  <span>Twesha Enterprise HQ, Industrial Trade Center, Mumbai, Maharashtra, India</span>
                 </div>
                 <div className={styles.contactItem}>
                   <Phone size={18} className={styles.blueIcon} />
@@ -146,7 +146,7 @@ export default function Footer({ categories = [] }: { categories?: any[] }) {
           <div className={styles.bottomFlex}>
             
             <div className={styles.copyright}>
-              © {new Date().getFullYear()} Twesha Enterprises. All Rights Reserved. Designed for Global Trade Leadership.
+              © {new Date().getFullYear()} Twesha Enterprise. All Rights Reserved. Designed for Global Trade Leadership.
             </div>
 
             {/* Glass Social Buttons */}

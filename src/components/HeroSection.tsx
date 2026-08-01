@@ -33,7 +33,7 @@ export default function HeroSection() {
         <div className={styles.watermarkContainer}>
           <img 
             src="/Twesha EnterPrize logo new.png" 
-            alt="Twesha Enterprises Watermark" 
+            alt="Twesha Enterprise Watermark" 
             className={styles.heroWatermark}
           />
         </div>
@@ -66,7 +66,7 @@ export default function HeroSection() {
 
             {/* Paragraph */}
             <p className={styles.description}>
-              Twesha Enterprises delivers world-class industrial products, automation solutions, 
+              Twesha Enterprise delivers world-class industrial products, automation solutions, 
               electrical equipment, and engineering supplies through reliable international sourcing 
               and export services.
             </p>

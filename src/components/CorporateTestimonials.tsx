@@ -25,7 +25,7 @@ export default function CorporateTestimonials() {
       role: "VP of Global Supply Chain",
       company: "Apex Industrial Automation GmbH",
       country: "Frankfurt, Germany",
-      quote: "Twesha Enterprises has consistently delivered precision PLC systems and high-voltage electrical components for our European plants. Their zero-defect QA audit and on-time maritime logistics have saved us hundreds of operational hours.",
+      quote: "Twesha Enterprise has consistently delivered precision PLC systems and high-voltage electrical components for our European plants. Their zero-defect QA audit and on-time maritime logistics have saved us hundreds of operational hours.",
       rating: 5,
       category: "Industrial Automation"
     },
@@ -45,7 +45,7 @@ export default function CorporateTestimonials() {
       role: "Director of International Trade",
       company: "Vanguard Robotics Corp",
       country: "Singapore",
-      quote: "Working with Twesha Enterprises gave us direct access to certified factory pricing without compromising quality. Their customs documentation and air freight speed are unmatched in the APAC region.",
+      quote: "Working with Twesha Enterprise gave us direct access to certified factory pricing without compromising quality. Their customs documentation and air freight speed are unmatched in the APAC region.",
       rating: 5,
       category: "Robotics & Controls"
     }
@@ -76,7 +76,7 @@ export default function CorporateTestimonials() {
             <span className="blue-gradient-text">Industrial Decision Makers</span>
           </h2>
           <p className={styles.subtitle}>
-            Discover how Twesha Enterprises powers global supply chains for enterprise industrial clients across six continents.
+            Discover how Twesha Enterprise powers global supply chains for enterprise industrial clients across six continents.
           </p>
         </div>
 

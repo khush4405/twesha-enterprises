@@ -26,7 +26,7 @@ export default function AboutTwesha() {
             <span className="gold-gradient-text">Built On Uncompromised Trust</span>
           </h2>
           <p className={styles.sectionSubtitle}>
-            Twesha Enterprises bridges manufacturing powerhouses with global industrial markets. 
+            Twesha Enterprise bridges manufacturing powerhouses with global industrial markets. 
             We specialize in end-to-end international procurement, quality compliance, and cross-border logistics.
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function AboutTwesha() {
 
             <p className={styles.cardText}>
               Established to streamline complex international industrial supply chains, 
-              Twesha Enterprises operates across key industrial centers worldwide. We partner exclusively 
+              Twesha Enterprise operates across key industrial centers worldwide. We partner exclusively 
               with certified OEM manufacturers to deliver precision automation, instrumentation, 
               and electrical equipment to 20+ countries.
             </p>

@@ -21,7 +21,7 @@ export default function CertificationsSection({ data = [] }: { data?: any[] }) {
             <span className="gold-gradient-text">Luxury Certifications</span>
           </h2>
           <p className={styles.subtitle}>
-            Twesha Enterprises adheres to strict global engineering standards, guaranteeing total legal, regulatory, and quality compliance for every order.
+            Twesha Enterprise adheres to strict global engineering standards, guaranteeing total legal, regulatory, and quality compliance for every order.
           </p>
         </div>
 

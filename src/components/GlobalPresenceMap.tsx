@@ -73,7 +73,7 @@ export default function GlobalPresenceMap() {
             <span className="blue-gradient-text">Connected Shipping Routes</span>
           </h2>
           <p className={styles.subtitle}>
-            Twesha Enterprises maintains an active trade network spanning over 20 countries. 
+            Twesha Enterprise maintains an active trade network spanning over 20 countries. 
             We coordinate air, ocean, and overland freight across major global maritime corridors.
           </p>
         </div>

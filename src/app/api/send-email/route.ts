@@ -42,7 +42,7 @@ export async function POST(req: Request) {
     }
 
     const htmlBody = `
-      <h2>New Inquiry from Twesha Enterprises Website</h2>
+      <h2>New Inquiry from Twesha Enterprise Website</h2>
       <p><strong>Name:</strong> ${firstName} ${lastName && lastName !== 'N/A' ? lastName : ''}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Phone:</strong> ${phone}</p>
@@ -63,7 +63,7 @@ export async function POST(req: Request) {
 
     // Auto-reply to the sender
     const autoReplyHtml = `
-      <h2>Thank you for contacting Twesha Enterprises!</h2>
+      <h2>Thank you for contacting Twesha Enterprise!</h2>
       <p>Dear ${firstName},</p>
       <p>We have received your inquiry and our team will get back to you shortly.</p>
       <br/>
@@ -74,9 +74,9 @@ export async function POST(req: Request) {
     `;
 
     const autoReplyPromise = transporter.sendMail({
-      from: `"Twesha Enterprises (No Reply)" <${emailConfig.user}>`, // Must match the authenticated user
+      from: `"Twesha Enterprise (No Reply)" <${emailConfig.user}>`, // Must match the authenticated user
       to: email, // Send to the person who filled out the form
-      subject: `Thank you for your inquiry - Twesha Enterprises`,
+      subject: `Thank you for your inquiry - Twesha Enterprise`,
       html: autoReplyHtml,
     });
 
