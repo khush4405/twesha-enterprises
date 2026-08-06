@@ -8,7 +8,7 @@ import masterContent from "@/data/masterContent.json";
 export default function ContactPage() {
   const content = masterContent as any;
   const contactInfo = content.contactInfo || {
-    emails: ["contact@twesha.com"],
+    emails: ["info@tweshaenterprise.com"],
     phones: ["+91 94261 29718", "+91 98255 31123"],
     address: "06 Sanskruti Cottage Society, Near Arti Colony, Opp. Pashupatinath Temple, GIDC Ankleshwar, Gujarat 393002, India",
     whatsapp: "+91 94261 29718",
