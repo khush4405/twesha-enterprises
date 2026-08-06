@@ -22,7 +22,7 @@ import Link from "next/link";
  *   "https://www.linkedin.com/company/twesha-enterprise/"
  * While this is empty the icon is hidden, so the footer never shows a dead link.
  */
-const LINKEDIN_URL = "";
+const LINKEDIN_URL = "https://www.linkedin.com/company/twesha-enterprise/";
 
 const WHATSAPP_NUMBER = "919426129718";
 
