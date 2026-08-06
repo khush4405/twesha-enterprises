@@ -27,7 +27,7 @@ export default function GlobalPresenceMap() {
       portsCount: 18,
       hubsCount: 6,
       featuredCountries: ["India (HQ)", "Singapore", "Japan", "South Korea", "Vietnam", "UAE"],
-      keyCorridor: "Mumbai Port → Singapore Straits → Tokyo Bay",
+      keyCorridor: "Kandla Port → Singapore Straits → Tokyo Bay",
       status: "High Volume Primary Hub"
     },
     {

@@ -9,9 +9,9 @@ export default function ContactPage() {
   const content = masterContent as any;
   const contactInfo = content.contactInfo || {
     emails: ["contact@twesha.com"],
-    phones: ["+91 9876543210"],
-    address: "Global Business Hub, Mumbai, India",
-    whatsapp: "+91 9876543210",
+    phones: ["+91 94261 29718", "+91 98255 31123"],
+    address: "06 Sanskruti Cottage Society, Near Arti Colony, Opp. Pashupatinath Temple, GIDC Ankleshwar, Gujarat 393002, India",
+    whatsapp: "+91 94261 29718",
     workingHours: "Mon - Sat, 9:00 AM - 6:00 PM"
   };
 
@@ -196,7 +196,7 @@ export default function ContactPage() {
               {/* Map Container */}
               <div className={styles.mapContainer}>
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609951666!2d72.74109995777421!3d19.08219783856114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1655382218765!5m2!1sen!2sin" 
+                  src="https://maps.google.com/maps?q=Sanskruti%20Cottage%20Society%2C%20Near%20Arti%20Colony%2C%20GIDC%20Ankleshwar%2C%20Gujarat%20393002&z=15&output=embed"
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 

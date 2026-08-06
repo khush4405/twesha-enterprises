@@ -5,7 +5,7 @@ import styles from "./AboutTwesha.module.css";
 
 export default function AboutTwesha() {
   const hubs = [
-    { name: "Mumbai HQ", status: "Primary Export Hub" },
+    { name: "Ankleshwar HQ", status: "Primary Export Hub" },
     { name: "Dubai, UAE", status: "MENA Distribution" },
     { name: "Frankfurt, DE", status: "European Gateway" },
     { name: "Singapore", status: "APAC Logistics Center" },

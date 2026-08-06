@@ -59,7 +59,7 @@ export default function Footer({ categories = [] }: { categories?: any[] }) {
                 <Link href="/contact" className={styles.btnPrimary}>
                   Get a Quote
                 </Link>
-                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className={styles.btnSecondary}>
+                <a href="https://wa.me/919426129718" target="_blank" rel="noopener noreferrer" className={styles.btnSecondary}>
                   WhatsApp Us
                 </a>
               </div>
@@ -120,11 +120,11 @@ export default function Footer({ categories = [] }: { categories?: any[] }) {
               <div className={styles.contactDetails}>
                 <div className={styles.contactItem}>
                   <MapPin size={18} className={styles.goldIcon} />
-                  <span>Twesha Enterprise HQ, Industrial Trade Center, Mumbai, Maharashtra, India</span>
+                  <span>Twesha Enterprise, 06 Sanskruti Cottage Society, Near Arti Colony, Opp. Pashupatinath Temple, GIDC Ankleshwar, Gujarat 393002, India</span>
                 </div>
                 <div className={styles.contactItem}>
                   <Phone size={18} className={styles.blueIcon} />
-                  <span>+91 98765 43210 / +91 22 4567 8900</span>
+                  <span>+91 94261 29718 / +91 98255 31123</span>
                 </div>
                 <div className={styles.contactItem}>
                   <Mail size={18} className={styles.goldIcon} />
